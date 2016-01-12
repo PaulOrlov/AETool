@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN"
+                            "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="Actions">
+        <folder name="Delete">
+            <file name="ru-ptahi-aetexperiment-deleteExperiment.instance">
+                <!--ru.ptahi.aetexperiment.DeleteAction-->
+                <attr name="displayName" stringvalue="Delete Experiment"/>
+                <attr name="instanceCreate" newvalue="ru.ptahi.aetexperiment.DeleteAction"/>
+            </file>
+        </folder>
+        <folder name="Edit">
+            <file name="ru-ptahi-aetexperiment-Visualize.instance">
+                <!--ru.ptahi.aetexperiment.Visualize-->
+                <attr
+                    bundlevalue="ru.ptahi.aetexperiment.Bundle#CTL_Visualize" name="displayName"/>
+                <attr methodvalue="org.openide.awt.Actions.context" name="instanceCreate"/>
+                <attr name="type" stringvalue="ru.ptahi.aetexperiment.ExperimentNode"/>
+                <attr methodvalue="org.openide.awt.Actions.inject" name="delegate"/>
+                <attr name="injectable" stringvalue="ru.ptahi.aetexperiment.Visualize"/>
+                <attr name="selectionType" stringvalue="EXACTLY_ONE"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+        </folder>
+        <folder name="Window">
+            <file name="ru-ptahi-aetexperiment-ExperimentEditorTopComponent.instance">
+                <!--ru.ptahi.aetexperiment.ExperimentEditorTopComponent-->
+                <attr
+                    methodvalue="org.openide.windows.TopComponent.openAction" name="instanceCreate"/>
+                <attr name="component" newvalue="ru.ptahi.aetexperiment.ExperimentEditorTopComponent"/>
+                <attr name="preferredID" stringvalue="ExperimentEditorTopComponent"/>
+                <attr
+                    bundlevalue="ru.ptahi.aetexperiment.Bundle#CTL_ExperimentEditorAction" name="displayName"/>
+            </file>
+            <file name="ru-ptahi-aetexperiment-VisualizerPropertiesTopComponent.instance">
+                <!--ru.ptahi.aetexperiment.VisualizerPropertiesTopComponent-->
+                <attr
+                    methodvalue="org.openide.windows.TopComponent.openAction" name="instanceCreate"/>
+                <attr name="component" newvalue="ru.ptahi.aetexperiment.VisualizerPropertiesTopComponent"/>
+                <attr name="preferredID" stringvalue="VisualizerPropertiesTopComponent"/>
+                <attr
+                    bundlevalue="ru.ptahi.aetexperiment.Bundle#CTL_VisualizerPropertiesAction" name="displayName"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="myAction">
+        <folder name="Experiment">
+            <file name="ru-ptahi-aetexperiment-deleteExperiment.shadow">
+                <!--ru.ptahi.aetexperiment.DeleteAction-->
+                <attr name="originalFile" stringvalue="Actions/Delete/ru-ptahi-aetexperiment-deleteExperiment.instance"/>
+                <attr intvalue="3" name="position"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Menu">
+        <folder name="Tools">
+            <file name="ru-ptahi-aetexperiment-Visualize.shadow">
+                <!--ru.ptahi.aetexperiment.Visualize-->
+                <attr name="originalFile" stringvalue="Actions/Edit/ru-ptahi-aetexperiment-Visualize.instance"/>
+                <attr intvalue="-450" name="position"/>
+            </file>
+        </folder>
+        <folder name="Window">
+            <file name="ru-ptahi-aetexperiment-ExperimentEditorTopComponent.shadow">
+                <!--ru.ptahi.aetexperiment.ExperimentEditorTopComponent-->
+                <attr name="originalFile" stringvalue="Actions/Window/ru-ptahi-aetexperiment-ExperimentEditorTopComponent.instance"/>
+            </file>
+            <file name="ru-ptahi-aetexperiment-ExperimentVisualizerTopComponent.shadow">
+                <!--ru.ptahi.aetexperiment.ExperimentVisualizerTopComponent-->
+                <attr name="originalFile" stringvalue="Actions/Window/ru-ptahi-aetexperiment-ExperimentVisualizerTopComponent.instance"/>
+            </file>
+            <file name="ru-ptahi-aetexperiment-RunExperimentTopComponent.shadow">
+                <!--ru.ptahi.aetexperiment.MyPA-->
+                <attr name="originalFile" stringvalue="Actions/Window/ru-ptahi-aetexperiment-RunExperimentTopComponent.instance"/>
+            </file>
+            <file name="ru-ptahi-aetexperiment-VisualizerPropertiesTopComponent.shadow">
+                <!--ru.ptahi.aetexperiment.VisualizerPropertiesTopComponent-->
+                <attr name="originalFile" stringvalue="Actions/Window/ru-ptahi-aetexperiment-VisualizerPropertiesTopComponent.instance"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Windows2">
+        <folder name="Components">
+            <file name="ExperimentEditorTopComponent.settings">
+                <!--ru.ptahi.aetexperiment.ExperimentEditorTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE settings PUBLIC "-//NetBeans//DTD Session settings 1.0//EN" "http://www.netbeans.org/dtds/sessionsettings-1_0.dtd">
+<settings version="1.0">
+  <instance class="ru.ptahi.aetexperiment.ExperimentEditorTopComponent"/>
+</settings>
+]]></file>
+            <file name="ExperimentVisualizerTopComponent.settings">
+                <!--ru.ptahi.aetexperiment.ExperimentVisualizerTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE settings PUBLIC "-//NetBeans//DTD Session settings 1.0//EN" "http://www.netbeans.org/dtds/sessionsettings-1_0.dtd">
+<settings version="1.0">
+  <instance class="ru.ptahi.aetexperiment.ExperimentVisualizerTopComponent"/>
+</settings>
+]]></file>
+            <file name="RunExperimentTopComponent.settings">
+                <!--ru.ptahi.aetexperiment.MyPA--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE settings PUBLIC "-//NetBeans//DTD Session settings 1.0//EN" "http://www.netbeans.org/dtds/sessionsettings-1_0.dtd">
+<settings version="1.0">
+  <instance class="ru.ptahi.aetexperiment.MyPA"/>
+</settings>
+]]></file>
+            <file name="VisualizerPropertiesTopComponent.settings">
+                <!--ru.ptahi.aetexperiment.VisualizerPropertiesTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE settings PUBLIC "-//NetBeans//DTD Session settings 1.0//EN" "http://www.netbeans.org/dtds/sessionsettings-1_0.dtd">
+<settings version="1.0">
+  <instance class="ru.ptahi.aetexperiment.VisualizerPropertiesTopComponent"/>
+</settings>
+]]></file>
+        </folder>
+        <folder name="Modes">
+            <folder name="editor">
+                <file name="ExperimentEditorTopComponent.wstcref">
+                    <!--ru.ptahi.aetexperiment.ExperimentEditorTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tc-ref PUBLIC "-//NetBeans//DTD Top Component in Mode Properties 2.0//EN" "http://www.netbeans.org/dtds/tc-ref2_0.dtd">
+<tc-ref version="2.0">
+  <tc-id id="ExperimentEditorTopComponent"/>
+  <state opened="false"/>
+</tc-ref>
+]]></file>
+                <file name="ExperimentVisualizerTopComponent.wstcref">
+                    <!--ru.ptahi.aetexperiment.ExperimentVisualizerTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tc-ref PUBLIC "-//NetBeans//DTD Top Component in Mode Properties 2.0//EN" "http://www.netbeans.org/dtds/tc-ref2_0.dtd">
+<tc-ref version="2.0">
+  <tc-id id="ExperimentVisualizerTopComponent"/>
+  <state opened="false"/>
+</tc-ref>
+]]></file>
+                <file name="RunExperimentTopComponent.wstcref">
+                    <!--ru.ptahi.aetexperiment.MyPA--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tc-ref PUBLIC "-//NetBeans//DTD Top Component in Mode Properties 2.0//EN" "http://www.netbeans.org/dtds/tc-ref2_0.dtd">
+<tc-ref version="2.0">
+  <tc-id id="RunExperimentTopComponent"/>
+  <state opened="false"/>
+</tc-ref>
+]]></file>
+            </folder>
+            <folder name="properties">
+                <file name="VisualizerPropertiesTopComponent.wstcref">
+                    <!--ru.ptahi.aetexperiment.VisualizerPropertiesTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tc-ref PUBLIC "-//NetBeans//DTD Top Component in Mode Properties 2.0//EN" "http://www.netbeans.org/dtds/tc-ref2_0.dtd">
+<tc-ref version="2.0">
+  <tc-id id="VisualizerPropertiesTopComponent"/>
+  <state opened="false"/>
+</tc-ref>
+]]></file>
+            </folder>
+        </folder>
+    </folder>
+    <folder name="xml">
+        <folder name="entities">
+            <folder name="ru_ptahi_aetexperiment">
+                <file name="ExperimentEditor" url="nbres:/org/netbeans/modules/settings/resources/properties-1_0.dtd">
+                    <!--ru.ptahi.aetexperiment.ExperimentEditorTopComponent-->
+                    <attr name="hint.originalPublicID" stringvalue="-//ru.ptahi.aetexperiment//ExperimentEditor//EN"/>
+                </file>
+                <file name="VisualizerProperties" url="nbres:/org/netbeans/modules/settings/resources/properties-1_0.dtd">
+                    <!--ru.ptahi.aetexperiment.VisualizerPropertiesTopComponent-->
+                    <attr name="hint.originalPublicID" stringvalue="-//ru.ptahi.aetexperiment//VisualizerProperties//EN"/>
+                </file>
+            </folder>
+        </folder>
+        <folder name="memory">
+            <folder name="ru">
+                <folder name="ptahi">
+                    <folder name="aetexperiment">
+                        <file name="ExperimentEditorTopComponent">
+                            <!--ru.ptahi.aetexperiment.ExperimentEditorTopComponent-->
+                            <attr name="settings.providerPath" stringvalue="xml/lookups//ru_ptahi_aetexperiment/ExperimentEditor.instance"/>
+                        </file>
+                        <file name="VisualizerPropertiesTopComponent">
+                            <!--ru.ptahi.aetexperiment.VisualizerPropertiesTopComponent-->
+                            <attr name="settings.providerPath" stringvalue="xml/lookups//ru_ptahi_aetexperiment/VisualizerProperties.instance"/>
+                        </file>
+                    </folder>
+                </folder>
+            </folder>
+        </folder>
+        <folder name="lookups">
+            <folder name="ru_ptahi_aetexperiment">
+                <file name="ExperimentEditor.instance">
+                    <!--ru.ptahi.aetexperiment.ExperimentEditorTopComponent-->
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.create" name="instanceCreate"/>
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.properties" name="settings.convertor"/>
+                    <attr name="settings.instanceClass" stringvalue="ru.ptahi.aetexperiment.ExperimentEditorTopComponent"/>
+                    <attr name="settings.instanceOf" stringvalue="ru.ptahi.aetexperiment.ExperimentEditorTopComponent"/>
+                    <attr boolvalue="true" name="xmlproperties.preventStoring"/>
+                </file>
+                <file name="VisualizerProperties.instance">
+                    <!--ru.ptahi.aetexperiment.VisualizerPropertiesTopComponent-->
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.create" name="instanceCreate"/>
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.properties" name="settings.convertor"/>
+                    <attr name="settings.instanceClass" stringvalue="ru.ptahi.aetexperiment.VisualizerPropertiesTopComponent"/>
+                    <attr name="settings.instanceOf" stringvalue="ru.ptahi.aetexperiment.VisualizerPropertiesTopComponent"/>
+                    <attr boolvalue="true" name="xmlproperties.preventStoring"/>
+                </file>
+            </folder>
+        </folder>
+    </folder>
+</filesystem>

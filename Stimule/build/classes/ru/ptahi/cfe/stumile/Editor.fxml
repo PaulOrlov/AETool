@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorpane" prefHeight="621.0" prefWidth="735.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Label layoutX="21.0" layoutY="24.0" text="Stimule">
+      <font>
+        <Font size="18.0" />
+      </font>
+    </Label>
+    <GridPane id="Grid" layoutX="21.0" layoutY="51.0" prefHeight="522.0" prefWidth="692.0">
+      <children>
+        <Label text="Complexity factor:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <TextField id="complexityfactor" prefWidth="400.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Label text="Correct answer:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <TextField id="correctanswer" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Label alignment="TOP_LEFT" text="Content:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <TextArea id="content" prefHeight="337.0" prefWidth="445.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="131.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="565.0" minWidth="10.0" prefWidth="434.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints maxHeight="72.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="74.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="458.0" minHeight="10.0" prefHeight="452.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+    <Button id="saveStimuleBtn" layoutX="572.0" layoutY="586.0" mnemonicParsing="false" prefWidth="141.0" text="Save Stimule" />
+  </children>
+</AnchorPane>

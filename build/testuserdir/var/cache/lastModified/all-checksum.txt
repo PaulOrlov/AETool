@@ -1,0 +1,11 @@
+/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform=1439304087000
+cluster./Volumes/Macintosh HD/Users/paulorlov/Documents/Projects/AETool/AETool/build/cluster=1452629965000
+cluster./Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/ide=1439304089000
+cluster./Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/javafx=1439304088000
+cluster./Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform=1439304087000
+user=1452629965000
+crc=7
+locale=en_US
+branding=aetool
+java.version=1.8.0_25
+java.vm.version=25.25-b02

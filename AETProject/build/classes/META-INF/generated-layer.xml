@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN"
+                            "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="Actions">
+        <folder name="Edit">
+            <file name="ru-ptahi-aet-aetproject-AddExperiment.instance">
+                <!--ru.ptahi.aet.aetproject.AddExperiment-->
+                <attr
+                    bundlevalue="ru.ptahi.aet.aetproject.Bundle#CTL_AddExperiment" name="displayName"/>
+                <attr methodvalue="org.openide.awt.Actions.context" name="instanceCreate"/>
+                <attr name="type" stringvalue="ru.ptahi.aet.aetproject.AETProject"/>
+                <attr methodvalue="org.openide.awt.Actions.inject" name="delegate"/>
+                <attr name="injectable" stringvalue="ru.ptahi.aet.aetproject.AddExperiment"/>
+                <attr name="selectionType" stringvalue="EXACTLY_ONE"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+            <file name="ru-ptahi-aet-aetproject-AddStimuli.instance">
+                <!--ru.ptahi.aet.aetproject.AddStimuli-->
+                <attr
+                    bundlevalue="ru.ptahi.aet.aetproject.Bundle#CTL_AddStimuli" name="displayName"/>
+                <attr methodvalue="org.openide.awt.Actions.context" name="instanceCreate"/>
+                <attr name="type" stringvalue="ru.ptahi.aet.aetproject.AETProject"/>
+                <attr methodvalue="org.openide.awt.Actions.inject" name="delegate"/>
+                <attr name="injectable" stringvalue="ru.ptahi.aet.aetproject.AddStimuli"/>
+                <attr name="selectionType" stringvalue="EXACTLY_ONE"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+        </folder>
+        <folder name="Tools">
+            <file name="ru-ptahi-aet-aetproject-AddParticipant.instance">
+                <!--ru.ptahi.aet.aetproject.AddParticipant-->
+                <attr
+                    bundlevalue="ru.ptahi.aet.aetproject.Bundle#CTL_AddParticipant" name="displayName"/>
+                <attr methodvalue="org.openide.awt.Actions.context" name="instanceCreate"/>
+                <attr name="type" stringvalue="ru.ptahi.aet.aetproject.AETProject"/>
+                <attr methodvalue="org.openide.awt.Actions.inject" name="delegate"/>
+                <attr name="injectable" stringvalue="ru.ptahi.aet.aetproject.AddParticipant"/>
+                <attr name="selectionType" stringvalue="EXACTLY_ONE"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Menu">
+        <folder name="Tools">
+            <file name="ru-ptahi-aet-aetproject-AddExperiment.shadow">
+                <!--ru.ptahi.aet.aetproject.AddExperiment-->
+                <attr name="originalFile" stringvalue="Actions/Edit/ru-ptahi-aet-aetproject-AddExperiment.instance"/>
+                <attr intvalue="-350" name="position"/>
+            </file>
+            <file name="ru-ptahi-aet-aetproject-AddParticipant.shadow">
+                <!--ru.ptahi.aet.aetproject.AddParticipant-->
+                <attr name="originalFile" stringvalue="Actions/Tools/ru-ptahi-aet-aetproject-AddParticipant.instance"/>
+                <attr intvalue="-250" name="position"/>
+            </file>
+            <file name="ru-ptahi-aet-aetproject-AddStimuli.shadow">
+                <!--ru.ptahi.aet.aetproject.AddStimuli-->
+                <attr name="originalFile" stringvalue="Actions/Edit/ru-ptahi-aet-aetproject-AddStimuli.instance"/>
+                <attr intvalue="-400" name="position"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Projects">
+        <folder name="ru-ptahi-aet-aetproject">
+            <folder name="Nodes">
+                <file name="ru-ptahi-aet-aetproject-nodes-ProjectNodeFactory.instance">
+                    <!--ru.ptahi.aet.aetproject.nodes.ProjectNodeFactory-->
+                    <attr intvalue="10" name="position"/>
+                </file>
+            </folder>
+        </folder>
+    </folder>
+</filesystem>

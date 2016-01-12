@@ -1,0 +1,217 @@
+-------------------------------------------------------------------------------
+>Log Session: Wednesday, January 13, 2016 12:19:26 AM MSK
+>System Info: 
+  Product Version         = AETool 201411181905
+  Operating System        = Mac OS X version 10.9.5 running on x86_64
+  Java; VM; Vendor        = 1.8.0_25; Java HotSpot(TM) 64-Bit Server VM 25.25-b02; Oracle Corporation
+  Runtime                 = Java(TM) SE Runtime Environment 1.8.0_25-b17
+  Java Home               = /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre
+  System Locale; Encoding = en_US (aetool); UTF-8
+  Home Directory          = /Users/paulorlov
+  Current Directory       = /Volumes/Macintosh HD/Users/paulorlov/Documents/Projects/AETool/AETool
+  User Directory          = /Volumes/Macintosh HD/Users/paulorlov/Documents/Projects/AETool/AETool/build/testuserdir
+  Cache Directory         = /Volumes/Macintosh HD/Users/paulorlov/Documents/Projects/AETool/AETool/build/testuserdir/var/cache
+  Installation            = /Volumes/Macintosh HD/Users/paulorlov/Documents/Projects/AETool/AETool/build/cluster
+                            /Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/ide
+                            /Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/javafx
+                            /Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform
+                            /Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform
+  Boot & Ext. Classpath   = /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/classes:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/System/Library/Java/Extensions/AppleScriptEngine.jar:/System/Library/Java/Extensions/dns_sd.jar:/System/Library/Java/Extensions/j3daudio.jar:/System/Library/Java/Extensions/j3dcore.jar:/System/Library/Java/Extensions/j3dutils.jar:/System/Library/Java/Extensions/jai_codec.jar:/System/Library/Java/Extensions/jai_core.jar:/System/Library/Java/Extensions/mlibwrapper_jai.jar:/System/Library/Java/Extensions/MRJToolkit.jar:/System/Library/Java/Extensions/QTJava.zip:/System/Library/Java/Extensions/vecmath.jar
+  Application Classpath   = /Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/boot.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/org-openide-modules.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/org-openide-util-lookup.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/org-openide-util.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/boot_ja.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/boot_pt_BR.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/boot_ru.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/boot_zh_CN.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-modules_ja.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-modules_pt_BR.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-modules_ru.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-modules_zh_CN.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-util-lookup_ja.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-util-lookup_pt_BR.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-util-lookup_ru.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-util-lookup_zh_CN.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-util_ja.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-util_pt_BR.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-util_ru.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-util_zh_CN.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/lib/tools.jar
+  Startup Classpath       = /Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/core/core.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/core/org-openide-filesystems.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/core/locale/core_ja.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/core/locale/core_pt_BR.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/core/locale/core_ru.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/core/locale/core_zh_CN.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/core/locale/org-openide-filesystems_ja.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/core/locale/org-openide-filesystems_pt_BR.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/core/locale/org-openide-filesystems_ru.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/core/locale/org-openide-filesystems_zh_CN.jar:/Volumes/Macintosh HD/Users/paulorlov/Documents/Projects/AETool/AETool/build/cluster/core/locale/core_aetool.jar
+-------------------------------------------------------------------------------
+Warning - could not install some modules:
+	org.netbeans.modules.javafx2.platform - The module named org.netbeans.api.java.classpath/1 was needed and not found.
+	org.netbeans.modules.javafx2.platform - The module named org.netbeans.modules.java.platform/1 was needed and not found.
+	org.netbeans.modules.javafx2.platform - The module named org.netbeans.api.java/1 was needed and not found.
+	org.netbeans.modules.javafx2.platform - The module named org.netbeans.modules.java.project/1 was needed and not found.
+	org.netbeans.modules.javafx2.platform - The module named org.netbeans.modules.java.j2seplatform/1 was needed and not found.
+	org.netbeans.modules.javafx2.platform - The module named org.netbeans.modules.project.ant/1 was needed and not found.
+	org.netbeans.modules.html.custom - The module named org.netbeans.modules.parsing.api/1 was needed and not found.
+	org.netbeans.modules.html.custom - The module named org.netbeans.modules.html.editor/2 was needed and not found.
+	org.netbeans.modules.html.custom - The module named org.netbeans.modules.web.common was needed and not found.
+	org.netbeans.modules.html.custom - The module named org.netbeans.libs.json_simple/1 was needed and not found.
+	org.netbeans.modules.html.custom - The module named org.netbeans.modules.csl.api/2 was needed and not found.
+	org.netbeans.modules.html.custom - The module named org.netbeans.modules.editor.completion/1 was needed and not found.
+	org.netbeans.modules.html.custom - The module named org.netbeans.modules.editor.indent/2 was needed and not found.
+	org.netbeans.modules.html.custom - The module named org.netbeans.modules.html.editor.lib/3 was needed and not found.
+	org.netbeans.modules.html.custom - The module named org.netbeans.modules.editor.lib/3 was needed and not found.
+	org.netbeans.modules.javascript2.requirejs - The module named org.netbeans.modules.parsing.api/1 was needed and not found.
+	org.netbeans.modules.javascript2.requirejs - The module named org.netbeans.modules.javascript2.editor/1 was needed and not found.
+	org.netbeans.modules.javascript2.requirejs - The module named org.netbeans.modules.web.common was needed and not found.
+	org.netbeans.modules.javascript2.requirejs - The module named org.netbeans.modules.html.editor/2 was needed and not found.
+	org.netbeans.modules.javascript2.requirejs - The module named org.netbeans.modules.csl.api/2 was needed and not found.
+	org.netbeans.modules.javascript2.requirejs - The module named org.netbeans.modules.editor.completion/1 was needed and not found.
+	org.netbeans.modules.javascript2.requirejs - The module named org.netbeans.modules.html.lexer/1 was needed and not found.
+	org.netbeans.modules.javascript2.requirejs - The module named org.netbeans.modules.editor.indent/2 was needed and not found.
+	org.netbeans.modules.javascript2.requirejs - The module named org.netbeans.modules.html.editor.lib/3 was needed and not found.
+	org.netbeans.modules.javascript2.requirejs - The module named org.netbeans.modules.lexer/2 was needed and not found.
+	org.netbeans.modules.javascript2.requirejs - The module named org.netbeans.modules.editor.lib/3 was needed and not found.
+	org.netbeans.modules.javascript2.prototypejs - The module named org.netbeans.modules.parsing.api/1 was needed and not found.
+	org.netbeans.modules.javascript2.prototypejs - The module named org.netbeans.modules.javascript2.editor/1 was needed and not found.
+	org.netbeans.modules.javascript2.prototypejs - The module named org.netbeans.modules.csl.api/2 was needed and not found.
+	org.netbeans.modules.javascript2.prototypejs - The module named org.netbeans.modules.editor.completion/1 was needed and not found.
+	org.netbeans.modules.javascript2.prototypejs - The module named org.netbeans.modules.lexer/2 was needed and not found.
+	org.netbeans.modules.javascript2.prototypejs - The module named org.netbeans.modules.editor.lib/3 was needed and not found.
+	org.netbeans.modules.bugtracking.commons - The module named org.netbeans.modules.team.commons was needed and not found.
+	org.netbeans.modules.bugtracking.commons - The module named org.netbeans.modules.bugtracking was needed and not found.
+	org.netbeans.modules.localtasks - The module org.netbeans.modules.bugtracking.commons would also need to be installed.
+	org.netbeans.modules.localtasks - The module named org.netbeans.modules.mylyn.util was needed and not found.
+	org.netbeans.modules.localtasks - The module named org.netbeans.modules.team.commons was needed and not found.
+	org.netbeans.modules.localtasks - The module named org.netbeans.modules.spellchecker.apimodule was needed and not found.
+	org.netbeans.modules.localtasks - The module named org.netbeans.modules.bugtracking was needed and not found.
+	org.netbeans.modules.javafx2.project - The module named org.netbeans.modules.java.j2seproject/1 was needed and not found.
+	org.netbeans.modules.javafx2.project - The module named org.netbeans.api.java/1 was needed and not found.
+	org.netbeans.modules.javafx2.project - The module named org.netbeans.modules.extexecution/2 was needed and not found.
+	org.netbeans.modules.javafx2.project - The module org.netbeans.modules.javafx2.platform would also need to be installed.
+	org.netbeans.modules.javafx2.project - The module named org.netbeans.modules.java.j2sedeploy was needed and not found.
+	org.netbeans.modules.javafx2.project - The module named org.netbeans.modules.project.ant/1 was needed and not found.
+	org.netbeans.modules.javafx2.project - The module named org.netbeans.modules.project.libraries/1 was needed and not found.
+	org.netbeans.modules.javafx2.project - The module named org.netbeans.libs.javacapi was needed and not found.
+	org.netbeans.modules.javafx2.project - The module named org.netbeans.api.java.classpath/1 was needed and not found.
+	org.netbeans.modules.javafx2.project - The module named org.netbeans.modules.java.platform/1 was needed and not found.
+	org.netbeans.modules.javafx2.project - The module named org.netbeans.modules.extbrowser/1 was needed and not found.
+	org.netbeans.modules.javafx2.project - The module named org.netbeans.modules.java.api.common/0-1 was needed and not found.
+	org.netbeans.modules.javafx2.project - The module named org.apache.tools.ant.module/3 was needed and not found.
+	org.netbeans.modules.javafx2.project - The module named org.netbeans.modules.java.source was needed and not found.
+	org.netbeans.modules.javafx2.project - The module named org.netbeans.modules.java.project/1 was needed and not found.
+	org.netbeans.modules.javafx2.samples - The module named org.netbeans.modules.java.platform/1 was needed and not found.
+	org.netbeans.modules.javafx2.samples - The module org.netbeans.modules.javafx2.project would also need to be installed.
+	org.netbeans.modules.javafx2.samples - The module org.netbeans.modules.javafx2.platform would also need to be installed.
+	org.netbeans.modules.javafx2.samples - The module named org.netbeans.modules.project.ant/1 was needed and not found.
+	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.css.lib/1 was needed and not found.
+	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.parsing.api/1 was needed and not found.
+	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.java.sourceui/1 was needed and not found.
+	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.java.editor/1 was needed and not found.
+	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.project.ant/1 was needed and not found.
+	org.netbeans.modules.javafx2.editor - The module named org.netbeans.libs.javacapi was needed and not found.
+	org.netbeans.modules.javafx2.editor - The module named org.netbeans.api.java.classpath/1 was needed and not found.
+	org.netbeans.modules.javafx2.editor - The module named org.netbeans.spi.editor.hints/0-1 was needed and not found.
+	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.css.editor/1 was needed and not found.
+	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.csl.api/2 was needed and not found.
+	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.refactoring.api was needed and not found.
+	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.xml.catalog/2 was needed and not found.
+	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.editor.completion/1 was needed and not found.
+	org.netbeans.modules.javafx2.editor - The module org.netbeans.modules.javafx2.project would also need to be installed.
+	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.whitelist was needed and not found.
+	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.xml.text/2 was needed and not found.
+	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.editor.lib2/1 was needed and not found.
+	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.java.source was needed and not found.
+	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.java.project/1 was needed and not found.
+	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.lexer/2 was needed and not found.
+	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.xml.lexer was needed and not found.
+	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.xml.xdm/1 was needed and not found.
+	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.editor.lib/3 was needed and not found.
+	org.netbeans.modules.javafx2.scenebuilder - The module named org.netbeans.modules.options.java was needed and not found.
+	org.netbeans.modules.javafx2.scenebuilder - The module org.netbeans.modules.javafx2.editor would also need to be installed.
+	org.netbeans.modules.javafx2.kit - The module named org.netbeans.modules.ant.kit was needed and not found.
+	org.netbeans.modules.javafx2.kit - The module named org.netbeans.modules.j2ee.persistence.kit was needed and not found.
+	org.netbeans.modules.javafx2.kit - The module named org.netbeans.modules.maven.kit/1 was needed and not found.
+	org.netbeans.modules.javafx2.kit - The module org.netbeans.modules.javafx2.samples would also need to be installed.
+	org.netbeans.modules.javafx2.kit - The module org.netbeans.modules.javafx2.project would also need to be installed.
+	org.netbeans.modules.javafx2.kit - The module org.netbeans.modules.javafx2.platform would also need to be installed.
+	org.netbeans.modules.javafx2.kit - The module named org.netbeans.modules.form.kit was needed and not found.
+	org.netbeans.modules.javafx2.kit - The module named org.netbeans.modules.debugger.jpda.kit was needed and not found.
+	org.netbeans.modules.javafx2.kit - The module org.netbeans.modules.javafx2.editor would also need to be installed.
+	org.netbeans.modules.javafx2.kit - The module named org.netbeans.modules.java.kit was needed and not found.
+INFO [org.netbeans.core.startup.NbEvents]: Turning on modules:
+	org.openide.util.lookup [8.25.2 201505281753]
+	org.openide.util [8.39.1 201408251540]
+	org.openide.modules [7.43.1 201408251540]
+	ru.ptahi.psy.project [1.0 160112]
+	javafx [1.0 160112]
+	ru.ptahi.iconmanager [1.0 160112]
+	org.netbeans.api.annotations.common/1 [1.24.1 201408251540]
+	org.openide.filesystems [8.12.1 201408251540]
+	org.openide.awt [7.62.1 201408251540]
+	org.netbeans.api.progress/1 [1.38.1 201408251540]
+	org.openide.dialogs [7.38.1 201408251540]
+	org.openide.nodes [7.39.1 201408251540]
+	org.openide.windows [6.71.1 201408251540]
+	org.netbeans.swing.tabcontrol [1.51.1 201408251540]
+	org.netbeans.swing.outline [1.30.1 201408251540]
+	org.openide.explorer [6.57.1 201408251540]
+	org.netbeans.modules.editor.mimelookup/1 [1.36.1 201408251540]
+	org.openide.text [6.62.2 201410071419]
+	org.openide.actions [6.35.1 201408251540]
+	org.netbeans.bootstrap/1 [2.69.3 201411181905]
+	org.netbeans.core.startup/1 [1.55.2 201411181905]
+	org.netbeans.modules.queries/1 [1.39.1 201408251540]
+	org.openide.loaders [7.57.2 201410071419]
+	org.netbeans.modules.settings/1 [1.45.1 201408251540]
+	com.google.gson [1.0 160112]
+	org.netbeans.swing.plaf [1.37.1 201408251540]
+	org.netbeans.modules.keyring [1.20.1 201408251540]
+	org.openide.io [1.45.1 201408251540]
+	org.netbeans.modules.sampler [1.10.1 201408251540]
+	org.netbeans.core/2 [3.46.1 201408251540]
+	org.netbeans.spi.quicksearch [1.23.1 201408251540]
+	org.netbeans.modules.options.api/1 [1.41.1 201408251540]
+	org.netbeans.core.windows/2 [2.77.2 201411181905]
+	org.netbeans.modules.projectapi/1 [1.60.2 201410071419]
+	ru.ptahi.cfe.stumile [1.0 160112]
+	org.netbeans.core.multiview/1 [1.40.1 201408251540]
+	ru.ptahi.aet.participant [1.0 160112]
+	ru.ptahi.aetexperiment [1.0 160112]
+	org.netbeans.modules.projectuiapi/1 [1.81.1.8 8 201505281753]
+	ru.ptahi.aet.participantviewer [1.0 160112]
+	ru.ptahi.aet.participanteditor [1.0 160112]
+	ru.ptahi.aet.aetproject [1.0 160112]
+	org.openide.execution [1.36.1 201408251540]
+	org.netbeans.swing.dirchooser [1.25.1 201408251540]
+	org.netbeans.modules.templates/1 [1.3.1 201408251540]
+	org.netbeans.modules.sendopts/2 [2.31.1 201408251540]
+	org.netbeans.modules.project.indexingbridge [1.13.1 201408251540]
+	org.netbeans.core.execution/1 [1.37.1 201408251540]
+	org.netbeans.modules.masterfs/2 [2.48.3 201502261250]
+	org.netbeans.core.ui/1 [1.41.1 201408251540]
+	org.netbeans.modules.favorites/1 [1.40.1 201408251540]
+	org.netbeans.modules.projectui [1.53.2.8 201505281753]
+	org.netbeans.modules.progress.ui [1.29.2 201410071419]
+	org.netbeans.modules.print [7.22.1 201408251540]
+	org.netbeans.modules.options.keymap [1.31.1 201408251540]
+	org.netbeans.modules.masterfs.nio2 [1.12.1 201408251540]
+	org.netbeans.libs.jna/1 [1.38.1 201408251540]
+	org.netbeans.modules.masterfs.macosx [1.10.1 201408251540]
+	org.netbeans.modules.keyring.fallback [1.4.1 201408251540]
+	org.netbeans.modules.keyring.impl [1.20.1 201408251540]
+	org.netbeans.modules.editor.mimelookup.impl/1 [1.27.1 201408251540]
+	org.netbeans.modules.applemenu/1 [1.33.1 201408251540]
+	org.netbeans.libs.osgi [1.18.1 201408251540]
+	org.netbeans.libs.jna.platform/1 [1.8.1 201408251540]
+	org.netbeans.libs.felix [2.12.1 201408251540]
+	org.netbeans.core.output2/1 [1.37.1 201408251540]
+	org.netbeans.core.network [1.6.1 201408251540]
+	org.netbeans.core.netigso [1.27.1 201408251540]
+	org.netbeans.core.nativeaccess/1 [1.27.1 201408251540]
+	org.netbeans.core.multitabs/1 [1.8.1.1 1 201408251540]
+	org.netbeans.core.io.ui/1 [1.26.1 201408251540]
+INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network proxy resolver: Mac
+INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network proxy reloading failed! Trying fallback resolver.
+INFO [org.netbeans.core.network.proxy.fallback.FallbackNetworkProxy]: Fallback system proxy resolver: no http_proxy variable found
+INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network proxy reloading succeeded. Fallback provider was successful.
+INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network proxy - mode: direct
+INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network proxy: fell to default (correct if direct mode went before)
+INFO [org.netbeans.ui.metrics.laf]: USG_LOOK_AND_FEEL
+WARNING [org.openide.filesystems.Ordering]: Not all children in Windows2/Modes/explorer/ marked with the position attribute: [ParticipantViewerTopComponent.wstcref], but some are: [projectTabLogical_tc.wstcref, projectTab_tc.wstcref, favorites.wstcref]
+Diagnostic information
+Input arguments:
+	-Djdk.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home
+	-Dnetbeans.dirs=/Volumes/Macintosh HD/Users/paulorlov/Documents/Projects/AETool/AETool/build/cluster:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/ide:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/javafx:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform
+	-Dnetbeans.home=/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform
+	-Dnetbeans.logger.console=true
+	-ea
+	-XX:+HeapDumpOnOutOfMemoryError
+	-XX:HeapDumpPath=/Volumes/Macintosh HD/Users/paulorlov/Documents/Projects/AETool/AETool/build/testuserdir/var/log/heapdump.hprof
+Compiler: HotSpot 64-Bit Tiered Compilers
+Heap memory usage: initial 64.0MB maximum 910.5MB
+Non heap memory usage: initial 2.4MB maximum -1b
+Garbage collector: PS Scavenge (Collections=7 Total time spent=0s)
+Garbage collector: PS MarkSweep (Collections=1 Total time spent=0s)
+Classes: loaded=4833 total loaded=4834 unloaded 1
+INFO [org.netbeans.core.ui.warmup.DiagnosticTask]: Total memory 4,294,967,296
+INFO [null]: Total physical memory 4,294,967,296
+WARNING [org.openide.filesystems.Ordering]: Not all children in Menu/Window/ marked with the position attribute: [ru-ptahi-aet-participanteditor-ParticipantEditorTopComponent.shadow, ru-ptahi-aet-participantviewer-ParticipantViewerTopComponent.shadow, ru-ptahi-aetexperiment-ExperimentEditorTopComponent.shadow, ru-ptahi-aetexperiment-ExperimentVisualizerTopComponent.shadow, ru-ptahi-aetexperiment-RunExperimentTopComponent.shadow, ru-ptahi-aetexperiment-VisualizerPropertiesTopComponent.shadow, ru-ptahi-cfe-stumile-StimuleEditorTopComponent.shadow], but some are: [org-netbeans-modules-project-ui-logical-tab-action.shadow, org-netbeans-modules-project-ui-physical-tab-action.shadow, org-netbeans-modules-favorites-View.shadow, org-netbeans-core-io-ui-IOWindowAction.shadow, SwitchToRecentDocumentAction.shadow, Web, Tools, Separator3.instance, ConfigureWindow, org-netbeans-core-windows-actions-ResetWindowsAction.shadow, Separator4.instance, CloseWindowAction.shadow, CloseAllDocumentsAction.shadow, CloseAllButThisAction.shadow, GroupsMenuAction.shadow, DocumentsAction.shadow]
+INFO [org.netbeans.ui.metrics.projects]: USG_PROJECT_OPEN
+WARNING [org.openide.filesystems.Ordering]: Encountered non-boolean relative ordering attribute <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2"><group/></open-files> from org.netbeans.spi.project.AuxiliaryConfiguration.http://www.netbeans.org/ns/projectui-open-files/2#open-files on /Volumes/Macintosh HD/Users/paulorlov/Documents/Projects/EyeBioFeedback/Project001
+WARNING [org.openide.filesystems.Ordering]: Encountered non-boolean relative ordering attribute <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2"><group/></open-files> from org.netbeans.spi.project.AuxiliaryConfiguration.http://www.netbeans.org/ns/projectui-open-files/2#open-files on /Volumes/Macintosh HD/Users/paulorlov/Documents/Projects/EyeBioFeedback/Project001

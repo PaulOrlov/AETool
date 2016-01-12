@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="ru.ptahi.psy.project">
+    <module_version install_time="1452629965316" last="true" origin="installer" specification_version="1.0">
+        <file crc="2532449489" name="config/Modules/ru-ptahi-psy-project.xml"/>
+        <file crc="3180617501" name="modules/ru-ptahi-psy-project.jar"/>
+    </module_version>
+</module>

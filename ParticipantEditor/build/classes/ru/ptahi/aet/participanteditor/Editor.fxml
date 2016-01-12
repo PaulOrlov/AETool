@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorpane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Label layoutX="21.0" layoutY="24.0" text="Participant">
+      <font>
+        <Font size="18.0" />
+      </font>
+    </Label>
+    <GridPane id="Grid" layoutX="21.0" layoutY="51.0" prefWidth="565.0">
+      <children>
+        <Label text="First name:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <TextField id="participantName" prefWidth="400.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Label text="Last name:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <TextField id="participantLastName" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <HBox id="HBox" alignment="CENTER_LEFT" spacing="45.0" GridPane.columnIndex="0" GridPane.rowIndex="2">
+          <children>
+            <Label text="Gender:" />
+            <ImageView id="participantGenderIcon" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../../../../../../img/male-user.png" />
+              </image>
+            </ImageView>
+          </children>
+        </HBox>
+        <Label text="Comment:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+        <HBox id="HBox" alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="165.0" spacing="15.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+          <children>
+            <RadioButton id="participantGenderMale" mnemonicParsing="false" selected="true" text="Male">
+              <toggleGroup>
+                <ToggleGroup fx:id="participantGender" />
+              </toggleGroup>
+              <HBox.margin>
+                <Insets left="2.0" fx:id="x1" />
+              </HBox.margin>
+            </RadioButton>
+            <RadioButton id="participantGenderFemale" mnemonicParsing="false" text="Female" toggleGroup="$participantGender" />
+          </children>
+        </HBox>
+        <Label text="Expert level:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <HBox id="HBox" alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="165.0" spacing="15.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+          <children>
+            <RadioButton id="participantExpLevelHight" mnemonicParsing="false" selected="true" text="High" HBox.margin="$x1" />
+            <RadioButton id="participantExpLevelLow" mnemonicParsing="false" text="Low" toggleGroup="$null" />
+          </children>
+        </HBox>
+        <TextArea id="participantComment" prefHeight="150.0" prefWidth="400.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <Label text="Date of birth:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <HBox id="HBox" alignment="CENTER_LEFT" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+          <children>
+            <ChoiceBox id="participantDataOfBirthDay">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Day" />
+                  <String fx:value="01" />
+                  <String fx:value="02" />
+                  <String fx:value="03" />
+                  <String fx:value="04" />
+                  <String fx:value="05" />
+                  <String fx:value="06" />
+                  <String fx:value="07" />
+                  <String fx:value="08" />
+                  <String fx:value="09" />
+                  <String fx:value="10" />
+                  <String fx:value="11" />
+                  <String fx:value="12" />
+                  <String fx:value="13" />
+                  <String fx:value="14" />
+                  <String fx:value="15" />
+                  <String fx:value="16" />
+                  <String fx:value="17" />
+                  <String fx:value="18" />
+                  <String fx:value="19" />
+                  <String fx:value="20" />
+                  <String fx:value="21" />
+                  <String fx:value="22" />
+                  <String fx:value="23" />
+                  <String fx:value="24" />
+                  <String fx:value="25" />
+                  <String fx:value="26" />
+                  <String fx:value="27" />
+                  <String fx:value="28" />
+                  <String fx:value="29" />
+                  <String fx:value="30" />
+                  <String fx:value="31" />
+                </FXCollections>
+              </items>
+            </ChoiceBox>
+            <ChoiceBox id="participantDataOfBirthMonth">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Month" />
+                  <String fx:value="Jan." />
+                  <String fx:value="Feb." />
+                  <String fx:value="Mar." />
+                  <String fx:value="Apr." />
+                  <String fx:value="May" />
+                  <String fx:value="June" />
+                  <String fx:value="July" />
+                  <String fx:value="Aug." />
+                  <String fx:value="Sept." />
+                  <String fx:value="Oct." />
+                  <String fx:value="Nov." />
+                  <String fx:value="Dec." />
+                </FXCollections>
+              </items>
+            </ChoiceBox>
+            <ChoiceBox id="participantDataOfBirthYear">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Year" />
+                </FXCollections>
+              </items>
+            </ChoiceBox>
+          </children>
+        </HBox>
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="10.0" prefWidth="120.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="565.0" minWidth="10.0" prefWidth="217.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="-1.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+    <Button id="saveParticipantBtn" layoutX="445.0" layoutY="358.0" mnemonicParsing="false" prefWidth="141.0" text="Save Participant" />
+  </children>
+</AnchorPane>

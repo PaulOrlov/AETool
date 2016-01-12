@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN"
+                            "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="Menu">
+        <folder name="Window">
+            <file name="ru-ptahi-aet-participanteditor-ParticipantEditorTopComponent.shadow">
+                <!--ru.ptahi.aet.participanteditor.ParticipantEditorTopComponent-->
+                <attr name="originalFile" stringvalue="Actions/Window/ru-ptahi-aet-participanteditor-ParticipantEditorTopComponent.instance"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Windows2">
+        <folder name="Components">
+            <file name="ParticipantEditorTopComponent.settings">
+                <!--ru.ptahi.aet.participanteditor.ParticipantEditorTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE settings PUBLIC "-//NetBeans//DTD Session settings 1.0//EN" "http://www.netbeans.org/dtds/sessionsettings-1_0.dtd">
+<settings version="1.0">
+  <instance class="ru.ptahi.aet.participanteditor.ParticipantEditorTopComponent"/>
+</settings>
+]]></file>
+        </folder>
+        <folder name="Modes">
+            <folder name="editor">
+                <file name="ParticipantEditorTopComponent.wstcref">
+                    <!--ru.ptahi.aet.participanteditor.ParticipantEditorTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tc-ref PUBLIC "-//NetBeans//DTD Top Component in Mode Properties 2.0//EN" "http://www.netbeans.org/dtds/tc-ref2_0.dtd">
+<tc-ref version="2.0">
+  <tc-id id="ParticipantEditorTopComponent"/>
+  <state opened="false"/>
+</tc-ref>
+]]></file>
+            </folder>
+        </folder>
+    </folder>
+    <folder name="Actions">
+        <folder name="Window">
+            <file name="ru-ptahi-aet-participanteditor-ParticipantEditorTopComponent.instance">
+                <!--ru.ptahi.aet.participanteditor.ParticipantEditorTopComponent-->
+                <attr
+                    methodvalue="org.openide.windows.TopComponent.openAction" name="instanceCreate"/>
+                <attr name="component" newvalue="ru.ptahi.aet.participanteditor.ParticipantEditorTopComponent"/>
+                <attr name="preferredID" stringvalue="ParticipantEditorTopComponent"/>
+                <attr
+                    bundlevalue="ru.ptahi.aet.participanteditor.Bundle#CTL_ParticipantEditorAction" name="displayName"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="xml">
+        <folder name="entities">
+            <folder name="ru_ptahi_aet_participanteditor">
+                <file name="ParticipantEditor" url="nbres:/org/netbeans/modules/settings/resources/properties-1_0.dtd">
+                    <!--ru.ptahi.aet.participanteditor.ParticipantEditorTopComponent-->
+                    <attr name="hint.originalPublicID" stringvalue="-//ru.ptahi.aet.participanteditor//ParticipantEditor//EN"/>
+                </file>
+            </folder>
+        </folder>
+        <folder name="memory">
+            <folder name="ru">
+                <folder name="ptahi">
+                    <folder name="aet">
+                        <folder name="participanteditor">
+                            <file name="ParticipantEditorTopComponent">
+                                <!--ru.ptahi.aet.participanteditor.ParticipantEditorTopComponent-->
+                                <attr name="settings.providerPath" stringvalue="xml/lookups//ru_ptahi_aet_participanteditor/ParticipantEditor.instance"/>
+                            </file>
+                        </folder>
+                    </folder>
+                </folder>
+            </folder>
+        </folder>
+        <folder name="lookups">
+            <folder name="ru_ptahi_aet_participanteditor">
+                <file name="ParticipantEditor.instance">
+                    <!--ru.ptahi.aet.participanteditor.ParticipantEditorTopComponent-->
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.create" name="instanceCreate"/>
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.properties" name="settings.convertor"/>
+                    <attr name="settings.instanceClass" stringvalue="ru.ptahi.aet.participanteditor.ParticipantEditorTopComponent"/>
+                    <attr name="settings.instanceOf" stringvalue="ru.ptahi.aet.participanteditor.ParticipantEditorTopComponent"/>
+                    <attr boolvalue="true" name="xmlproperties.preventStoring"/>
+                </file>
+            </folder>
+        </folder>
+    </folder>
+</filesystem>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN"
+                            "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="Actions">
+        <folder name="Delete">
+            <file name="ru-ptahi-aetexperiment-deleteStimuli.instance">
+                <!--ru.ptahi.cfe.stumile.DeleteAction-->
+                <attr name="displayName" stringvalue="Delete Stimuli"/>
+                <attr name="instanceCreate" newvalue="ru.ptahi.cfe.stumile.DeleteAction"/>
+            </file>
+        </folder>
+        <folder name="Window">
+            <file name="ru-ptahi-cfe-stumile-StimuleEditorTopComponent.instance">
+                <!--ru.ptahi.cfe.stumile.StimuleEditorTopComponent-->
+                <attr
+                    methodvalue="org.openide.windows.TopComponent.openAction" name="instanceCreate"/>
+                <attr name="component" newvalue="ru.ptahi.cfe.stumile.StimuleEditorTopComponent"/>
+                <attr name="preferredID" stringvalue="StimuleEditorTopComponent"/>
+                <attr
+                    bundlevalue="ru.ptahi.cfe.stumile.Bundle#CTL_StimuleEditorAction" name="displayName"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="myAction">
+        <folder name="Stimuli">
+            <file name="ru-ptahi-aetexperiment-deleteStimuli.shadow">
+                <!--ru.ptahi.cfe.stumile.DeleteAction-->
+                <attr name="originalFile" stringvalue="Actions/Delete/ru-ptahi-aetexperiment-deleteStimuli.instance"/>
+                <attr intvalue="3" name="position"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Menu">
+        <folder name="Window">
+            <file name="ru-ptahi-cfe-stumile-StimuleEditorTopComponent.shadow">
+                <!--ru.ptahi.cfe.stumile.StimuleEditorTopComponent-->
+                <attr name="originalFile" stringvalue="Actions/Window/ru-ptahi-cfe-stumile-StimuleEditorTopComponent.instance"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Windows2">
+        <folder name="Components">
+            <file name="StimuleEditorTopComponent.settings">
+                <!--ru.ptahi.cfe.stumile.StimuleEditorTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE settings PUBLIC "-//NetBeans//DTD Session settings 1.0//EN" "http://www.netbeans.org/dtds/sessionsettings-1_0.dtd">
+<settings version="1.0">
+  <instance class="ru.ptahi.cfe.stumile.StimuleEditorTopComponent"/>
+</settings>
+]]></file>
+        </folder>
+        <folder name="Modes">
+            <folder name="editor">
+                <file name="StimuleEditorTopComponent.wstcref">
+                    <!--ru.ptahi.cfe.stumile.StimuleEditorTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tc-ref PUBLIC "-//NetBeans//DTD Top Component in Mode Properties 2.0//EN" "http://www.netbeans.org/dtds/tc-ref2_0.dtd">
+<tc-ref version="2.0">
+  <tc-id id="StimuleEditorTopComponent"/>
+  <state opened="false"/>
+</tc-ref>
+]]></file>
+            </folder>
+        </folder>
+    </folder>
+    <folder name="xml">
+        <folder name="entities">
+            <folder name="ru_ptahi_cfe_stumile">
+                <file name="StimuleEditor" url="nbres:/org/netbeans/modules/settings/resources/properties-1_0.dtd">
+                    <!--ru.ptahi.cfe.stumile.StimuleEditorTopComponent-->
+                    <attr name="hint.originalPublicID" stringvalue="-//ru.ptahi.cfe.stumile//StimuleEditor//EN"/>
+                </file>
+            </folder>
+        </folder>
+        <folder name="memory">
+            <folder name="ru">
+                <folder name="ptahi">
+                    <folder name="cfe">
+                        <folder name="stumile">
+                            <file name="StimuleEditorTopComponent">
+                                <!--ru.ptahi.cfe.stumile.StimuleEditorTopComponent-->
+                                <attr name="settings.providerPath" stringvalue="xml/lookups//ru_ptahi_cfe_stumile/StimuleEditor.instance"/>
+                            </file>
+                        </folder>
+                    </folder>
+                </folder>
+            </folder>
+        </folder>
+        <folder name="lookups">
+            <folder name="ru_ptahi_cfe_stumile">
+                <file name="StimuleEditor.instance">
+                    <!--ru.ptahi.cfe.stumile.StimuleEditorTopComponent-->
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.create" name="instanceCreate"/>
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.properties" name="settings.convertor"/>
+                    <attr name="settings.instanceClass" stringvalue="ru.ptahi.cfe.stumile.StimuleEditorTopComponent"/>
+                    <attr name="settings.instanceOf" stringvalue="ru.ptahi.cfe.stumile.StimuleEditorTopComponent"/>
+                    <attr boolvalue="true" name="xmlproperties.preventStoring"/>
+                </file>
+            </folder>
+        </folder>
+    </folder>
+</filesystem>

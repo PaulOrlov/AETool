@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="ru.ptahi.aetexperiment">
+    <module_version install_time="1452629964659" last="true" origin="installer" specification_version="1.0">
+        <file crc="1023325861" name="config/Modules/ru-ptahi-aetexperiment.xml"/>
+        <file crc="1812833737" name="modules/ext/EyeTrackingAPI.jar"/>
+        <file crc="705657601" name="modules/ext/core.jar"/>
+        <file crc="4022828937" name="modules/ext/gluegen-rt-natives-linux-amd64.jar"/>
+        <file crc="3271044677" name="modules/ext/gluegen-rt-natives-linux-armv6hf.jar"/>
+        <file crc="3676221310" name="modules/ext/gluegen-rt-natives-linux-i586.jar"/>
+        <file crc="3842376657" name="modules/ext/gluegen-rt-natives-macosx-universal.jar"/>
+        <file crc="1535321724" name="modules/ext/gluegen-rt-natives-windows-amd64.jar"/>
+        <file crc="623201999" name="modules/ext/gluegen-rt-natives-windows-i586.jar"/>
+        <file crc="688671700" name="modules/ext/gluegen-rt.jar"/>
+        <file crc="3471746808" name="modules/ext/jogl-all-natives-linux-amd64.jar"/>
+        <file crc="1164050993" name="modules/ext/jogl-all-natives-linux-armv6hf.jar"/>
+        <file crc="144831104" name="modules/ext/jogl-all-natives-linux-i586.jar"/>
+        <file crc="679638971" name="modules/ext/jogl-all-natives-macosx-universal.jar"/>
+        <file crc="3279179800" name="modules/ext/jogl-all-natives-windows-amd64.jar"/>
+        <file crc="3871849121" name="modules/ext/jogl-all-natives-windows-i586.jar"/>
+        <file crc="921988896" name="modules/ext/jogl-all.jar"/>
+        <file crc="2819083122" name="modules/ru-ptahi-aetexperiment.jar"/>
+    </module_version>
+</module>
