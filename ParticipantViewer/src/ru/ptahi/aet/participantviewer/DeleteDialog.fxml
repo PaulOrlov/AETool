@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorpane" prefHeight="196.0" prefWidth="345.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <ImageView id="icon" fitHeight="32.0" fitWidth="32.0" layoutX="40.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true" />
+    <Label layoutX="102.0" layoutY="40.0" text="You try to delete participant:">
+      <font>
+        <Font size="15.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label id="participantLabel" layoutY="70.0" prefHeight="18.0" prefWidth="209.0" text="" AnchorPane.leftAnchor="102.0" AnchorPane.rightAnchor="34.0">
+      <font>
+        <Font name="System Bold Italic" size="15.0" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="102.0" layoutY="98.0" prefWidth="58.0" text="Really?" />
+    <Button id="yButton" layoutX="102.0" layoutY="141.0" mnemonicParsing="false" text="Yes, delete" textAlignment="CENTER" />
+    <Button id="nButton" layoutX="220.0" layoutY="141.0" mnemonicParsing="false" prefWidth="91.0" text="Cancel" textAlignment="CENTER" />
+  </children>
+</AnchorPane>

@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module: ru.ptahi.aet.participant
+OpenIDE-Module-Localizing-Bundle: ru/ptahi/aet/participant/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+

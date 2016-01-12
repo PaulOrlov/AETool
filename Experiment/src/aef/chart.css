@@ -1,0 +1,39 @@
+.chart-area-symbol {
+    -fx-background-color: transparent, transparent;
+}
+
+.chart-legend-item-symbol{
+   -fx-background-radius: 5;
+}
+ 
+.chart-legend-item{
+    -fx-text-fill: #191970;
+}
+        
+.series-FixationDuration .chart-series-area-fill { -fx-fill: #E95B0D55; }
+.series-FixationDuration .chart-series-area-line { -fx-stroke: #E95B0D; }
+.series-FixationDuration .chart-legend-item-symbol { -fx-background-color: #E95B0D, #E95B0D55; }
+
+.series-Attributes .chart-series-area-fill { -fx-fill: #2165F555; }
+.series-Attributes .chart-series-area-line { -fx-stroke: #2165F5; }
+.series-Attributes .chart-legend-item-symbol { -fx-background-color: #2165F5, #2165F555; }
+
+.series-Constructor .chart-series-area-fill { -fx-fill: #15B0F555; }
+.series-Constructor .chart-series-area-line { -fx-stroke: #15B0F5; }
+.series-Constructor .chart-legend-item-symbol { -fx-background-color: #15B0F5, #15B0F555; }
+
+.series-Area .chart-series-area-fill { -fx-fill: #ffd70055; }
+.series-Area .chart-series-area-line { -fx-stroke: #ffd700; }
+.series-Area .chart-legend-item-symbol { -fx-background-color: #ffd700, #ffd700; }
+
+.series-Width .chart-series-area-fill { -fx-fill: #E82C0C55; }
+.series-Width .chart-series-area-line { -fx-stroke: #E82C0C; }
+.series-Width .chart-legend-item-symbol { -fx-background-color: #E82C0C, #E82C0C55; }
+
+.series-Height .chart-series-area-fill { -fx-fill: #5512FF55; }
+.series-Height .chart-series-area-line { -fx-stroke: #5512FF; }
+.series-Height .chart-legend-item-symbol { -fx-background-color: #5512FF, #5512FF55; }
+
+.series-Main .chart-series-area-fill { -fx-fill: #0DB91F55; }
+.series-Main .chart-series-area-line { -fx-stroke: #0DB91F; }
+.series-Main .chart-legend-item-symbol { -fx-background-color: #0DB91F, #0DB91F55; }
