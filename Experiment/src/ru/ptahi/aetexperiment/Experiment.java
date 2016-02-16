@@ -15,7 +15,6 @@ import ru.ptahi.aet.participant.Participant;
 import ru.ptahi.cfe.stumile.Stimule;
 import com.google.gson.reflect.TypeToken;
 import java.lang.reflect.Type;
-import org.netbeans.api.project.Project;
 
 /**
  *
@@ -33,8 +32,6 @@ class Experiment {
     private ArrayList<Annotation> fdList;
     private ArrayList<Annotation> eaList;
     private boolean isDone = false;
-    public Project experimaentProject;
-    public ExperimentNode en;
 
     void setFixationDurationList(ArrayList<Annotation> fdList) {
         ArrayList<Annotation> oldfdList = this.fdList;

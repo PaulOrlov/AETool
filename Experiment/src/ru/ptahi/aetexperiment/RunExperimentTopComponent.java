@@ -1,8 +1,5 @@
 package ru.ptahi.aetexperiment;
 
-import eyeTrackingTheoryProject.Controller.FixationDurationDelegator;
-import eyeTrackingTheoryProject.Controller.MyDelegator;
-import eyeTrackingTheoryProject.Controller.MyEyeTrackingFilterListener;
 import java.awt.AWTException;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -12,8 +9,15 @@ import java.awt.Toolkit;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
+import java.net.SocketException;
+import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.application.Platform;
 import javafx.embed.swing.JFXPanel;
 import javafx.event.EventHandler;
@@ -29,7 +33,6 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.Background;
 import javafx.scene.layout.VBox;
 import javafx.scene.layout.HBox;
 import javafx.scene.paint.Color;
@@ -46,11 +49,6 @@ import org.openide.util.NbBundle.Messages;
 import org.openide.windows.WindowManager;
 import processing.core.PApplet;
 import static processing.core.PConstants.CENTER;
-import rit.eyeTrackingAPI.ApplicationUtilities.EyeTrackingFilterListener;
-import rit.eyeTrackingAPI.DataConstructs.GazePoint;
-import rit.eyeTrackingAPI.EyeTrackerUtilities.eyeTrackerClients.IViewXClient;
-import rit.eyeTrackingAPI.SmoothingFilters.DurationFixationAndLeastSquaresFilter;
-import rit.eyeTrackingAPI.SmoothingFilters.Filter;
 import ru.ptahi.iconmanager.IconManager;
 import ru.ptahi.cfe.stumile.StimuleList;
 
@@ -86,6 +84,8 @@ class MyPA extends PApplet{
     int mx;
     int my;
     
+    
+    
     @Override
     public void setup(){
         size(900,200);
@@ -94,8 +94,7 @@ class MyPA extends PApplet{
         noStroke();
         //noCursor();
         //ellipseMode(CENTER);
-        //mColor = 200;
-        mColor = 50;
+        mColor = 200;
     }
     
     @Override
@@ -104,29 +103,23 @@ class MyPA extends PApplet{
         fill(0,5);
         rect(0,0,width,height);
         fill(250,20);
-        ellipse(mouseX, mouseY, 10, 10);
+        ellipse(mx, my, 10, 10);
         fill(200,mColor,mColor, 50);
         rect(0, 0, width,height);
     }
     
     public void setWhiteColor() {
-        //mColor = 200;
+        mColor = 200;
     }
 
     public void setRedColor() {
-        //mColor = 50;
+        mColor = 50;
     }
     
 }
 
 public final class RunExperimentTopComponent extends TopComponent {
     
-    public static MyEyeTrackingFilterListener myL;
-    private GazePoint userGazeCoordinates;
-    private Filter smoothingFilter;
-    protected IViewXClient eyeTrackerComm;
-    protected EyeTrackingFilterListener eyeMediator;
-
     private JFXPanel fxContainer;
     private ExperimentNode context;
     private VBox vb;
@@ -141,11 +134,15 @@ public final class RunExperimentTopComponent extends TopComponent {
     public static MyPA mpa;
     
     public static void makeItRed(){
-        mpa.setRedColor();
+        if(mpa != null){
+            mpa.setRedColor();
+        }
     }
     
     public static void makeItWhite(){
-        mpa.setWhiteColor();
+        if(mpa != null){
+            mpa.setWhiteColor();
+        }
     }
     
 
@@ -244,6 +241,7 @@ public final class RunExperimentTopComponent extends TopComponent {
 
     public RunExperimentTopComponent(ExperimentNode context) {
         initComponents();
+        startIViewXListener();
         setName(Bundle.CTL_RunExperimentTopComponent());
         setToolTipText(Bundle.HINT_RunExperimentTopComponent());
         mThis = this;
@@ -268,23 +266,6 @@ public final class RunExperimentTopComponent extends TopComponent {
                 }
             }
         });
-        smoothingFilter = new DurationFixationAndLeastSquaresFilter(2);
-        userGazeCoordinates = new GazePoint(smoothingFilter);
-        eyeTrackerComm = new IViewXClient(userGazeCoordinates);
-        myL = new MyEyeTrackingFilterListener(smoothingFilter, new MyDelegator(), false, 0);
-        eyeMediator = myL;
-        
-        FixationDurationDelegator fdd = new FixationDurationDelegator();
-        eyeTrackerComm.setFixationDurationIViexListener(fdd);
-        
-      
-        eyeMediator.setCursorVisibility(true);
-        eyeMediator.setEyeTracking(true);
-        eyeMediator.start();
-
-        eyeTrackerComm.connect();
-        eyeTrackerComm.start();
-        eyeTrackerComm.startFixationDetection();
     }
 
     /**
@@ -316,7 +297,7 @@ public final class RunExperimentTopComponent extends TopComponent {
 
     @Override
     public void componentClosed() {
-        // TODO add custom code on component closing
+        isTreadRuning = false;
     }
 
     void writeProperties(java.util.Properties p) {
@@ -332,7 +313,22 @@ public final class RunExperimentTopComponent extends TopComponent {
     }
 
     private void sendUPD() {
-        eyeTrackerComm.sendTrialIncrement();
+       try {
+            DatagramSocket serverSocket = new DatagramSocket();
+            String send = "ET_INC\n";
+            byte[] m = send.getBytes();
+            InetAddress aHost = InetAddress.getByName("192.168.0.2");
+            int serverPort = 4444;
+            DatagramPacket request = new DatagramPacket(m, m.length, aHost, serverPort);
+            serverSocket.send(request);
+            serverSocket.close();
+        } catch (SocketException ex) {
+            Exceptions.printStackTrace(ex);
+        } catch (UnknownHostException ex) {
+            Exceptions.printStackTrace(ex);
+        } catch (IOException ex) {
+            Exceptions.printStackTrace(ex);
+        }
         trialsCounter++;
     }
 
@@ -349,7 +345,7 @@ public final class RunExperimentTopComponent extends TopComponent {
         }
 
         vb = (VBox) root.lookup("#vb");
-        vb.setSpacing(20);
+        vb.setSpacing(10);
         vb.setAlignment(Pos.CENTER);
 
         Button runExpBtn = (Button) root.lookup("#runbutton");
@@ -439,6 +435,7 @@ public final class RunExperimentTopComponent extends TopComponent {
     Iterator<Experiment.StimuleInExperiment> iterator;
     Experiment.StimuleInExperiment current;
     public static Ellipse smallCircle;
+    boolean isTreadRuning = true;
 
     private void nextStimule() {
         Platform.runLater(new Runnable() {
@@ -458,44 +455,41 @@ public final class RunExperimentTopComponent extends TopComponent {
             current.beginTime = String.valueOf(System.currentTimeMillis());
             current.indexInTheSet = stieList.indexOf(current);
             
+            System.out.println("   ");
+            System.out.println("maskType: " + current.maskType + ", stencilSize: " + current.stencilSize);
+            System.out.println("   ");
 
             Platform.runLater(new Runnable() {
                 @Override
                 public void run() {
-                    
-                    Label stimiliLabel = new Label(current.sObj.getContent()) ;
-                    //stimiliLabel.setBackground(Background.EMPTY);
-                    //stimiliLabel.setStyle("-fx-background-color: rgba(255, 255, 255, 0);");
+//                    Rectangle rect = new Rectangle(0, 0, 900, 900);
+//                    rect.setFill(Color.TRANSPARENT);
+//                    rect.setCursor(Cursor.NONE);
 
-//                    stimiliLabel.setPrefWidth(1100);
-//                    stimiliLabel.setMaxWidth(1100);
-                    stimiliLabel.setMaxHeight(400);
-                    stimiliLabel.setPrefHeight(400);
-                    stimiliLabel.setMinHeight(400);
-                    stimiliLabel.setStyle("-fx-text-fill: black;"
-                            + "-fx-background-color: rgba(255, 255, 255, 0);"
-                            + "-fx-font: 52px \"Courier\" ;"
+                    TextArea ta = new TextArea(current.sObj.getContent());
+                    ta.setPrefWidth(1100);
+                    ta.setMaxWidth(1100);
+                    ta.setMaxHeight(getHeight() - 300);
+                    ta.setPrefHeight(getHeight() - 300);
+                    ta.setMinHeight(getHeight() - 300);
+
+                    ta.setEditable(false);
+                    ta.setPrefHeight(600);
+                    ta.setCursor(Cursor.NONE);
+
+                    ta.setStyle("-fx-text-fill: black;"
+                            + "-fx-background-color: white;"
+                            + "-fx-font: 14px \"Courier\" ;"
                             + "-fx-font-weight: normal;"
                             + "-fx-cursor: null;");
-                    stimiliLabel.setAlignment(Pos.TOP_CENTER);
+
                     //                                "-fx-font: Courier New;"+ "-fx-font: 14px \"Serif\" ;"+ 
                     final Button aswerBtn = new Button("Ok");
-                    aswerBtn.setScaleX(2);
-                    aswerBtn.setScaleY(2);
                     Button nextBtn = new Button("And the Answer is...");
-                    nextBtn.setScaleX(2);
-                    nextBtn.setScaleY(2);
                     final Label yourAnswerLabel = new Label("Your answer: ");
-                    yourAnswerLabel.setStyle("-fx-font: 25px \"Tahoma\" ;"
-                            + "-fx-font-weight: normal;"
-                            + "-fx-cursor: null;");
                     final TextField answerField = new TextField();
-                    answerField.setStyle("-fx-font: 25px \"Tahoma\";"
-                            + "-fx-font-weight: normal;"
-                            + "-fx-cursor: null;");
                     answerField.setPrefWidth(400);
                     answerField.setMaxWidth(400);
-                    stimiliLabel.setMaxHeight(200);
 
                     nextBtn.addEventFilter(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
                         @Override
@@ -560,8 +554,6 @@ public final class RunExperimentTopComponent extends TopComponent {
                     });
 
                     Button noAnswerBtn = new Button("I have NO Answer");
-                    noAnswerBtn.setScaleX(2);
-                    noAnswerBtn.setScaleY(2);
 
                     noAnswerBtn.addEventFilter(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
                         @Override
@@ -605,16 +597,32 @@ public final class RunExperimentTopComponent extends TopComponent {
                         }
                     });
 
-                    vb.setAlignment(Pos.CENTER);
+//                    smallCircle = new Ellipse(); 
+//                    smallCircle.setCenterX(50.0f);
+//                    smallCircle.setCenterY(50.0f);
+//                    smallCircle.setRadiusX(50.0f);
+//                    smallCircle.setRadiusY(50.0f);
+//                    smallCircle.setFill(new Color(0.2, 0.2, 0.2, 0.3));
+
+
+                    vb.setAlignment(Pos.TOP_CENTER);
                     Group g = new Group();
-                    g.getChildren().add(stimiliLabel);
+//                    HBox mhb = new HBox();
+//                    mhb.getChildren().add(smallCircle);
+                    g.getChildren().add(ta);
+                    //g.getChildren().add(g);
+                    
+                    //g.getChildren().add(rect);
+                    //g.setCursor(Cursor.NONE);
                     vb.getChildren().add(g);
+
                     HBox hb = new HBox();
                     hb.getChildren().add(noAnswerBtn);
                     hb.getChildren().add(nextBtn);
-                    hb.setSpacing(150);
+                    hb.setSpacing(90);
                     hb.setAlignment(Pos.CENTER);
                     vb.getChildren().add(hb);
+
                 }
             });
 
@@ -647,6 +655,88 @@ public final class RunExperimentTopComponent extends TopComponent {
         ExportToCSFileCookie sc = context.getLookup().lookup(ExportToCSFileCookie.class);
         if (sc != null) {
             sc.serialize();
+        }
+    }
+
+    private void startIViewXListener() {
+        try {
+            DatagramSocket serverSocket = new DatagramSocket();
+            InetAddress IPAddress = InetAddress.getByName("192.168.0.2");
+            int serverPort = 4444;
+            String send = "ET_STR\n";
+            byte[] m = send.getBytes();
+            DatagramPacket request = new DatagramPacket(m, m.length, IPAddress, serverPort);
+            serverSocket.send(request);
+            
+            send = "ET_REC\n";
+            m = send.getBytes();
+            request = new DatagramPacket(m, m.length, IPAddress, serverPort);
+            serverSocket.send(request);
+
+            send = "ET_FIX\n";
+            m = send.getBytes();
+            request = new DatagramPacket(m, m.length, IPAddress, serverPort);
+            serverSocket.send(request);
+
+            send = "ET_FRM \"%ET %SX %SY\" \n";
+            m = send.getBytes();
+            request = new DatagramPacket(m, m.length, IPAddress, serverPort);
+            serverSocket.send(request);
+            serverSocket.close();
+
+            Thread thr = new Thread() {
+                public void run() {
+                    try {
+                        long fixBegin = 0;
+                        DatagramSocket clientSocket = new DatagramSocket(5555);
+                        while (isTreadRuning) {
+                            byte[] receiveData = new byte[1024];
+                            DatagramPacket receive = new DatagramPacket(receiveData, receiveData.length);
+                            clientSocket.receive(receive);
+                            String mRes = new String(receive.getData());
+                            String[] parts = mRes.split(" ");
+                            if (parts[0].equals("ET_SPL")) {
+                                int xl = Integer.parseInt(parts[2].trim());
+                                int xr = Integer.parseInt(parts[3].trim());
+                                int yl = Integer.parseInt(parts[4].trim());
+                                int yr = Integer.parseInt(parts[5].trim());
+
+                                double gazeX = ((double) xl + (double) xr) / 2.0;
+                                double gazeY = ((double) yl + (double) yr) / 2.0;
+
+                                //System.out.println("GX: " + gazeX + ", GY: " + gazeY);
+                                if(mpa != null){
+                                    mpa.mx = (int) gazeX;
+                                    mpa.my = (int) gazeY;
+                                }
+                                
+                            } else if (parts[0].equals("ET_FIX")) {
+                                fixBegin = System.currentTimeMillis();
+                            }
+                            
+                            if(System.currentTimeMillis() - fixBegin > 500){
+                                makeItRed();
+                            } else {
+                                makeItWhite();
+                            }
+                        }
+                        clientSocket.close();
+                    } catch (SocketException ex) {
+                        
+                    } catch (IOException ex) {
+                        
+                    }
+                }
+            };
+
+            thr.start();
+
+        } catch (SocketException ex) {
+            
+        } catch (UnknownHostException ex) {
+            Exceptions.printStackTrace(ex);
+        } catch (IOException ex) {
+            Exceptions.printStackTrace(ex);
         }
     }
 }

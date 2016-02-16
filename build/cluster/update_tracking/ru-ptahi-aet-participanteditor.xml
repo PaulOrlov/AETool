@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><module codename="ru.ptahi.aet.participanteditor">
-    <module_version install_time="1452629963901" last="true" origin="installer" specification_version="1.0">
-        <file crc="1165367799" name="config/Modules/ru-ptahi-aet-participanteditor.xml"/>
-        <file crc="3852680995" name="modules/ru-ptahi-aet-participanteditor.jar"/>
+    <module_version install_time="1455619081105" last="true" origin="installer" specification_version="1.0">
+        <file crc="2053586926" name="config/Modules/ru-ptahi-aet-participanteditor.xml"/>
+        <file crc="3611492458" name="modules/ru-ptahi-aet-participanteditor.jar"/>
     </module_version>
 </module>

@@ -9,6 +9,7 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 import javax.swing.Action;
+import org.netbeans.api.project.Project;
 import org.openide.nodes.BeanNode;
 import org.openide.nodes.Children;
 import org.openide.nodes.Node;
@@ -64,7 +65,6 @@ class ExperimentNode extends BeanNode<Experiment> implements PropertyChangeListe
         nodesOnLookup = Utilities.actionsGlobalContext().lookupResult(Node.class);
         nodesOnLookup.addLookupListener(this);
         this.eObj = eObj;
-        this.eObj.en = this;
     }
 
     @Override
@@ -91,10 +91,18 @@ class ExperimentNode extends BeanNode<Experiment> implements PropertyChangeListe
     @Override
     public Action[] getActions(boolean context) {
         List<Action> nodeActions = new ArrayList<Action>();
+        nodeActions.addAll(Utilities.actionsForPath("myAction/Experiment"));
         nodeActions.add(new Run(this));
         nodeActions.add(new EditAction(getLookup()));
-        nodeActions.addAll(Utilities.actionsForPath("myAction/Experiment"));
         return nodeActions.toArray(new Action[nodeActions.size()]);
+        
+//        return new Action[]{ 
+//            new Run(this),
+//            new Visualize(this),
+//            new EditAction(getLookup()),
+//            new DeleteAction(getLookup()),
+//            new ShowEventsAction()
+//        };
     }
     
     @Override
@@ -112,8 +120,13 @@ class ExperimentNode extends BeanNode<Experiment> implements PropertyChangeListe
 
     @Override
     public void resultChanged(LookupEvent le) {
-         if (!nodesOnLookup.allInstances().isEmpty()) {
+//        Lookup.Result<Node> projectOjb = Utilities.actionsGlobalContext().lookupResult(Project.class);
+        
+        //Lookup.Result<Node>  = Utilities.actionsGlobalContext().lookupResult(Node.class);
+        nodesOnLookup = Utilities.actionsGlobalContext().lookupResult(Node.class);
+        if (!nodesOnLookup.allInstances().isEmpty()) {
             Node nObj = nodesOnLookup.allInstances().iterator().next();
+            
             if(nObj.equals(this)){
                 current = true;
             } else {

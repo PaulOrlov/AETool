@@ -1,217 +1,1770 @@
--------------------------------------------------------------------------------
->Log Session: Wednesday, January 13, 2016 12:19:26 AM MSK
->System Info: 
-  Product Version         = AETool 201411181905
-  Operating System        = Mac OS X version 10.9.5 running on x86_64
-  Java; VM; Vendor        = 1.8.0_25; Java HotSpot(TM) 64-Bit Server VM 25.25-b02; Oracle Corporation
-  Runtime                 = Java(TM) SE Runtime Environment 1.8.0_25-b17
-  Java Home               = /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre
-  System Locale; Encoding = en_US (aetool); UTF-8
-  Home Directory          = /Users/paulorlov
-  Current Directory       = /Volumes/Macintosh HD/Users/paulorlov/Documents/Projects/AETool/AETool
-  User Directory          = /Volumes/Macintosh HD/Users/paulorlov/Documents/Projects/AETool/AETool/build/testuserdir
-  Cache Directory         = /Volumes/Macintosh HD/Users/paulorlov/Documents/Projects/AETool/AETool/build/testuserdir/var/cache
-  Installation            = /Volumes/Macintosh HD/Users/paulorlov/Documents/Projects/AETool/AETool/build/cluster
-                            /Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/ide
-                            /Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/javafx
-                            /Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform
-                            /Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform
-  Boot & Ext. Classpath   = /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/classes:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/System/Library/Java/Extensions/AppleScriptEngine.jar:/System/Library/Java/Extensions/dns_sd.jar:/System/Library/Java/Extensions/j3daudio.jar:/System/Library/Java/Extensions/j3dcore.jar:/System/Library/Java/Extensions/j3dutils.jar:/System/Library/Java/Extensions/jai_codec.jar:/System/Library/Java/Extensions/jai_core.jar:/System/Library/Java/Extensions/mlibwrapper_jai.jar:/System/Library/Java/Extensions/MRJToolkit.jar:/System/Library/Java/Extensions/QTJava.zip:/System/Library/Java/Extensions/vecmath.jar
-  Application Classpath   = /Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/boot.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/org-openide-modules.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/org-openide-util-lookup.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/org-openide-util.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/boot_ja.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/boot_pt_BR.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/boot_ru.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/boot_zh_CN.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-modules_ja.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-modules_pt_BR.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-modules_ru.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-modules_zh_CN.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-util-lookup_ja.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-util-lookup_pt_BR.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-util-lookup_ru.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-util-lookup_zh_CN.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-util_ja.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-util_pt_BR.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-util_ru.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/lib/locale/org-openide-util_zh_CN.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/lib/tools.jar
-  Startup Classpath       = /Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/core/core.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/core/org-openide-filesystems.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/core/locale/core_ja.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/core/locale/core_pt_BR.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/core/locale/core_ru.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/core/locale/core_zh_CN.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/core/locale/org-openide-filesystems_ja.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/core/locale/org-openide-filesystems_pt_BR.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/core/locale/org-openide-filesystems_ru.jar:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform/core/locale/org-openide-filesystems_zh_CN.jar:/Volumes/Macintosh HD/Users/paulorlov/Documents/Projects/AETool/AETool/build/cluster/core/locale/core_aetool.jar
--------------------------------------------------------------------------------
-Warning - could not install some modules:
-	org.netbeans.modules.javafx2.platform - The module named org.netbeans.api.java.classpath/1 was needed and not found.
-	org.netbeans.modules.javafx2.platform - The module named org.netbeans.modules.java.platform/1 was needed and not found.
-	org.netbeans.modules.javafx2.platform - The module named org.netbeans.api.java/1 was needed and not found.
-	org.netbeans.modules.javafx2.platform - The module named org.netbeans.modules.java.project/1 was needed and not found.
-	org.netbeans.modules.javafx2.platform - The module named org.netbeans.modules.java.j2seplatform/1 was needed and not found.
-	org.netbeans.modules.javafx2.platform - The module named org.netbeans.modules.project.ant/1 was needed and not found.
-	org.netbeans.modules.html.custom - The module named org.netbeans.modules.parsing.api/1 was needed and not found.
-	org.netbeans.modules.html.custom - The module named org.netbeans.modules.html.editor/2 was needed and not found.
-	org.netbeans.modules.html.custom - The module named org.netbeans.modules.web.common was needed and not found.
-	org.netbeans.modules.html.custom - The module named org.netbeans.libs.json_simple/1 was needed and not found.
-	org.netbeans.modules.html.custom - The module named org.netbeans.modules.csl.api/2 was needed and not found.
-	org.netbeans.modules.html.custom - The module named org.netbeans.modules.editor.completion/1 was needed and not found.
-	org.netbeans.modules.html.custom - The module named org.netbeans.modules.editor.indent/2 was needed and not found.
-	org.netbeans.modules.html.custom - The module named org.netbeans.modules.html.editor.lib/3 was needed and not found.
-	org.netbeans.modules.html.custom - The module named org.netbeans.modules.editor.lib/3 was needed and not found.
-	org.netbeans.modules.javascript2.requirejs - The module named org.netbeans.modules.parsing.api/1 was needed and not found.
-	org.netbeans.modules.javascript2.requirejs - The module named org.netbeans.modules.javascript2.editor/1 was needed and not found.
-	org.netbeans.modules.javascript2.requirejs - The module named org.netbeans.modules.web.common was needed and not found.
-	org.netbeans.modules.javascript2.requirejs - The module named org.netbeans.modules.html.editor/2 was needed and not found.
-	org.netbeans.modules.javascript2.requirejs - The module named org.netbeans.modules.csl.api/2 was needed and not found.
-	org.netbeans.modules.javascript2.requirejs - The module named org.netbeans.modules.editor.completion/1 was needed and not found.
-	org.netbeans.modules.javascript2.requirejs - The module named org.netbeans.modules.html.lexer/1 was needed and not found.
-	org.netbeans.modules.javascript2.requirejs - The module named org.netbeans.modules.editor.indent/2 was needed and not found.
-	org.netbeans.modules.javascript2.requirejs - The module named org.netbeans.modules.html.editor.lib/3 was needed and not found.
-	org.netbeans.modules.javascript2.requirejs - The module named org.netbeans.modules.lexer/2 was needed and not found.
-	org.netbeans.modules.javascript2.requirejs - The module named org.netbeans.modules.editor.lib/3 was needed and not found.
-	org.netbeans.modules.javascript2.prototypejs - The module named org.netbeans.modules.parsing.api/1 was needed and not found.
-	org.netbeans.modules.javascript2.prototypejs - The module named org.netbeans.modules.javascript2.editor/1 was needed and not found.
-	org.netbeans.modules.javascript2.prototypejs - The module named org.netbeans.modules.csl.api/2 was needed and not found.
-	org.netbeans.modules.javascript2.prototypejs - The module named org.netbeans.modules.editor.completion/1 was needed and not found.
-	org.netbeans.modules.javascript2.prototypejs - The module named org.netbeans.modules.lexer/2 was needed and not found.
-	org.netbeans.modules.javascript2.prototypejs - The module named org.netbeans.modules.editor.lib/3 was needed and not found.
-	org.netbeans.modules.bugtracking.commons - The module named org.netbeans.modules.team.commons was needed and not found.
-	org.netbeans.modules.bugtracking.commons - The module named org.netbeans.modules.bugtracking was needed and not found.
-	org.netbeans.modules.localtasks - The module org.netbeans.modules.bugtracking.commons would also need to be installed.
-	org.netbeans.modules.localtasks - The module named org.netbeans.modules.mylyn.util was needed and not found.
-	org.netbeans.modules.localtasks - The module named org.netbeans.modules.team.commons was needed and not found.
-	org.netbeans.modules.localtasks - The module named org.netbeans.modules.spellchecker.apimodule was needed and not found.
-	org.netbeans.modules.localtasks - The module named org.netbeans.modules.bugtracking was needed and not found.
-	org.netbeans.modules.javafx2.project - The module named org.netbeans.modules.java.j2seproject/1 was needed and not found.
-	org.netbeans.modules.javafx2.project - The module named org.netbeans.api.java/1 was needed and not found.
-	org.netbeans.modules.javafx2.project - The module named org.netbeans.modules.extexecution/2 was needed and not found.
-	org.netbeans.modules.javafx2.project - The module org.netbeans.modules.javafx2.platform would also need to be installed.
-	org.netbeans.modules.javafx2.project - The module named org.netbeans.modules.java.j2sedeploy was needed and not found.
-	org.netbeans.modules.javafx2.project - The module named org.netbeans.modules.project.ant/1 was needed and not found.
-	org.netbeans.modules.javafx2.project - The module named org.netbeans.modules.project.libraries/1 was needed and not found.
-	org.netbeans.modules.javafx2.project - The module named org.netbeans.libs.javacapi was needed and not found.
-	org.netbeans.modules.javafx2.project - The module named org.netbeans.api.java.classpath/1 was needed and not found.
-	org.netbeans.modules.javafx2.project - The module named org.netbeans.modules.java.platform/1 was needed and not found.
-	org.netbeans.modules.javafx2.project - The module named org.netbeans.modules.extbrowser/1 was needed and not found.
-	org.netbeans.modules.javafx2.project - The module named org.netbeans.modules.java.api.common/0-1 was needed and not found.
-	org.netbeans.modules.javafx2.project - The module named org.apache.tools.ant.module/3 was needed and not found.
-	org.netbeans.modules.javafx2.project - The module named org.netbeans.modules.java.source was needed and not found.
-	org.netbeans.modules.javafx2.project - The module named org.netbeans.modules.java.project/1 was needed and not found.
-	org.netbeans.modules.javafx2.samples - The module named org.netbeans.modules.java.platform/1 was needed and not found.
-	org.netbeans.modules.javafx2.samples - The module org.netbeans.modules.javafx2.project would also need to be installed.
-	org.netbeans.modules.javafx2.samples - The module org.netbeans.modules.javafx2.platform would also need to be installed.
-	org.netbeans.modules.javafx2.samples - The module named org.netbeans.modules.project.ant/1 was needed and not found.
-	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.css.lib/1 was needed and not found.
-	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.parsing.api/1 was needed and not found.
-	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.java.sourceui/1 was needed and not found.
-	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.java.editor/1 was needed and not found.
-	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.project.ant/1 was needed and not found.
-	org.netbeans.modules.javafx2.editor - The module named org.netbeans.libs.javacapi was needed and not found.
-	org.netbeans.modules.javafx2.editor - The module named org.netbeans.api.java.classpath/1 was needed and not found.
-	org.netbeans.modules.javafx2.editor - The module named org.netbeans.spi.editor.hints/0-1 was needed and not found.
-	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.css.editor/1 was needed and not found.
-	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.csl.api/2 was needed and not found.
-	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.refactoring.api was needed and not found.
-	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.xml.catalog/2 was needed and not found.
-	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.editor.completion/1 was needed and not found.
-	org.netbeans.modules.javafx2.editor - The module org.netbeans.modules.javafx2.project would also need to be installed.
-	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.whitelist was needed and not found.
-	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.xml.text/2 was needed and not found.
-	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.editor.lib2/1 was needed and not found.
-	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.java.source was needed and not found.
-	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.java.project/1 was needed and not found.
-	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.lexer/2 was needed and not found.
-	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.xml.lexer was needed and not found.
-	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.xml.xdm/1 was needed and not found.
-	org.netbeans.modules.javafx2.editor - The module named org.netbeans.modules.editor.lib/3 was needed and not found.
-	org.netbeans.modules.javafx2.scenebuilder - The module named org.netbeans.modules.options.java was needed and not found.
-	org.netbeans.modules.javafx2.scenebuilder - The module org.netbeans.modules.javafx2.editor would also need to be installed.
-	org.netbeans.modules.javafx2.kit - The module named org.netbeans.modules.ant.kit was needed and not found.
-	org.netbeans.modules.javafx2.kit - The module named org.netbeans.modules.j2ee.persistence.kit was needed and not found.
-	org.netbeans.modules.javafx2.kit - The module named org.netbeans.modules.maven.kit/1 was needed and not found.
-	org.netbeans.modules.javafx2.kit - The module org.netbeans.modules.javafx2.samples would also need to be installed.
-	org.netbeans.modules.javafx2.kit - The module org.netbeans.modules.javafx2.project would also need to be installed.
-	org.netbeans.modules.javafx2.kit - The module org.netbeans.modules.javafx2.platform would also need to be installed.
-	org.netbeans.modules.javafx2.kit - The module named org.netbeans.modules.form.kit was needed and not found.
-	org.netbeans.modules.javafx2.kit - The module named org.netbeans.modules.debugger.jpda.kit was needed and not found.
-	org.netbeans.modules.javafx2.kit - The module org.netbeans.modules.javafx2.editor would also need to be installed.
-	org.netbeans.modules.javafx2.kit - The module named org.netbeans.modules.java.kit was needed and not found.
-INFO [org.netbeans.core.startup.NbEvents]: Turning on modules:
-	org.openide.util.lookup [8.25.2 201505281753]
-	org.openide.util [8.39.1 201408251540]
-	org.openide.modules [7.43.1 201408251540]
-	ru.ptahi.psy.project [1.0 160112]
-	javafx [1.0 160112]
-	ru.ptahi.iconmanager [1.0 160112]
-	org.netbeans.api.annotations.common/1 [1.24.1 201408251540]
-	org.openide.filesystems [8.12.1 201408251540]
-	org.openide.awt [7.62.1 201408251540]
-	org.netbeans.api.progress/1 [1.38.1 201408251540]
-	org.openide.dialogs [7.38.1 201408251540]
-	org.openide.nodes [7.39.1 201408251540]
-	org.openide.windows [6.71.1 201408251540]
-	org.netbeans.swing.tabcontrol [1.51.1 201408251540]
-	org.netbeans.swing.outline [1.30.1 201408251540]
-	org.openide.explorer [6.57.1 201408251540]
-	org.netbeans.modules.editor.mimelookup/1 [1.36.1 201408251540]
-	org.openide.text [6.62.2 201410071419]
-	org.openide.actions [6.35.1 201408251540]
-	org.netbeans.bootstrap/1 [2.69.3 201411181905]
-	org.netbeans.core.startup/1 [1.55.2 201411181905]
-	org.netbeans.modules.queries/1 [1.39.1 201408251540]
-	org.openide.loaders [7.57.2 201410071419]
-	org.netbeans.modules.settings/1 [1.45.1 201408251540]
-	com.google.gson [1.0 160112]
-	org.netbeans.swing.plaf [1.37.1 201408251540]
-	org.netbeans.modules.keyring [1.20.1 201408251540]
-	org.openide.io [1.45.1 201408251540]
-	org.netbeans.modules.sampler [1.10.1 201408251540]
-	org.netbeans.core/2 [3.46.1 201408251540]
-	org.netbeans.spi.quicksearch [1.23.1 201408251540]
-	org.netbeans.modules.options.api/1 [1.41.1 201408251540]
-	org.netbeans.core.windows/2 [2.77.2 201411181905]
-	org.netbeans.modules.projectapi/1 [1.60.2 201410071419]
-	ru.ptahi.cfe.stumile [1.0 160112]
-	org.netbeans.core.multiview/1 [1.40.1 201408251540]
-	ru.ptahi.aet.participant [1.0 160112]
-	ru.ptahi.aetexperiment [1.0 160112]
-	org.netbeans.modules.projectuiapi/1 [1.81.1.8 8 201505281753]
-	ru.ptahi.aet.participantviewer [1.0 160112]
-	ru.ptahi.aet.participanteditor [1.0 160112]
-	ru.ptahi.aet.aetproject [1.0 160112]
-	org.openide.execution [1.36.1 201408251540]
-	org.netbeans.swing.dirchooser [1.25.1 201408251540]
-	org.netbeans.modules.templates/1 [1.3.1 201408251540]
-	org.netbeans.modules.sendopts/2 [2.31.1 201408251540]
-	org.netbeans.modules.project.indexingbridge [1.13.1 201408251540]
-	org.netbeans.core.execution/1 [1.37.1 201408251540]
-	org.netbeans.modules.masterfs/2 [2.48.3 201502261250]
-	org.netbeans.core.ui/1 [1.41.1 201408251540]
-	org.netbeans.modules.favorites/1 [1.40.1 201408251540]
-	org.netbeans.modules.projectui [1.53.2.8 201505281753]
-	org.netbeans.modules.progress.ui [1.29.2 201410071419]
-	org.netbeans.modules.print [7.22.1 201408251540]
-	org.netbeans.modules.options.keymap [1.31.1 201408251540]
-	org.netbeans.modules.masterfs.nio2 [1.12.1 201408251540]
-	org.netbeans.libs.jna/1 [1.38.1 201408251540]
-	org.netbeans.modules.masterfs.macosx [1.10.1 201408251540]
-	org.netbeans.modules.keyring.fallback [1.4.1 201408251540]
-	org.netbeans.modules.keyring.impl [1.20.1 201408251540]
-	org.netbeans.modules.editor.mimelookup.impl/1 [1.27.1 201408251540]
-	org.netbeans.modules.applemenu/1 [1.33.1 201408251540]
-	org.netbeans.libs.osgi [1.18.1 201408251540]
-	org.netbeans.libs.jna.platform/1 [1.8.1 201408251540]
-	org.netbeans.libs.felix [2.12.1 201408251540]
-	org.netbeans.core.output2/1 [1.37.1 201408251540]
-	org.netbeans.core.network [1.6.1 201408251540]
-	org.netbeans.core.netigso [1.27.1 201408251540]
-	org.netbeans.core.nativeaccess/1 [1.27.1 201408251540]
-	org.netbeans.core.multitabs/1 [1.8.1.1 1 201408251540]
-	org.netbeans.core.io.ui/1 [1.26.1 201408251540]
-INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network proxy resolver: Mac
-INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network proxy reloading failed! Trying fallback resolver.
-INFO [org.netbeans.core.network.proxy.fallback.FallbackNetworkProxy]: Fallback system proxy resolver: no http_proxy variable found
-INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network proxy reloading succeeded. Fallback provider was successful.
-INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network proxy - mode: direct
-INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network proxy: fell to default (correct if direct mode went before)
-INFO [org.netbeans.ui.metrics.laf]: USG_LOOK_AND_FEEL
-WARNING [org.openide.filesystems.Ordering]: Not all children in Windows2/Modes/explorer/ marked with the position attribute: [ParticipantViewerTopComponent.wstcref], but some are: [projectTabLogical_tc.wstcref, projectTab_tc.wstcref, favorites.wstcref]
-Diagnostic information
-Input arguments:
-	-Djdk.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home
-	-Dnetbeans.dirs=/Volumes/Macintosh HD/Users/paulorlov/Documents/Projects/AETool/AETool/build/cluster:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/ide:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/javafx:/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform
-	-Dnetbeans.home=/Applications/NetBeans/NetBeans 8.0.app/Contents/Resources/NetBeans/platform
-	-Dnetbeans.logger.console=true
-	-ea
-	-XX:+HeapDumpOnOutOfMemoryError
-	-XX:HeapDumpPath=/Volumes/Macintosh HD/Users/paulorlov/Documents/Projects/AETool/AETool/build/testuserdir/var/log/heapdump.hprof
-Compiler: HotSpot 64-Bit Tiered Compilers
-Heap memory usage: initial 64.0MB maximum 910.5MB
-Non heap memory usage: initial 2.4MB maximum -1b
-Garbage collector: PS Scavenge (Collections=7 Total time spent=0s)
-Garbage collector: PS MarkSweep (Collections=1 Total time spent=0s)
-Classes: loaded=4833 total loaded=4834 unloaded 1
-INFO [org.netbeans.core.ui.warmup.DiagnosticTask]: Total memory 4,294,967,296
-INFO [null]: Total physical memory 4,294,967,296
-WARNING [org.openide.filesystems.Ordering]: Not all children in Menu/Window/ marked with the position attribute: [ru-ptahi-aet-participanteditor-ParticipantEditorTopComponent.shadow, ru-ptahi-aet-participantviewer-ParticipantViewerTopComponent.shadow, ru-ptahi-aetexperiment-ExperimentEditorTopComponent.shadow, ru-ptahi-aetexperiment-ExperimentVisualizerTopComponent.shadow, ru-ptahi-aetexperiment-RunExperimentTopComponent.shadow, ru-ptahi-aetexperiment-VisualizerPropertiesTopComponent.shadow, ru-ptahi-cfe-stumile-StimuleEditorTopComponent.shadow], but some are: [org-netbeans-modules-project-ui-logical-tab-action.shadow, org-netbeans-modules-project-ui-physical-tab-action.shadow, org-netbeans-modules-favorites-View.shadow, org-netbeans-core-io-ui-IOWindowAction.shadow, SwitchToRecentDocumentAction.shadow, Web, Tools, Separator3.instance, ConfigureWindow, org-netbeans-core-windows-actions-ResetWindowsAction.shadow, Separator4.instance, CloseWindowAction.shadow, CloseAllDocumentsAction.shadow, CloseAllButThisAction.shadow, GroupsMenuAction.shadow, DocumentsAction.shadow]
-INFO [org.netbeans.ui.metrics.projects]: USG_PROJECT_OPEN
-WARNING [org.openide.filesystems.Ordering]: Encountered non-boolean relative ordering attribute <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2"><group/></open-files> from org.netbeans.spi.project.AuxiliaryConfiguration.http://www.netbeans.org/ns/projectui-open-files/2#open-files on /Volumes/Macintosh HD/Users/paulorlov/Documents/Projects/EyeBioFeedback/Project001
-WARNING [org.openide.filesystems.Ordering]: Encountered non-boolean relative ordering attribute <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2"><group/></open-files> from org.netbeans.spi.project.AuxiliaryConfiguration.http://www.netbeans.org/ns/projectui-open-files/2#open-files on /Volumes/Macintosh HD/Users/paulorlov/Documents/Projects/EyeBioFeedback/Project001
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 22 ms
+INFO [org.openide.filesystems.FileSystem]: Cannot rename Windows2Local/Modes/.nbattrs to Windows2Local/Modes/.nbattrs~
+
+msg
+Caused: org.openide.filesystems.FSException: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+	at org.openide.filesystems.LocalFileSystem.rename(LocalFileSystem.java:313)
+	at org.openide.filesystems.LocalFileSystem$Impl.rename(LocalFileSystem.java:599)
+	at org.openide.filesystems.DefaultAttributes.saveTable(DefaultAttributes.java:621)
+[catch] at org.openide.filesystems.DefaultAttributes.deleteAttributes(DefaultAttributes.java:517)
+	at org.netbeans.core.startup.layers.LocalFileSystemEx$DelegatingAttributes.deleteAttributes(LocalFileSystemEx.java:221)
+	at org.openide.filesystems.AbstractFileObject.handleDelete(AbstractFileObject.java:616)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.netbeans.core.windows.persistence.PersistenceManager.deleteOneFO(PersistenceManager.java:1320)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.deleteLocalMode(WindowManagerParser.java:782)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.writeModes(WindowManagerParser.java:690)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.save(WindowManagerParser.java:121)
+	at org.netbeans.core.windows.persistence.PersistenceManager.saveWindowSystem(PersistenceManager.java:1187)
+	at org.netbeans.core.windows.PersistenceHandler.save(PersistenceHandler.java:315)
+	at org.netbeans.core.windows.WindowSystemImpl.save(WindowSystemImpl.java:93)
+	at org.netbeans.core.NbLifeExit.doStopInfra(NbLifeExit.java:150)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:97)
+	at org.netbeans.core.startup.ModuleSystem$2.run(ModuleSystem.java:343)
+	at org.netbeans.ModuleManager.shutDownAsync(ModuleManager.java:1991)
+	at org.netbeans.core.startup.ModuleSystem.shutDownAsync(ModuleSystem.java:349)
+	at org.netbeans.core.NbLifeExit.doExit(NbLifeExit.java:137)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:94)
+	at org.openide.util.Mutex.doEvent(Mutex.java:1356)
+	at org.openide.util.Mutex.readAccess(Mutex.java:355)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:213)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:119)
+	at org.netbeans.core.windows.view.ui.MainWindow$9.windowClosing(MainWindow.java:525)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.Window.processWindowEvent(Window.java:2058)
+	at javax.swing.JFrame.processWindowEvent(JFrame.java:297)
+	at java.awt.Window.processEvent(Window.java:2017)
+	at java.awt.Component.dispatchEventImpl(Component.java:4881)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+ALL [null]: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems]
+
+msg
+Caused: org.openide.filesystems.FSException: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+	at org.openide.filesystems.LocalFileSystem.rename(LocalFileSystem.java:313)
+	at org.openide.filesystems.LocalFileSystem$Impl.rename(LocalFileSystem.java:599)
+	at org.openide.filesystems.DefaultAttributes.saveTable(DefaultAttributes.java:621)
+[catch] at org.openide.filesystems.DefaultAttributes.deleteAttributes(DefaultAttributes.java:517)
+	at org.netbeans.core.startup.layers.LocalFileSystemEx$DelegatingAttributes.deleteAttributes(LocalFileSystemEx.java:221)
+	at org.openide.filesystems.AbstractFileObject.handleDelete(AbstractFileObject.java:616)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.netbeans.core.windows.persistence.PersistenceManager.deleteOneFO(PersistenceManager.java:1320)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.deleteLocalMode(WindowManagerParser.java:782)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.writeModes(WindowManagerParser.java:690)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.save(WindowManagerParser.java:121)
+	at org.netbeans.core.windows.persistence.PersistenceManager.saveWindowSystem(PersistenceManager.java:1187)
+	at org.netbeans.core.windows.PersistenceHandler.save(PersistenceHandler.java:315)
+	at org.netbeans.core.windows.WindowSystemImpl.save(WindowSystemImpl.java:93)
+	at org.netbeans.core.NbLifeExit.doStopInfra(NbLifeExit.java:150)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:97)
+	at org.netbeans.core.startup.ModuleSystem$2.run(ModuleSystem.java:343)
+	at org.netbeans.ModuleManager.shutDownAsync(ModuleManager.java:1991)
+	at org.netbeans.core.startup.ModuleSystem.shutDownAsync(ModuleSystem.java:349)
+	at org.netbeans.core.NbLifeExit.doExit(NbLifeExit.java:137)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:94)
+	at org.openide.util.Mutex.doEvent(Mutex.java:1356)
+	at org.openide.util.Mutex.readAccess(Mutex.java:355)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:213)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:119)
+	at org.netbeans.core.windows.view.ui.MainWindow$9.windowClosing(MainWindow.java:525)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.Window.processWindowEvent(Window.java:2058)
+	at javax.swing.JFrame.processWindowEvent(JFrame.java:297)
+	at java.awt.Window.processEvent(Window.java:2017)
+	at java.awt.Component.dispatchEventImpl(Component.java:4881)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+ALL [null]: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Cannot delete Windows2Local/Modes/.nbattrs
+java.io.FileNotFoundException: F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config\Windows2Local\Modes\.nbattrs (Отказано в доступе)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.openide.filesystems.LocalFileSystem.outputStream(LocalFileSystem.java:465)
+	at org.openide.filesystems.LocalFileSystem$Impl.outputStream(LocalFileSystem.java:685)
+	at org.openide.filesystems.DefaultAttributes.deleteFile(DefaultAttributes.java:788)
+[catch] at org.openide.filesystems.DefaultAttributes.saveTable(DefaultAttributes.java:613)
+	at org.openide.filesystems.DefaultAttributes.deleteAttributes(DefaultAttributes.java:517)
+	at org.netbeans.core.startup.layers.LocalFileSystemEx$DelegatingAttributes.deleteAttributes(LocalFileSystemEx.java:221)
+	at org.openide.filesystems.AbstractFileObject.handleDelete(AbstractFileObject.java:616)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.netbeans.core.windows.persistence.PersistenceManager.deleteOneFO(PersistenceManager.java:1320)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.deleteLocalMode(WindowManagerParser.java:782)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.writeModes(WindowManagerParser.java:690)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.save(WindowManagerParser.java:121)
+	at org.netbeans.core.windows.persistence.PersistenceManager.saveWindowSystem(PersistenceManager.java:1187)
+	at org.netbeans.core.windows.PersistenceHandler.save(PersistenceHandler.java:315)
+	at org.netbeans.core.windows.WindowSystemImpl.save(WindowSystemImpl.java:93)
+	at org.netbeans.core.NbLifeExit.doStopInfra(NbLifeExit.java:150)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:97)
+	at org.netbeans.core.startup.ModuleSystem$2.run(ModuleSystem.java:343)
+	at org.netbeans.ModuleManager.shutDownAsync(ModuleManager.java:1991)
+	at org.netbeans.core.startup.ModuleSystem.shutDownAsync(ModuleSystem.java:349)
+	at org.netbeans.core.NbLifeExit.doExit(NbLifeExit.java:137)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:94)
+	at org.openide.util.Mutex.doEvent(Mutex.java:1356)
+	at org.openide.util.Mutex.readAccess(Mutex.java:355)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:213)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:119)
+	at org.netbeans.core.windows.view.ui.MainWindow$9.windowClosing(MainWindow.java:525)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.Window.processWindowEvent(Window.java:2058)
+	at javax.swing.JFrame.processWindowEvent(JFrame.java:297)
+	at java.awt.Window.processEvent(Window.java:2017)
+	at java.awt.Component.dispatchEventImpl(Component.java:4881)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+WARNING [org.openide.filesystems.FileSystem]: Rename #0 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 86 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #1 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 99 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #2 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 79 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #3 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 75 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #4 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 38 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #5 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 51 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #6 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 92 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #7 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 46 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #8 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 85 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #9 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 23 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #10 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 60 ms
+INFO [org.openide.filesystems.FileSystem]: Cannot rename Windows2Local/Modes/.nbattrs to Windows2Local/Modes/.nbattrs~
+
+msg
+Caused: org.openide.filesystems.FSException: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+	at org.openide.filesystems.LocalFileSystem.rename(LocalFileSystem.java:313)
+	at org.openide.filesystems.LocalFileSystem$Impl.rename(LocalFileSystem.java:599)
+[catch] at org.openide.filesystems.DefaultAttributes.saveTable(DefaultAttributes.java:621)
+	at org.openide.filesystems.DefaultAttributes.deleteAttributes(DefaultAttributes.java:517)
+	at org.netbeans.core.startup.layers.LocalFileSystemEx$DelegatingAttributes.deleteAttributes(LocalFileSystemEx.java:221)
+	at org.openide.filesystems.AbstractFileObject.handleDelete(AbstractFileObject.java:616)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.netbeans.core.windows.persistence.PersistenceManager.deleteOneFO(PersistenceManager.java:1320)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.deleteLocalMode(WindowManagerParser.java:782)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.writeModes(WindowManagerParser.java:690)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.save(WindowManagerParser.java:121)
+	at org.netbeans.core.windows.persistence.PersistenceManager.saveWindowSystem(PersistenceManager.java:1187)
+	at org.netbeans.core.windows.PersistenceHandler.save(PersistenceHandler.java:315)
+	at org.netbeans.core.windows.WindowSystemImpl.save(WindowSystemImpl.java:93)
+	at org.netbeans.core.NbLifeExit.doStopInfra(NbLifeExit.java:150)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:97)
+	at org.netbeans.core.startup.ModuleSystem$2.run(ModuleSystem.java:343)
+	at org.netbeans.ModuleManager.shutDownAsync(ModuleManager.java:1991)
+	at org.netbeans.core.startup.ModuleSystem.shutDownAsync(ModuleSystem.java:349)
+	at org.netbeans.core.NbLifeExit.doExit(NbLifeExit.java:137)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:94)
+	at org.openide.util.Mutex.doEvent(Mutex.java:1356)
+	at org.openide.util.Mutex.readAccess(Mutex.java:355)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:213)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:119)
+	at org.netbeans.core.windows.view.ui.MainWindow$9.windowClosing(MainWindow.java:525)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.Window.processWindowEvent(Window.java:2058)
+	at javax.swing.JFrame.processWindowEvent(JFrame.java:297)
+	at java.awt.Window.processEvent(Window.java:2017)
+	at java.awt.Component.dispatchEventImpl(Component.java:4881)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+ALL [null]: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Cannot delete Windows2Local/Modes/.nbattrs
+java.io.FileNotFoundException: F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config\Windows2Local\Modes\.nbattrs (Отказано в доступе)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.openide.filesystems.LocalFileSystem.outputStream(LocalFileSystem.java:465)
+	at org.openide.filesystems.LocalFileSystem$Impl.outputStream(LocalFileSystem.java:685)
+	at org.openide.filesystems.DefaultAttributes.deleteFile(DefaultAttributes.java:788)
+[catch] at org.openide.filesystems.DefaultAttributes.saveTable(DefaultAttributes.java:613)
+	at org.openide.filesystems.DefaultAttributes.deleteAttributes(DefaultAttributes.java:517)
+	at org.netbeans.core.startup.layers.LocalFileSystemEx$DelegatingAttributes.deleteAttributes(LocalFileSystemEx.java:221)
+	at org.openide.filesystems.AbstractFileObject.handleDelete(AbstractFileObject.java:616)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.netbeans.core.windows.persistence.PersistenceManager.deleteOneFO(PersistenceManager.java:1320)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.deleteLocalMode(WindowManagerParser.java:782)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.writeModes(WindowManagerParser.java:690)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.save(WindowManagerParser.java:121)
+	at org.netbeans.core.windows.persistence.PersistenceManager.saveWindowSystem(PersistenceManager.java:1187)
+	at org.netbeans.core.windows.PersistenceHandler.save(PersistenceHandler.java:315)
+	at org.netbeans.core.windows.WindowSystemImpl.save(WindowSystemImpl.java:93)
+	at org.netbeans.core.NbLifeExit.doStopInfra(NbLifeExit.java:150)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:97)
+	at org.netbeans.core.startup.ModuleSystem$2.run(ModuleSystem.java:343)
+	at org.netbeans.ModuleManager.shutDownAsync(ModuleManager.java:1991)
+	at org.netbeans.core.startup.ModuleSystem.shutDownAsync(ModuleSystem.java:349)
+	at org.netbeans.core.NbLifeExit.doExit(NbLifeExit.java:137)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:94)
+	at org.openide.util.Mutex.doEvent(Mutex.java:1356)
+	at org.openide.util.Mutex.readAccess(Mutex.java:355)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:213)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:119)
+	at org.netbeans.core.windows.view.ui.MainWindow$9.windowClosing(MainWindow.java:525)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.Window.processWindowEvent(Window.java:2058)
+	at javax.swing.JFrame.processWindowEvent(JFrame.java:297)
+	at java.awt.Window.processEvent(Window.java:2017)
+	at java.awt.Component.dispatchEventImpl(Component.java:4881)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+WARNING [org.openide.filesystems.FileSystem]: Rename #0 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 8 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #1 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 84 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #2 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 3 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #3 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 74 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #4 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 19 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #5 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 80 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #6 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 8 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #7 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 22 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #8 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 94 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #9 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 60 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #10 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 64 ms
+INFO [org.openide.filesystems.FileSystem]: Cannot rename Windows2Local/Modes/.nbattrs to Windows2Local/Modes/.nbattrs~
+
+msg
+Caused: org.openide.filesystems.FSException: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+	at org.openide.filesystems.LocalFileSystem.rename(LocalFileSystem.java:313)
+	at org.openide.filesystems.LocalFileSystem$Impl.rename(LocalFileSystem.java:599)
+[catch] at org.openide.filesystems.DefaultAttributes.saveTable(DefaultAttributes.java:621)
+	at org.openide.filesystems.DefaultAttributes.deleteAttributes(DefaultAttributes.java:517)
+	at org.netbeans.core.startup.layers.LocalFileSystemEx$DelegatingAttributes.deleteAttributes(LocalFileSystemEx.java:221)
+	at org.openide.filesystems.AbstractFileObject.handleDelete(AbstractFileObject.java:616)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.netbeans.core.windows.persistence.PersistenceManager.deleteOneFO(PersistenceManager.java:1320)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.deleteLocalMode(WindowManagerParser.java:782)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.writeModes(WindowManagerParser.java:690)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.save(WindowManagerParser.java:121)
+	at org.netbeans.core.windows.persistence.PersistenceManager.saveWindowSystem(PersistenceManager.java:1187)
+	at org.netbeans.core.windows.PersistenceHandler.save(PersistenceHandler.java:315)
+	at org.netbeans.core.windows.WindowSystemImpl.save(WindowSystemImpl.java:93)
+	at org.netbeans.core.NbLifeExit.doStopInfra(NbLifeExit.java:150)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:97)
+	at org.netbeans.core.startup.ModuleSystem$2.run(ModuleSystem.java:343)
+	at org.netbeans.ModuleManager.shutDownAsync(ModuleManager.java:1991)
+	at org.netbeans.core.startup.ModuleSystem.shutDownAsync(ModuleSystem.java:349)
+	at org.netbeans.core.NbLifeExit.doExit(NbLifeExit.java:137)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:94)
+	at org.openide.util.Mutex.doEvent(Mutex.java:1356)
+	at org.openide.util.Mutex.readAccess(Mutex.java:355)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:213)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:119)
+	at org.netbeans.core.windows.view.ui.MainWindow$9.windowClosing(MainWindow.java:525)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.Window.processWindowEvent(Window.java:2058)
+	at javax.swing.JFrame.processWindowEvent(JFrame.java:297)
+	at java.awt.Window.processEvent(Window.java:2017)
+	at java.awt.Component.dispatchEventImpl(Component.java:4881)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+ALL [null]: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Cannot delete Windows2Local/Modes/.nbattrs
+java.io.FileNotFoundException: F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config\Windows2Local\Modes\.nbattrs (Отказано в доступе)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.openide.filesystems.LocalFileSystem.outputStream(LocalFileSystem.java:465)
+	at org.openide.filesystems.LocalFileSystem$Impl.outputStream(LocalFileSystem.java:685)
+	at org.openide.filesystems.DefaultAttributes.deleteFile(DefaultAttributes.java:788)
+[catch] at org.openide.filesystems.DefaultAttributes.saveTable(DefaultAttributes.java:613)
+	at org.openide.filesystems.DefaultAttributes.deleteAttributes(DefaultAttributes.java:517)
+	at org.netbeans.core.startup.layers.LocalFileSystemEx$DelegatingAttributes.deleteAttributes(LocalFileSystemEx.java:221)
+	at org.openide.filesystems.AbstractFileObject.handleDelete(AbstractFileObject.java:616)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.netbeans.core.windows.persistence.PersistenceManager.deleteOneFO(PersistenceManager.java:1320)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.deleteLocalMode(WindowManagerParser.java:782)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.writeModes(WindowManagerParser.java:690)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.save(WindowManagerParser.java:121)
+	at org.netbeans.core.windows.persistence.PersistenceManager.saveWindowSystem(PersistenceManager.java:1187)
+	at org.netbeans.core.windows.PersistenceHandler.save(PersistenceHandler.java:315)
+	at org.netbeans.core.windows.WindowSystemImpl.save(WindowSystemImpl.java:93)
+	at org.netbeans.core.NbLifeExit.doStopInfra(NbLifeExit.java:150)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:97)
+	at org.netbeans.core.startup.ModuleSystem$2.run(ModuleSystem.java:343)
+	at org.netbeans.ModuleManager.shutDownAsync(ModuleManager.java:1991)
+	at org.netbeans.core.startup.ModuleSystem.shutDownAsync(ModuleSystem.java:349)
+	at org.netbeans.core.NbLifeExit.doExit(NbLifeExit.java:137)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:94)
+	at org.openide.util.Mutex.doEvent(Mutex.java:1356)
+	at org.openide.util.Mutex.readAccess(Mutex.java:355)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:213)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:119)
+	at org.netbeans.core.windows.view.ui.MainWindow$9.windowClosing(MainWindow.java:525)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.Window.processWindowEvent(Window.java:2058)
+	at javax.swing.JFrame.processWindowEvent(JFrame.java:297)
+	at java.awt.Window.processEvent(Window.java:2017)
+	at java.awt.Component.dispatchEventImpl(Component.java:4881)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+WARNING [org.openide.filesystems.FileSystem]: Rename #0 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 24 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #1 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 76 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #2 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 74 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #3 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 48 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #4 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 46 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #5 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 27 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #6 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 91 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #7 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 41 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #8 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 64 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #9 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 98 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #10 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 1 ms
+INFO [org.openide.filesystems.FileSystem]: Cannot rename Windows2Local/Modes/.nbattrs to Windows2Local/Modes/.nbattrs~
+
+msg
+Caused: org.openide.filesystems.FSException: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+	at org.openide.filesystems.LocalFileSystem.rename(LocalFileSystem.java:313)
+	at org.openide.filesystems.LocalFileSystem$Impl.rename(LocalFileSystem.java:599)
+[catch] at org.openide.filesystems.DefaultAttributes.saveTable(DefaultAttributes.java:621)
+	at org.openide.filesystems.DefaultAttributes.deleteAttributes(DefaultAttributes.java:517)
+	at org.netbeans.core.startup.layers.LocalFileSystemEx$DelegatingAttributes.deleteAttributes(LocalFileSystemEx.java:221)
+	at org.openide.filesystems.AbstractFileObject.handleDelete(AbstractFileObject.java:616)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.netbeans.core.windows.persistence.PersistenceManager.deleteOneFO(PersistenceManager.java:1320)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.deleteLocalMode(WindowManagerParser.java:782)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.writeModes(WindowManagerParser.java:690)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.save(WindowManagerParser.java:121)
+	at org.netbeans.core.windows.persistence.PersistenceManager.saveWindowSystem(PersistenceManager.java:1187)
+	at org.netbeans.core.windows.PersistenceHandler.save(PersistenceHandler.java:315)
+	at org.netbeans.core.windows.WindowSystemImpl.save(WindowSystemImpl.java:93)
+	at org.netbeans.core.NbLifeExit.doStopInfra(NbLifeExit.java:150)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:97)
+	at org.netbeans.core.startup.ModuleSystem$2.run(ModuleSystem.java:343)
+	at org.netbeans.ModuleManager.shutDownAsync(ModuleManager.java:1991)
+	at org.netbeans.core.startup.ModuleSystem.shutDownAsync(ModuleSystem.java:349)
+	at org.netbeans.core.NbLifeExit.doExit(NbLifeExit.java:137)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:94)
+	at org.openide.util.Mutex.doEvent(Mutex.java:1356)
+	at org.openide.util.Mutex.readAccess(Mutex.java:355)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:213)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:119)
+	at org.netbeans.core.windows.view.ui.MainWindow$9.windowClosing(MainWindow.java:525)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.Window.processWindowEvent(Window.java:2058)
+	at javax.swing.JFrame.processWindowEvent(JFrame.java:297)
+	at java.awt.Window.processEvent(Window.java:2017)
+	at java.awt.Component.dispatchEventImpl(Component.java:4881)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+ALL [null]: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Cannot delete Windows2Local/Modes/.nbattrs
+java.io.FileNotFoundException: F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config\Windows2Local\Modes\.nbattrs (Отказано в доступе)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.openide.filesystems.LocalFileSystem.outputStream(LocalFileSystem.java:465)
+	at org.openide.filesystems.LocalFileSystem$Impl.outputStream(LocalFileSystem.java:685)
+	at org.openide.filesystems.DefaultAttributes.deleteFile(DefaultAttributes.java:788)
+[catch] at org.openide.filesystems.DefaultAttributes.saveTable(DefaultAttributes.java:613)
+	at org.openide.filesystems.DefaultAttributes.deleteAttributes(DefaultAttributes.java:517)
+	at org.netbeans.core.startup.layers.LocalFileSystemEx$DelegatingAttributes.deleteAttributes(LocalFileSystemEx.java:221)
+	at org.openide.filesystems.AbstractFileObject.handleDelete(AbstractFileObject.java:616)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.netbeans.core.windows.persistence.PersistenceManager.deleteOneFO(PersistenceManager.java:1320)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.deleteLocalMode(WindowManagerParser.java:782)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.writeModes(WindowManagerParser.java:690)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.save(WindowManagerParser.java:121)
+	at org.netbeans.core.windows.persistence.PersistenceManager.saveWindowSystem(PersistenceManager.java:1187)
+	at org.netbeans.core.windows.PersistenceHandler.save(PersistenceHandler.java:315)
+	at org.netbeans.core.windows.WindowSystemImpl.save(WindowSystemImpl.java:93)
+	at org.netbeans.core.NbLifeExit.doStopInfra(NbLifeExit.java:150)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:97)
+	at org.netbeans.core.startup.ModuleSystem$2.run(ModuleSystem.java:343)
+	at org.netbeans.ModuleManager.shutDownAsync(ModuleManager.java:1991)
+	at org.netbeans.core.startup.ModuleSystem.shutDownAsync(ModuleSystem.java:349)
+	at org.netbeans.core.NbLifeExit.doExit(NbLifeExit.java:137)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:94)
+	at org.openide.util.Mutex.doEvent(Mutex.java:1356)
+	at org.openide.util.Mutex.readAccess(Mutex.java:355)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:213)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:119)
+	at org.netbeans.core.windows.view.ui.MainWindow$9.windowClosing(MainWindow.java:525)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.Window.processWindowEvent(Window.java:2058)
+	at javax.swing.JFrame.processWindowEvent(JFrame.java:297)
+	at java.awt.Window.processEvent(Window.java:2017)
+	at java.awt.Component.dispatchEventImpl(Component.java:4881)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+WARNING [org.openide.filesystems.FileSystem]: Rename #0 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 52 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #1 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 5 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #2 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 30 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #3 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 49 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #4 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 25 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #5 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 24 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #6 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 84 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #7 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 97 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #8 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 28 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #9 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 60 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #10 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 67 ms
+INFO [org.openide.filesystems.FileSystem]: Cannot rename Windows2Local/Modes/.nbattrs to Windows2Local/Modes/.nbattrs~
+
+msg
+Caused: org.openide.filesystems.FSException: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+	at org.openide.filesystems.LocalFileSystem.rename(LocalFileSystem.java:313)
+	at org.openide.filesystems.LocalFileSystem$Impl.rename(LocalFileSystem.java:599)
+[catch] at org.openide.filesystems.DefaultAttributes.saveTable(DefaultAttributes.java:621)
+	at org.openide.filesystems.DefaultAttributes.deleteAttributes(DefaultAttributes.java:517)
+	at org.netbeans.core.startup.layers.LocalFileSystemEx$DelegatingAttributes.deleteAttributes(LocalFileSystemEx.java:221)
+	at org.openide.filesystems.AbstractFileObject.handleDelete(AbstractFileObject.java:616)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.netbeans.core.windows.persistence.PersistenceManager.deleteOneFO(PersistenceManager.java:1320)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.deleteLocalMode(WindowManagerParser.java:782)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.writeModes(WindowManagerParser.java:690)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.save(WindowManagerParser.java:121)
+	at org.netbeans.core.windows.persistence.PersistenceManager.saveWindowSystem(PersistenceManager.java:1187)
+	at org.netbeans.core.windows.PersistenceHandler.save(PersistenceHandler.java:315)
+	at org.netbeans.core.windows.WindowSystemImpl.save(WindowSystemImpl.java:93)
+	at org.netbeans.core.NbLifeExit.doStopInfra(NbLifeExit.java:150)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:97)
+	at org.netbeans.core.startup.ModuleSystem$2.run(ModuleSystem.java:343)
+	at org.netbeans.ModuleManager.shutDownAsync(ModuleManager.java:1991)
+	at org.netbeans.core.startup.ModuleSystem.shutDownAsync(ModuleSystem.java:349)
+	at org.netbeans.core.NbLifeExit.doExit(NbLifeExit.java:137)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:94)
+	at org.openide.util.Mutex.doEvent(Mutex.java:1356)
+	at org.openide.util.Mutex.readAccess(Mutex.java:355)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:213)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:119)
+	at org.netbeans.core.windows.view.ui.MainWindow$9.windowClosing(MainWindow.java:525)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.Window.processWindowEvent(Window.java:2058)
+	at javax.swing.JFrame.processWindowEvent(JFrame.java:297)
+	at java.awt.Window.processEvent(Window.java:2017)
+	at java.awt.Component.dispatchEventImpl(Component.java:4881)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+ALL [null]: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Cannot delete Windows2Local/Modes/.nbattrs
+java.io.FileNotFoundException: F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config\Windows2Local\Modes\.nbattrs (Отказано в доступе)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.openide.filesystems.LocalFileSystem.outputStream(LocalFileSystem.java:465)
+	at org.openide.filesystems.LocalFileSystem$Impl.outputStream(LocalFileSystem.java:685)
+	at org.openide.filesystems.DefaultAttributes.deleteFile(DefaultAttributes.java:788)
+[catch] at org.openide.filesystems.DefaultAttributes.saveTable(DefaultAttributes.java:613)
+	at org.openide.filesystems.DefaultAttributes.deleteAttributes(DefaultAttributes.java:517)
+	at org.netbeans.core.startup.layers.LocalFileSystemEx$DelegatingAttributes.deleteAttributes(LocalFileSystemEx.java:221)
+	at org.openide.filesystems.AbstractFileObject.handleDelete(AbstractFileObject.java:616)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.netbeans.core.windows.persistence.PersistenceManager.deleteOneFO(PersistenceManager.java:1320)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.deleteLocalMode(WindowManagerParser.java:782)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.writeModes(WindowManagerParser.java:690)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.save(WindowManagerParser.java:121)
+	at org.netbeans.core.windows.persistence.PersistenceManager.saveWindowSystem(PersistenceManager.java:1187)
+	at org.netbeans.core.windows.PersistenceHandler.save(PersistenceHandler.java:315)
+	at org.netbeans.core.windows.WindowSystemImpl.save(WindowSystemImpl.java:93)
+	at org.netbeans.core.NbLifeExit.doStopInfra(NbLifeExit.java:150)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:97)
+	at org.netbeans.core.startup.ModuleSystem$2.run(ModuleSystem.java:343)
+	at org.netbeans.ModuleManager.shutDownAsync(ModuleManager.java:1991)
+	at org.netbeans.core.startup.ModuleSystem.shutDownAsync(ModuleSystem.java:349)
+	at org.netbeans.core.NbLifeExit.doExit(NbLifeExit.java:137)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:94)
+	at org.openide.util.Mutex.doEvent(Mutex.java:1356)
+	at org.openide.util.Mutex.readAccess(Mutex.java:355)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:213)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:119)
+	at org.netbeans.core.windows.view.ui.MainWindow$9.windowClosing(MainWindow.java:525)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.Window.processWindowEvent(Window.java:2058)
+	at javax.swing.JFrame.processWindowEvent(JFrame.java:297)
+	at java.awt.Window.processEvent(Window.java:2017)
+	at java.awt.Component.dispatchEventImpl(Component.java:4881)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+WARNING [org.openide.filesystems.FileSystem]: Rename #0 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 92 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #1 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 33 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #2 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 47 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #3 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 14 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #4 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 76 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #5 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 9 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #6 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 63 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #7 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 95 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #8 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 51 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #9 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 66 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #10 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 77 ms
+INFO [org.openide.filesystems.FileSystem]: Cannot rename Windows2Local/Modes/.nbattrs to Windows2Local/Modes/.nbattrs~
+
+msg
+Caused: org.openide.filesystems.FSException: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+	at org.openide.filesystems.LocalFileSystem.rename(LocalFileSystem.java:313)
+	at org.openide.filesystems.LocalFileSystem$Impl.rename(LocalFileSystem.java:599)
+[catch] at org.openide.filesystems.DefaultAttributes.saveTable(DefaultAttributes.java:621)
+	at org.openide.filesystems.DefaultAttributes.deleteAttributes(DefaultAttributes.java:517)
+	at org.netbeans.core.startup.layers.LocalFileSystemEx$DelegatingAttributes.deleteAttributes(LocalFileSystemEx.java:221)
+	at org.openide.filesystems.AbstractFileObject.handleDelete(AbstractFileObject.java:616)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.netbeans.core.windows.persistence.PersistenceManager.deleteOneFO(PersistenceManager.java:1320)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.deleteLocalMode(WindowManagerParser.java:782)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.writeModes(WindowManagerParser.java:690)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.save(WindowManagerParser.java:121)
+	at org.netbeans.core.windows.persistence.PersistenceManager.saveWindowSystem(PersistenceManager.java:1187)
+	at org.netbeans.core.windows.PersistenceHandler.save(PersistenceHandler.java:315)
+	at org.netbeans.core.windows.WindowSystemImpl.save(WindowSystemImpl.java:93)
+	at org.netbeans.core.NbLifeExit.doStopInfra(NbLifeExit.java:150)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:97)
+	at org.netbeans.core.startup.ModuleSystem$2.run(ModuleSystem.java:343)
+	at org.netbeans.ModuleManager.shutDownAsync(ModuleManager.java:1991)
+	at org.netbeans.core.startup.ModuleSystem.shutDownAsync(ModuleSystem.java:349)
+	at org.netbeans.core.NbLifeExit.doExit(NbLifeExit.java:137)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:94)
+	at org.openide.util.Mutex.doEvent(Mutex.java:1356)
+	at org.openide.util.Mutex.readAccess(Mutex.java:355)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:213)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:119)
+	at org.netbeans.core.windows.view.ui.MainWindow$9.windowClosing(MainWindow.java:525)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.Window.processWindowEvent(Window.java:2058)
+	at javax.swing.JFrame.processWindowEvent(JFrame.java:297)
+	at java.awt.Window.processEvent(Window.java:2017)
+	at java.awt.Component.dispatchEventImpl(Component.java:4881)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+ALL [null]: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Cannot delete Windows2Local/Modes/.nbattrs
+java.io.FileNotFoundException: F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config\Windows2Local\Modes\.nbattrs (Отказано в доступе)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.openide.filesystems.LocalFileSystem.outputStream(LocalFileSystem.java:465)
+	at org.openide.filesystems.LocalFileSystem$Impl.outputStream(LocalFileSystem.java:685)
+	at org.openide.filesystems.DefaultAttributes.deleteFile(DefaultAttributes.java:788)
+[catch] at org.openide.filesystems.DefaultAttributes.saveTable(DefaultAttributes.java:613)
+	at org.openide.filesystems.DefaultAttributes.deleteAttributes(DefaultAttributes.java:517)
+	at org.netbeans.core.startup.layers.LocalFileSystemEx$DelegatingAttributes.deleteAttributes(LocalFileSystemEx.java:221)
+	at org.openide.filesystems.AbstractFileObject.handleDelete(AbstractFileObject.java:616)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.netbeans.core.windows.persistence.PersistenceManager.deleteOneFO(PersistenceManager.java:1320)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.deleteLocalMode(WindowManagerParser.java:782)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.writeModes(WindowManagerParser.java:690)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.save(WindowManagerParser.java:121)
+	at org.netbeans.core.windows.persistence.PersistenceManager.saveWindowSystem(PersistenceManager.java:1187)
+	at org.netbeans.core.windows.PersistenceHandler.save(PersistenceHandler.java:315)
+	at org.netbeans.core.windows.WindowSystemImpl.save(WindowSystemImpl.java:93)
+	at org.netbeans.core.NbLifeExit.doStopInfra(NbLifeExit.java:150)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:97)
+	at org.netbeans.core.startup.ModuleSystem$2.run(ModuleSystem.java:343)
+	at org.netbeans.ModuleManager.shutDownAsync(ModuleManager.java:1991)
+	at org.netbeans.core.startup.ModuleSystem.shutDownAsync(ModuleSystem.java:349)
+	at org.netbeans.core.NbLifeExit.doExit(NbLifeExit.java:137)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:94)
+	at org.openide.util.Mutex.doEvent(Mutex.java:1356)
+	at org.openide.util.Mutex.readAccess(Mutex.java:355)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:213)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:119)
+	at org.netbeans.core.windows.view.ui.MainWindow$9.windowClosing(MainWindow.java:525)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.Window.processWindowEvent(Window.java:2058)
+	at javax.swing.JFrame.processWindowEvent(JFrame.java:297)
+	at java.awt.Window.processEvent(Window.java:2017)
+	at java.awt.Component.dispatchEventImpl(Component.java:4881)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+WARNING [org.openide.filesystems.FileSystem]: Rename #0 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 89 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #1 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 9 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #2 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 77 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #3 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 97 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #4 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 3 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #5 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 57 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #6 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 2 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #7 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 39 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #8 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 91 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #9 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 69 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #10 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 50 ms
+INFO [org.openide.filesystems.FileSystem]: Cannot rename Windows2Local/Modes/.nbattrs to Windows2Local/Modes/.nbattrs~
+
+msg
+Caused: org.openide.filesystems.FSException: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+	at org.openide.filesystems.LocalFileSystem.rename(LocalFileSystem.java:313)
+	at org.openide.filesystems.LocalFileSystem$Impl.rename(LocalFileSystem.java:599)
+[catch] at org.openide.filesystems.DefaultAttributes.saveTable(DefaultAttributes.java:621)
+	at org.openide.filesystems.DefaultAttributes.deleteAttributes(DefaultAttributes.java:517)
+	at org.netbeans.core.startup.layers.LocalFileSystemEx$DelegatingAttributes.deleteAttributes(LocalFileSystemEx.java:221)
+	at org.openide.filesystems.AbstractFileObject.handleDelete(AbstractFileObject.java:616)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.netbeans.core.windows.persistence.PersistenceManager.deleteOneFO(PersistenceManager.java:1320)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.deleteLocalMode(WindowManagerParser.java:782)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.writeModes(WindowManagerParser.java:690)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.save(WindowManagerParser.java:121)
+	at org.netbeans.core.windows.persistence.PersistenceManager.saveWindowSystem(PersistenceManager.java:1187)
+	at org.netbeans.core.windows.PersistenceHandler.save(PersistenceHandler.java:315)
+	at org.netbeans.core.windows.WindowSystemImpl.save(WindowSystemImpl.java:93)
+	at org.netbeans.core.NbLifeExit.doStopInfra(NbLifeExit.java:150)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:97)
+	at org.netbeans.core.startup.ModuleSystem$2.run(ModuleSystem.java:343)
+	at org.netbeans.ModuleManager.shutDownAsync(ModuleManager.java:1991)
+	at org.netbeans.core.startup.ModuleSystem.shutDownAsync(ModuleSystem.java:349)
+	at org.netbeans.core.NbLifeExit.doExit(NbLifeExit.java:137)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:94)
+	at org.openide.util.Mutex.doEvent(Mutex.java:1356)
+	at org.openide.util.Mutex.readAccess(Mutex.java:355)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:213)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:119)
+	at org.netbeans.core.windows.view.ui.MainWindow$9.windowClosing(MainWindow.java:525)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.Window.processWindowEvent(Window.java:2058)
+	at javax.swing.JFrame.processWindowEvent(JFrame.java:297)
+	at java.awt.Window.processEvent(Window.java:2017)
+	at java.awt.Component.dispatchEventImpl(Component.java:4881)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+ALL [null]: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Cannot delete Windows2Local/Modes/.nbattrs
+java.io.FileNotFoundException: F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config\Windows2Local\Modes\.nbattrs (Отказано в доступе)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.openide.filesystems.LocalFileSystem.outputStream(LocalFileSystem.java:465)
+	at org.openide.filesystems.LocalFileSystem$Impl.outputStream(LocalFileSystem.java:685)
+	at org.openide.filesystems.DefaultAttributes.deleteFile(DefaultAttributes.java:788)
+[catch] at org.openide.filesystems.DefaultAttributes.saveTable(DefaultAttributes.java:613)
+	at org.openide.filesystems.DefaultAttributes.deleteAttributes(DefaultAttributes.java:517)
+	at org.netbeans.core.startup.layers.LocalFileSystemEx$DelegatingAttributes.deleteAttributes(LocalFileSystemEx.java:221)
+	at org.openide.filesystems.AbstractFileObject.handleDelete(AbstractFileObject.java:616)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.netbeans.core.windows.persistence.PersistenceManager.deleteOneFO(PersistenceManager.java:1320)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.deleteLocalMode(WindowManagerParser.java:782)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.writeModes(WindowManagerParser.java:690)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.save(WindowManagerParser.java:121)
+	at org.netbeans.core.windows.persistence.PersistenceManager.saveWindowSystem(PersistenceManager.java:1187)
+	at org.netbeans.core.windows.PersistenceHandler.save(PersistenceHandler.java:315)
+	at org.netbeans.core.windows.WindowSystemImpl.save(WindowSystemImpl.java:93)
+	at org.netbeans.core.NbLifeExit.doStopInfra(NbLifeExit.java:150)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:97)
+	at org.netbeans.core.startup.ModuleSystem$2.run(ModuleSystem.java:343)
+	at org.netbeans.ModuleManager.shutDownAsync(ModuleManager.java:1991)
+	at org.netbeans.core.startup.ModuleSystem.shutDownAsync(ModuleSystem.java:349)
+	at org.netbeans.core.NbLifeExit.doExit(NbLifeExit.java:137)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:94)
+	at org.openide.util.Mutex.doEvent(Mutex.java:1356)
+	at org.openide.util.Mutex.readAccess(Mutex.java:355)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:213)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:119)
+	at org.netbeans.core.windows.view.ui.MainWindow$9.windowClosing(MainWindow.java:525)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.Window.processWindowEvent(Window.java:2058)
+	at javax.swing.JFrame.processWindowEvent(JFrame.java:297)
+	at java.awt.Window.processEvent(Window.java:2017)
+	at java.awt.Component.dispatchEventImpl(Component.java:4881)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+WARNING [org.openide.filesystems.FileSystem]: Rename #0 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 28 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #1 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 6 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #2 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 93 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #3 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 26 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #4 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 53 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #5 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 72 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #6 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 9 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #7 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 78 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #8 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 70 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #9 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 16 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #10 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 62 ms
+INFO [org.openide.filesystems.FileSystem]: Cannot rename Windows2Local/Modes/.nbattrs to Windows2Local/Modes/.nbattrs~
+
+msg
+Caused: org.openide.filesystems.FSException: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+	at org.openide.filesystems.LocalFileSystem.rename(LocalFileSystem.java:313)
+	at org.openide.filesystems.LocalFileSystem$Impl.rename(LocalFileSystem.java:599)
+[catch] at org.openide.filesystems.DefaultAttributes.saveTable(DefaultAttributes.java:621)
+	at org.openide.filesystems.DefaultAttributes.deleteAttributes(DefaultAttributes.java:517)
+	at org.netbeans.core.startup.layers.LocalFileSystemEx$DelegatingAttributes.deleteAttributes(LocalFileSystemEx.java:221)
+	at org.openide.filesystems.AbstractFileObject.handleDelete(AbstractFileObject.java:616)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.netbeans.core.windows.persistence.PersistenceManager.deleteOneFO(PersistenceManager.java:1320)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.deleteLocalMode(WindowManagerParser.java:782)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.writeModes(WindowManagerParser.java:690)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.save(WindowManagerParser.java:121)
+	at org.netbeans.core.windows.persistence.PersistenceManager.saveWindowSystem(PersistenceManager.java:1187)
+	at org.netbeans.core.windows.PersistenceHandler.save(PersistenceHandler.java:315)
+	at org.netbeans.core.windows.WindowSystemImpl.save(WindowSystemImpl.java:93)
+	at org.netbeans.core.NbLifeExit.doStopInfra(NbLifeExit.java:150)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:97)
+	at org.netbeans.core.startup.ModuleSystem$2.run(ModuleSystem.java:343)
+	at org.netbeans.ModuleManager.shutDownAsync(ModuleManager.java:1991)
+	at org.netbeans.core.startup.ModuleSystem.shutDownAsync(ModuleSystem.java:349)
+	at org.netbeans.core.NbLifeExit.doExit(NbLifeExit.java:137)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:94)
+	at org.openide.util.Mutex.doEvent(Mutex.java:1356)
+	at org.openide.util.Mutex.readAccess(Mutex.java:355)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:213)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:119)
+	at org.netbeans.core.windows.view.ui.MainWindow$9.windowClosing(MainWindow.java:525)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.Window.processWindowEvent(Window.java:2058)
+	at javax.swing.JFrame.processWindowEvent(JFrame.java:297)
+	at java.awt.Window.processEvent(Window.java:2017)
+	at java.awt.Component.dispatchEventImpl(Component.java:4881)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+ALL [null]: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Cannot delete Windows2Local/Modes/.nbattrs
+java.io.FileNotFoundException: F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config\Windows2Local\Modes\.nbattrs (Отказано в доступе)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.openide.filesystems.LocalFileSystem.outputStream(LocalFileSystem.java:465)
+	at org.openide.filesystems.LocalFileSystem$Impl.outputStream(LocalFileSystem.java:685)
+	at org.openide.filesystems.DefaultAttributes.deleteFile(DefaultAttributes.java:788)
+[catch] at org.openide.filesystems.DefaultAttributes.saveTable(DefaultAttributes.java:613)
+	at org.openide.filesystems.DefaultAttributes.deleteAttributes(DefaultAttributes.java:517)
+	at org.netbeans.core.startup.layers.LocalFileSystemEx$DelegatingAttributes.deleteAttributes(LocalFileSystemEx.java:221)
+	at org.openide.filesystems.AbstractFileObject.handleDelete(AbstractFileObject.java:616)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.netbeans.core.windows.persistence.PersistenceManager.deleteOneFO(PersistenceManager.java:1320)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.deleteLocalMode(WindowManagerParser.java:782)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.writeModes(WindowManagerParser.java:690)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.save(WindowManagerParser.java:121)
+	at org.netbeans.core.windows.persistence.PersistenceManager.saveWindowSystem(PersistenceManager.java:1187)
+	at org.netbeans.core.windows.PersistenceHandler.save(PersistenceHandler.java:315)
+	at org.netbeans.core.windows.WindowSystemImpl.save(WindowSystemImpl.java:93)
+	at org.netbeans.core.NbLifeExit.doStopInfra(NbLifeExit.java:150)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:97)
+	at org.netbeans.core.startup.ModuleSystem$2.run(ModuleSystem.java:343)
+	at org.netbeans.ModuleManager.shutDownAsync(ModuleManager.java:1991)
+	at org.netbeans.core.startup.ModuleSystem.shutDownAsync(ModuleSystem.java:349)
+	at org.netbeans.core.NbLifeExit.doExit(NbLifeExit.java:137)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:94)
+	at org.openide.util.Mutex.doEvent(Mutex.java:1356)
+	at org.openide.util.Mutex.readAccess(Mutex.java:355)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:213)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:119)
+	at org.netbeans.core.windows.view.ui.MainWindow$9.windowClosing(MainWindow.java:525)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.Window.processWindowEvent(Window.java:2058)
+	at javax.swing.JFrame.processWindowEvent(JFrame.java:297)
+	at java.awt.Window.processEvent(Window.java:2017)
+	at java.awt.Component.dispatchEventImpl(Component.java:4881)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+WARNING [org.openide.filesystems.FileSystem]: Rename #0 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 41 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #1 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 86 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #2 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 74 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #3 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 25 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #4 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 97 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #5 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 80 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #6 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 12 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #7 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 1 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #8 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 67 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #9 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 43 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #10 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 55 ms
+INFO [org.openide.filesystems.FileSystem]: Cannot rename Windows2Local/Modes/.nbattrs to Windows2Local/Modes/.nbattrs~
+
+msg
+Caused: org.openide.filesystems.FSException: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+	at org.openide.filesystems.LocalFileSystem.rename(LocalFileSystem.java:313)
+	at org.openide.filesystems.LocalFileSystem$Impl.rename(LocalFileSystem.java:599)
+[catch] at org.openide.filesystems.DefaultAttributes.saveTable(DefaultAttributes.java:621)
+	at org.openide.filesystems.DefaultAttributes.deleteAttributes(DefaultAttributes.java:517)
+	at org.netbeans.core.startup.layers.LocalFileSystemEx$DelegatingAttributes.deleteAttributes(LocalFileSystemEx.java:221)
+	at org.openide.filesystems.AbstractFileObject.handleDelete(AbstractFileObject.java:616)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.netbeans.core.windows.persistence.PersistenceManager.deleteOneFO(PersistenceManager.java:1320)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.deleteLocalMode(WindowManagerParser.java:782)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.writeModes(WindowManagerParser.java:690)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.save(WindowManagerParser.java:121)
+	at org.netbeans.core.windows.persistence.PersistenceManager.saveWindowSystem(PersistenceManager.java:1187)
+	at org.netbeans.core.windows.PersistenceHandler.save(PersistenceHandler.java:315)
+	at org.netbeans.core.windows.WindowSystemImpl.save(WindowSystemImpl.java:93)
+	at org.netbeans.core.NbLifeExit.doStopInfra(NbLifeExit.java:150)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:97)
+	at org.netbeans.core.startup.ModuleSystem$2.run(ModuleSystem.java:343)
+	at org.netbeans.ModuleManager.shutDownAsync(ModuleManager.java:1991)
+	at org.netbeans.core.startup.ModuleSystem.shutDownAsync(ModuleSystem.java:349)
+	at org.netbeans.core.NbLifeExit.doExit(NbLifeExit.java:137)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:94)
+	at org.openide.util.Mutex.doEvent(Mutex.java:1356)
+	at org.openide.util.Mutex.readAccess(Mutex.java:355)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:213)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:119)
+	at org.netbeans.core.windows.view.ui.MainWindow$9.windowClosing(MainWindow.java:525)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.Window.processWindowEvent(Window.java:2058)
+	at javax.swing.JFrame.processWindowEvent(JFrame.java:297)
+	at java.awt.Window.processEvent(Window.java:2017)
+	at java.awt.Component.dispatchEventImpl(Component.java:4881)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+ALL [null]: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Cannot delete Windows2Local/Modes/.nbattrs
+java.io.FileNotFoundException: F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config\Windows2Local\Modes\.nbattrs (Отказано в доступе)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.openide.filesystems.LocalFileSystem.outputStream(LocalFileSystem.java:465)
+	at org.openide.filesystems.LocalFileSystem$Impl.outputStream(LocalFileSystem.java:685)
+	at org.openide.filesystems.DefaultAttributes.deleteFile(DefaultAttributes.java:788)
+[catch] at org.openide.filesystems.DefaultAttributes.saveTable(DefaultAttributes.java:613)
+	at org.openide.filesystems.DefaultAttributes.deleteAttributes(DefaultAttributes.java:517)
+	at org.netbeans.core.startup.layers.LocalFileSystemEx$DelegatingAttributes.deleteAttributes(LocalFileSystemEx.java:221)
+	at org.openide.filesystems.AbstractFileObject.handleDelete(AbstractFileObject.java:616)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.netbeans.core.windows.persistence.PersistenceManager.deleteOneFO(PersistenceManager.java:1320)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.deleteLocalMode(WindowManagerParser.java:782)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.writeModes(WindowManagerParser.java:690)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.save(WindowManagerParser.java:121)
+	at org.netbeans.core.windows.persistence.PersistenceManager.saveWindowSystem(PersistenceManager.java:1187)
+	at org.netbeans.core.windows.PersistenceHandler.save(PersistenceHandler.java:315)
+	at org.netbeans.core.windows.WindowSystemImpl.save(WindowSystemImpl.java:93)
+	at org.netbeans.core.NbLifeExit.doStopInfra(NbLifeExit.java:150)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:97)
+	at org.netbeans.core.startup.ModuleSystem$2.run(ModuleSystem.java:343)
+	at org.netbeans.ModuleManager.shutDownAsync(ModuleManager.java:1991)
+	at org.netbeans.core.startup.ModuleSystem.shutDownAsync(ModuleSystem.java:349)
+	at org.netbeans.core.NbLifeExit.doExit(NbLifeExit.java:137)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:94)
+	at org.openide.util.Mutex.doEvent(Mutex.java:1356)
+	at org.openide.util.Mutex.readAccess(Mutex.java:355)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:213)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:119)
+	at org.netbeans.core.windows.view.ui.MainWindow$9.windowClosing(MainWindow.java:525)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.Window.processWindowEvent(Window.java:2058)
+	at javax.swing.JFrame.processWindowEvent(JFrame.java:297)
+	at java.awt.Window.processEvent(Window.java:2017)
+	at java.awt.Component.dispatchEventImpl(Component.java:4881)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+WARNING [org.openide.filesystems.FileSystem]: Rename #0 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 23 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #1 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 80 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #2 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 30 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #3 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 35 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #4 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 28 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #5 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 98 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #6 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 92 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #7 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 64 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #8 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 53 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #9 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 87 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #10 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 34 ms
+INFO [org.openide.filesystems.FileSystem]: Cannot rename Windows2Local/Modes/.nbattrs to Windows2Local/Modes/.nbattrs~
+
+msg
+Caused: org.openide.filesystems.FSException: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+	at org.openide.filesystems.LocalFileSystem.rename(LocalFileSystem.java:313)
+	at org.openide.filesystems.LocalFileSystem$Impl.rename(LocalFileSystem.java:599)
+[catch] at org.openide.filesystems.DefaultAttributes.saveTable(DefaultAttributes.java:621)
+	at org.openide.filesystems.DefaultAttributes.deleteAttributes(DefaultAttributes.java:517)
+	at org.netbeans.core.startup.layers.LocalFileSystemEx$DelegatingAttributes.deleteAttributes(LocalFileSystemEx.java:221)
+	at org.openide.filesystems.AbstractFileObject.handleDelete(AbstractFileObject.java:616)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.netbeans.core.windows.persistence.PersistenceManager.deleteOneFO(PersistenceManager.java:1320)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.deleteLocalMode(WindowManagerParser.java:782)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.writeModes(WindowManagerParser.java:690)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.save(WindowManagerParser.java:121)
+	at org.netbeans.core.windows.persistence.PersistenceManager.saveWindowSystem(PersistenceManager.java:1187)
+	at org.netbeans.core.windows.PersistenceHandler.save(PersistenceHandler.java:315)
+	at org.netbeans.core.windows.WindowSystemImpl.save(WindowSystemImpl.java:93)
+	at org.netbeans.core.NbLifeExit.doStopInfra(NbLifeExit.java:150)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:97)
+	at org.netbeans.core.startup.ModuleSystem$2.run(ModuleSystem.java:343)
+	at org.netbeans.ModuleManager.shutDownAsync(ModuleManager.java:1991)
+	at org.netbeans.core.startup.ModuleSystem.shutDownAsync(ModuleSystem.java:349)
+	at org.netbeans.core.NbLifeExit.doExit(NbLifeExit.java:137)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:94)
+	at org.openide.util.Mutex.doEvent(Mutex.java:1356)
+	at org.openide.util.Mutex.readAccess(Mutex.java:355)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:213)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:119)
+	at org.netbeans.core.windows.view.ui.MainWindow$9.windowClosing(MainWindow.java:525)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.Window.processWindowEvent(Window.java:2058)
+	at javax.swing.JFrame.processWindowEvent(JFrame.java:297)
+	at java.awt.Window.processEvent(Window.java:2017)
+	at java.awt.Component.dispatchEventImpl(Component.java:4881)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+ALL [null]: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Cannot delete Windows2Local/Modes/.nbattrs
+java.io.FileNotFoundException: F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config\Windows2Local\Modes\.nbattrs (Отказано в доступе)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.openide.filesystems.LocalFileSystem.outputStream(LocalFileSystem.java:465)
+	at org.openide.filesystems.LocalFileSystem$Impl.outputStream(LocalFileSystem.java:685)
+	at org.openide.filesystems.DefaultAttributes.deleteFile(DefaultAttributes.java:788)
+[catch] at org.openide.filesystems.DefaultAttributes.saveTable(DefaultAttributes.java:613)
+	at org.openide.filesystems.DefaultAttributes.deleteAttributes(DefaultAttributes.java:517)
+	at org.netbeans.core.startup.layers.LocalFileSystemEx$DelegatingAttributes.deleteAttributes(LocalFileSystemEx.java:221)
+	at org.openide.filesystems.AbstractFileObject.handleDelete(AbstractFileObject.java:616)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.netbeans.core.windows.persistence.PersistenceManager.deleteOneFO(PersistenceManager.java:1320)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.deleteLocalMode(WindowManagerParser.java:782)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.writeModes(WindowManagerParser.java:690)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.save(WindowManagerParser.java:121)
+	at org.netbeans.core.windows.persistence.PersistenceManager.saveWindowSystem(PersistenceManager.java:1187)
+	at org.netbeans.core.windows.PersistenceHandler.save(PersistenceHandler.java:315)
+	at org.netbeans.core.windows.WindowSystemImpl.save(WindowSystemImpl.java:93)
+	at org.netbeans.core.NbLifeExit.doStopInfra(NbLifeExit.java:150)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:97)
+	at org.netbeans.core.startup.ModuleSystem$2.run(ModuleSystem.java:343)
+	at org.netbeans.ModuleManager.shutDownAsync(ModuleManager.java:1991)
+	at org.netbeans.core.startup.ModuleSystem.shutDownAsync(ModuleSystem.java:349)
+	at org.netbeans.core.NbLifeExit.doExit(NbLifeExit.java:137)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:94)
+	at org.openide.util.Mutex.doEvent(Mutex.java:1356)
+	at org.openide.util.Mutex.readAccess(Mutex.java:355)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:213)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:119)
+	at org.netbeans.core.windows.view.ui.MainWindow$9.windowClosing(MainWindow.java:525)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.Window.processWindowEvent(Window.java:2058)
+	at javax.swing.JFrame.processWindowEvent(JFrame.java:297)
+	at java.awt.Window.processEvent(Window.java:2017)
+	at java.awt.Component.dispatchEventImpl(Component.java:4881)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+WARNING [org.openide.filesystems.FileSystem]: Rename #0 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 59 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #1 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 79 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #2 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 100 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #3 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 33 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #4 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 21 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #5 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 86 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #6 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 86 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #7 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 95 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #8 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 69 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #9 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 19 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #10 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 57 ms
+INFO [org.openide.filesystems.FileSystem]: Cannot rename Windows2Local/Modes/.nbattrs to Windows2Local/Modes/.nbattrs~
+
+msg
+Caused: org.openide.filesystems.FSException: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+	at org.openide.filesystems.LocalFileSystem.rename(LocalFileSystem.java:313)
+	at org.openide.filesystems.LocalFileSystem$Impl.rename(LocalFileSystem.java:599)
+[catch] at org.openide.filesystems.DefaultAttributes.saveTable(DefaultAttributes.java:621)
+	at org.openide.filesystems.DefaultAttributes.deleteAttributes(DefaultAttributes.java:517)
+	at org.netbeans.core.startup.layers.LocalFileSystemEx$DelegatingAttributes.deleteAttributes(LocalFileSystemEx.java:221)
+	at org.openide.filesystems.AbstractFileObject.handleDelete(AbstractFileObject.java:616)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.netbeans.core.windows.persistence.PersistenceManager.deleteOneFO(PersistenceManager.java:1320)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.deleteLocalMode(WindowManagerParser.java:782)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.writeModes(WindowManagerParser.java:690)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.save(WindowManagerParser.java:121)
+	at org.netbeans.core.windows.persistence.PersistenceManager.saveWindowSystem(PersistenceManager.java:1187)
+	at org.netbeans.core.windows.PersistenceHandler.save(PersistenceHandler.java:315)
+	at org.netbeans.core.windows.WindowSystemImpl.save(WindowSystemImpl.java:93)
+	at org.netbeans.core.NbLifeExit.doStopInfra(NbLifeExit.java:150)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:97)
+	at org.netbeans.core.startup.ModuleSystem$2.run(ModuleSystem.java:343)
+	at org.netbeans.ModuleManager.shutDownAsync(ModuleManager.java:1991)
+	at org.netbeans.core.startup.ModuleSystem.shutDownAsync(ModuleSystem.java:349)
+	at org.netbeans.core.NbLifeExit.doExit(NbLifeExit.java:137)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:94)
+	at org.openide.util.Mutex.doEvent(Mutex.java:1356)
+	at org.openide.util.Mutex.readAccess(Mutex.java:355)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:213)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:119)
+	at org.netbeans.core.windows.view.ui.MainWindow$9.windowClosing(MainWindow.java:525)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.Window.processWindowEvent(Window.java:2058)
+	at javax.swing.JFrame.processWindowEvent(JFrame.java:297)
+	at java.awt.Window.processEvent(Window.java:2017)
+	at java.awt.Component.dispatchEventImpl(Component.java:4881)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+ALL [null]: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Cannot delete Windows2Local/Modes/.nbattrs
+java.io.FileNotFoundException: F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config\Windows2Local\Modes\.nbattrs (Отказано в доступе)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.openide.filesystems.LocalFileSystem.outputStream(LocalFileSystem.java:465)
+	at org.openide.filesystems.LocalFileSystem$Impl.outputStream(LocalFileSystem.java:685)
+	at org.openide.filesystems.DefaultAttributes.deleteFile(DefaultAttributes.java:788)
+[catch] at org.openide.filesystems.DefaultAttributes.saveTable(DefaultAttributes.java:613)
+	at org.openide.filesystems.DefaultAttributes.deleteAttributes(DefaultAttributes.java:517)
+	at org.netbeans.core.startup.layers.LocalFileSystemEx$DelegatingAttributes.deleteAttributes(LocalFileSystemEx.java:221)
+	at org.openide.filesystems.AbstractFileObject.handleDelete(AbstractFileObject.java:616)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.openide.filesystems.MultiFileObject.needsMask(MultiFileObject.java:1638)
+	at org.openide.filesystems.MultiFileObject.handleDelete(MultiFileObject.java:1350)
+	at org.openide.filesystems.AbstractFolder.delete(AbstractFolder.java:997)
+	at org.netbeans.core.windows.persistence.PersistenceManager.deleteOneFO(PersistenceManager.java:1320)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.deleteLocalMode(WindowManagerParser.java:782)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.writeModes(WindowManagerParser.java:690)
+	at org.netbeans.core.windows.persistence.WindowManagerParser.save(WindowManagerParser.java:121)
+	at org.netbeans.core.windows.persistence.PersistenceManager.saveWindowSystem(PersistenceManager.java:1187)
+	at org.netbeans.core.windows.PersistenceHandler.save(PersistenceHandler.java:315)
+	at org.netbeans.core.windows.WindowSystemImpl.save(WindowSystemImpl.java:93)
+	at org.netbeans.core.NbLifeExit.doStopInfra(NbLifeExit.java:150)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:97)
+	at org.netbeans.core.startup.ModuleSystem$2.run(ModuleSystem.java:343)
+	at org.netbeans.ModuleManager.shutDownAsync(ModuleManager.java:1991)
+	at org.netbeans.core.startup.ModuleSystem.shutDownAsync(ModuleSystem.java:349)
+	at org.netbeans.core.NbLifeExit.doExit(NbLifeExit.java:137)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:94)
+	at org.openide.util.Mutex.doEvent(Mutex.java:1356)
+	at org.openide.util.Mutex.readAccess(Mutex.java:355)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:213)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:119)
+	at org.netbeans.core.windows.view.ui.MainWindow$9.windowClosing(MainWindow.java:525)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.Window.processWindowEvent(Window.java:2058)
+	at javax.swing.JFrame.processWindowEvent(JFrame.java:297)
+	at java.awt.Window.processEvent(Window.java:2017)
+	at java.awt.Component.dispatchEventImpl(Component.java:4881)
+	at java.awt.Container.dispatchEventImpl(Container.java:2292)
+	at java.awt.Window.dispatchEventImpl(Window.java:2739)
+	at java.awt.Component.dispatchEvent(Component.java:4703)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:746)
+	at java.awt.EventQueue.access$400(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.awt.EventQueue$3.run(EventQueue.java:691)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:719)
+	at java.awt.EventQueue$4.run(EventQueue.java:717)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:75)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:716)
+	at org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+WARNING [org.openide.filesystems.FileSystem]: Rename #0 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 13 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #1 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 26 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #2 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 56 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #3 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 27 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #4 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 83 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #5 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 39 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #6 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 65 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #7 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 70 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #8 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 74 ms
+WARNING [org.openide.filesystems.FileSystem]: Rename #9 failed: Невозможно переименовать файл Windows2Local/Modes/.nbattrs~ в папке F:\Новая папка\EyeTackerBIOFeedback\build\testuserdir\config в Windows2Local/Modes/.nbattrs. Существует новый файл: true. Результат переименования: null.
+INFO [org.openide.filesystems.FileSystem]: Sleeping for 93 ms

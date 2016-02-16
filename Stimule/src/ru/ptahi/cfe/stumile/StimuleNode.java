@@ -4,8 +4,6 @@ import java.awt.Image;
 import java.beans.IntrospectionException;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
-import java.util.ArrayList;
-import java.util.List;
 import javax.swing.Action;
 import org.openide.nodes.BeanNode;
 import org.openide.nodes.Children;
@@ -28,20 +26,12 @@ public class StimuleNode extends BeanNode<Stimule> implements PropertyChangeList
     private Lookup.Result<Node> nodesOnLookup;
     private Stimule sObj;
     private boolean current = false;
-    boolean shouldBeBold = false;
     
     StimuleNode(Stimule sObj, InstanceContent sContent) throws IntrospectionException {
         super(sObj, Children.LEAF, new AbstractLookup(sContent));
         this.sContent = sContent;
-        
-        if( sObj.getContent() == null){
-            setDisplayName("Empty...");
-            this.setPreferred(true);
-            shouldBeBold = true;
-        } else {
-            setDisplayName("Stimule " + sObj.getId());
-        }
-         
+        setDisplayName("Stimule " + sObj.getId() + ". CF(" + sObj.getComplexity() + ")");
+
         this.sContent.add(new DeleteCookie(this));
         this.sContent.add(new SerializeCookie(this));
         this.sContent.add(sObj);
@@ -54,13 +44,10 @@ public class StimuleNode extends BeanNode<Stimule> implements PropertyChangeList
     @Override
     public void propertyChange(PropertyChangeEvent evt) {
         Stimule s = getBean();
-        if( s.getContent() != null){
-            String oldName = getDisplayName();
-            String str = "Stimule " + s.getId();
-            this.setDisplayName(str);
-            fireDisplayNameChange(oldName, str);
-            shouldBeBold = false;
-        } 
+        String str = "Stimule " + s.getId() + ". CF(" + s.getComplexity() + ")";
+        String oldName = getDisplayName();
+        this.setDisplayName(str);
+        fireDisplayNameChange(oldName, str);
     }
 
     @Override
@@ -74,10 +61,10 @@ public class StimuleNode extends BeanNode<Stimule> implements PropertyChangeList
     
     @Override
     public Action[] getActions(boolean context) {
-        List<Action> nodeActions = new ArrayList<Action>();
-        nodeActions.add(new EditAction(getLookup()));
-        nodeActions.addAll(Utilities.actionsForPath("myAction/Stimuli"));
-        return nodeActions.toArray(new Action[nodeActions.size()]);
+        return new Action[]{ 
+            new EditAction(getLookup()),
+            new DeleteAction(getLookup())
+        };
     }
     
     @Override
@@ -91,14 +78,5 @@ public class StimuleNode extends BeanNode<Stimule> implements PropertyChangeList
     @Override
     public Image getOpenedIcon(int type) {
         return IconManager.getOpenedIcon("screen.png");
-    }
-    
-    @Override
-    public String getHtmlDisplayName() {
-        String result = getDisplayName();
-        if(shouldBeBold){
-            result = "<b>" + getDisplayName() + "</b>";
-        }
-        return result;
     }
 }

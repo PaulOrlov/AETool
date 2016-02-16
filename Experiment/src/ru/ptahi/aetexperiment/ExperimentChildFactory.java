@@ -131,7 +131,6 @@ public class ExperimentChildFactory extends ChildFactory<DataObject> {
 
         try {
             Experiment eObj = reconstructExperiment(key);
-            eObj.experimaentProject = project;
             InstanceContent experimentContent = new InstanceContent();
             experimentContent.add(key);
             experimentContent.add(project);

@@ -6,7 +6,7 @@
   <kind type="view" />
   <state type="joined"  />
   <constraints>
-    <path orientation="horizontal" number="20" weight="0.3"/>
+    <path orientation="horizontal" number="20" weight="0.20094191522762953"/>
     <path orientation="vertical" number="20" weight="0.5"/>
   </constraints>
   <bounds x="128" y="185" width="294" height="286" />

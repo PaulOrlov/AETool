@@ -4,6 +4,7 @@ import java.awt.Dimension;
 import java.awt.MouseInfo;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
+import java.util.Collection;
 import javafx.application.Platform;
 import javafx.embed.swing.JFXPanel;
 import javafx.event.EventHandler;
@@ -23,11 +24,13 @@ import org.openide.awt.ActionID;
 import org.openide.awt.ActionReference;
 import org.openide.awt.ActionReferences;
 import org.openide.awt.ActionRegistration;
+import org.openide.nodes.Node;
 import org.openide.util.ContextAwareAction;
 import org.openide.util.Exceptions;
 import org.openide.util.Lookup;
 import org.openide.util.LookupEvent;
 import org.openide.util.LookupListener;
+import org.openide.util.NbBundle;
 import org.openide.util.Utilities;
 import ru.ptahi.iconmanager.IconManager;
 
@@ -36,22 +39,25 @@ import ru.ptahi.iconmanager.IconManager;
  *
  * @author paulorlov
  */
-@ActionID(category = "Delete", id = "ru.ptahi.aetexperiment.deleteExperiment")
+@ActionID(category = "Delete", id = "ru.ptahi.aetexperiment.delete")
 @ActionRegistration(displayName = "Delete Experiment", asynchronous=true)
 @ActionReferences({
-    @ActionReference(path = "myAction/Experiment", position = 3)
+    @ActionReference(path = "myAction/Experiment", position = 0)
 })
 public class DeleteAction extends AbstractAction implements LookupListener, ContextAwareAction{
 
     private Lookup lookup;
+    private Experiment exObj;
+    private JFXPanel fxContainer;
+    private String name;
+    private JDialog dialog;
     private Lookup.Result<DeleteCookie> lkpInfo;
-    //private Experiment exObj;
-    //private JFXPanel fxContainer;
-    //private String name;
-    //private JDialog dialog;
+    private Lookup.Result<ExperimentNode> lkpInfoNode;
 
-    public DeleteAction(Lookup lookup) {
-        putValue(NAME, "Delete");
+    DeleteAction(Lookup lookup) {
+        super("Delete");
+        //putValue(NAME, "Delete");
+        //putValue(Action.NAME, NbBundle.getMessage(DeleteAction.class, "Delete"));
         this.lookup = lookup;
     }
     
@@ -60,44 +66,14 @@ public class DeleteAction extends AbstractAction implements LookupListener, Cont
     }
     
     @Override
-    public void resultChanged(LookupEvent le) {
-        setEnabled(true);
-    }
-    
-    @Override
-    public Action createContextAwareInstance(Lookup lkp) {
-        return new DeleteAction(lkp);
-    }
-    
-    void init() {
-        assert SwingUtilities.isEventDispatchThread() : "this shall be called just from AWT thread";
- 
-        if (lkpInfo != null) {
-            return;
-        }
- 
-        //The thing we want to listen for the presence or absence of
-        //on the global selection
-        lkpInfo = lookup.lookupResult(DeleteCookie.class);
-        lkpInfo.addLookupListener(this);
-        
-        resultChanged(null);
-    }
-    
-    public boolean isEnabled() {
-        init();
-        return super.isEnabled();
-    }
-
-    @Override
     public void actionPerformed(ActionEvent e) {
         init();
+        //exObj = lookup.lookup(Experiment.class);
         for (DeleteCookie dc : lkpInfo.allInstances()) {
             if (dc != null) {
                 dc.delete();
             }
         }
-//        exObj = lookup.lookup(Experiment.class);
 //        name = "With id " + exObj.getId();
 //                            
 //        fxContainer = new JFXPanel();
@@ -118,77 +94,126 @@ public class DeleteAction extends AbstractAction implements LookupListener, Cont
 //        dialog.setVisible(true);
     }
     
-//    private void closeDialog() {
-//        SwingUtilities.invokeLater(new Runnable() {
-//            @Override
-//            public void run() {
-//                dialog.setVisible(false);
-//            }
-//        });
-//    }
-//    
-//    private void deleteStimule() {
-//        SwingUtilities.invokeLater(new Runnable() {
-//            @Override
-//            public void run() {
-//                dialog.setVisible(false);
-//            }
-//        });
+    private void closeDialog() {
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                dialog.setVisible(false);
+            }
+        });
+    }
+    
+    private void deleteStimule() {
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                dialog.setVisible(false);
+            }
+        });
+        
+        Thread tr = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                DeleteCookie dc = lookup.lookup(DeleteCookie.class);
+                if (dc != null) {
+                    dc.delete();
+                }                
+            }
+        });
+        tr.start();        
+    }
+
+    private void createScene() {
+        Parent root = null;
+        
+        try {
+            root = FXMLLoader.load(getClass().getResource("DeleteDialog.fxml"));
+            AnchorPane ap = (AnchorPane) root.lookup("#AnchorPane");
+            dialog.setSize(new Dimension((int)ap.getPrefWidth()+20, (int)ap.getPrefHeight()+20));             
+        } catch (IOException ex) {
+            Exceptions.printStackTrace(ex);
+        }
+
+        if (root == null) {
+            return;
+        }
+
+        Label stimuleLabel = (Label) root.lookup("#experimentLabel");
+        stimuleLabel.setText(name);
+
+        ImageView icon = (ImageView) root.lookup("#icon");
+
+        icon.setImage(IconManager.getFXIcon("delete-item.png", 32, 32));
+
+        Button yButton = (Button) root.lookup("#yButton");
+        yButton.addEventFilter(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+
+            @Override
+            public void handle(MouseEvent t) {
+                deleteStimule();
+            }
+        });
+
+        Button nButton = (Button) root.lookup("#nButton");
+        nButton.addEventFilter(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+
+            @Override
+            public void handle(MouseEvent t) {
+                closeDialog();
+            }
+            
+        });
+
+        Scene scene = new Scene(root);
+        fxContainer.setScene(scene);
+    }
+
+    @Override
+    public void resultChanged(LookupEvent le) {
+ 
+//        setEnabled(!lkpInfo.allInstances().isEmpty());
 //        
-//        Thread tr = new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                DeleteCookie dc = lookup.lookup(DeleteCookie.class);
-//                if (dc != null) {
-//                    dc.delete();
-//                }                
-//            }
-//        });
-//        tr.start();        
-//    }
+//        int selected = lkpInfo.allInstances().size();
 //
-//    private void createScene() {
-//        Parent root = null;
-//        
-//        try {
-//            root = FXMLLoader.load(getClass().getResource("DeleteDialog.fxml"));
-//            AnchorPane ap = (AnchorPane) root.lookup("#AnchorPane");
-//            dialog.setSize(new Dimension((int)ap.getPrefWidth()+20, (int)ap.getPrefHeight()+20));             
-//        } catch (IOException ex) {
-//            Exceptions.printStackTrace(ex);
-//        }
-//
-//        if (root == null) {
+//        if (selected == 0) {
+//            setEnabled(false);
 //            return;
 //        }
 //
-//        Label stimuleLabel = (Label) root.lookup("#experimentLabel");
-//        stimuleLabel.setText(name);
-//
-//        ImageView icon = (ImageView) root.lookup("#icon");
-//
-//        icon.setImage(IconManager.getFXIcon("delete-item.png", 32, 32));
-//
-//        Button yButton = (Button) root.lookup("#yButton");
-//        yButton.addEventFilter(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
-//
-//            @Override
-//            public void handle(MouseEvent t) {
-//                deleteStimule();
-//            }
-//        });
-//
-//        Button nButton = (Button) root.lookup("#nButton");
-//        nButton.addEventFilter(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
-//
-//            @Override
-//            public void handle(MouseEvent t) {
-//                closeDialog();
-//            }
-//            
-//        });
-//
-//        Scene scene = new Scene(root);
-//        fxContainer.setScene(scene);
-//    }
+//        for (Node node : Utilities.actionsGlobalContext().lookupAll(Node.class)) {
+//            setEnabled(true);
+//        }
+        setEnabled(true);
+    }
+
+    @Override
+    public Action createContextAwareInstance(Lookup lkp) {
+        return new DeleteAction(lkp);
+    }
+    
+    void init() {
+        assert SwingUtilities.isEventDispatchThread() : "this shall be called just from AWT thread";
+ 
+        if (lkpInfo != null) {
+            return;
+        }
+ 
+        //The thing we want to listen for the presence or absence of
+        //on the global selection
+        lkpInfo = lookup.lookupResult(DeleteCookie.class);
+        lkpInfo.addLookupListener(this);
+        
+        
+        lkpInfoNode = lookup.lookupResult(ExperimentNode.class);
+        lkpInfoNode.addLookupListener(this);
+        
+        resultChanged(null);
+    }
+    
+    public boolean isEnabled() {
+        init();
+        return super.isEnabled();
+    }
+    
+    
 }

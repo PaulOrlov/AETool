@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><module codename="ru.ptahi.aetexperiment">
-    <module_version install_time="1452629964659" last="true" origin="installer" specification_version="1.0">
-        <file crc="1023325861" name="config/Modules/ru-ptahi-aetexperiment.xml"/>
+    <module_version install_time="1455631440271" last="true" origin="installer" specification_version="1.0">
+        <file crc="43418401" name="config/Modules/ru-ptahi-aetexperiment.xml"/>
         <file crc="1812833737" name="modules/ext/EyeTrackingAPI.jar"/>
         <file crc="705657601" name="modules/ext/core.jar"/>
         <file crc="4022828937" name="modules/ext/gluegen-rt-natives-linux-amd64.jar"/>
@@ -17,6 +17,6 @@
         <file crc="3279179800" name="modules/ext/jogl-all-natives-windows-amd64.jar"/>
         <file crc="3871849121" name="modules/ext/jogl-all-natives-windows-i586.jar"/>
         <file crc="921988896" name="modules/ext/jogl-all.jar"/>
-        <file crc="2819083122" name="modules/ru-ptahi-aetexperiment.jar"/>
+        <file crc="425710192" name="modules/ru-ptahi-aetexperiment.jar"/>
     </module_version>
 </module>

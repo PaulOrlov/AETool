@@ -6,7 +6,6 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import javafx.animation.FadeTransition;
@@ -29,7 +28,6 @@ import org.netbeans.api.project.Project;
 import org.netbeans.api.settings.ConvertAsProperties;
 import org.openide.awt.ActionID;
 import org.openide.awt.ActionReference;
-import org.openide.nodes.BeanNode;
 import org.openide.nodes.Node;
 import org.openide.util.Exceptions;
 import org.openide.util.Lookup;
@@ -38,7 +36,6 @@ import org.openide.util.LookupListener;
 import org.openide.windows.TopComponent;
 import org.openide.util.NbBundle.Messages;
 import org.openide.util.Utilities;
-import ru.ptahi.aet.*;
 import ru.ptahi.aet.participant.Participant;
 import ru.ptahi.aet.participant.ParticipantList;
 
@@ -90,18 +87,18 @@ public final class ExperimentEditorTopComponent extends TopComponent implements 
         fxContainer.setPreferredSize(new Dimension(600, 400));
         add(fxContainer, BorderLayout.CENTER);
 
-        myInit();
-    }
-    
-    public void myInit(){
-        if(exObj == null){
-            Lookup.Result<Experiment> agc = Utilities.actionsGlobalContext().lookupResult(Experiment.class);
-            if (!agc.allInstances().isEmpty()) {
-                exObj = agc.allInstances().iterator().next();
-                pcl = new PCL();
-                exObj.addPropertyChangeListener(pcl);
+        Platform.setImplicitExit(false);
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    createScene();
+                } catch (Exception e) {
+                    System.out.println("Found an exception ************************************");
+                    System.out.println(e);
+                }
             }
-        }
+        });
     }
 
     /**
@@ -130,42 +127,17 @@ public final class ExperimentEditorTopComponent extends TopComponent implements 
     public void componentOpened() {
         projectOnLookup = Utilities.actionsGlobalContext().lookupResult(Node.class);
         projectOnLookup.addLookupListener(this);
-        
-        myInit();
-        
-        if(exObj != null){
-            Platform.setImplicitExit(false);
-            Platform.runLater(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    createScene();
-                } catch (Exception e) {
-                    System.out.println("Found an exception ************************************");
-                    System.out.println(e);
-                }
-            }
-            }); 
-            
-            upDateScene();
-            }
 
-//        if (!projectOnLookup.allInstances().isEmpty()) {
-//            exN = projectOnLookup.allInstances().iterator().next();
-//            exObj = (Experiment) exN.getLookup().lookup(Experiment.class);
-//        }
-//        if (exObj == null) {
-//            initComponents();
-//            projectOnLookup = Utilities.actionsGlobalContext().lookupResult(Node.class);
-//            projectOnLookup.addLookupListener(this);
-//            if (!projectOnLookup.allInstances().isEmpty()) {
-//                exN = projectOnLookup.allInstances().iterator().next();
-//                exObj = (Experiment) exN.getLookup().lookup(Experiment.class);
-//            }
-//            //System.out.println("exObj == null");
-//            //return;
-//        }
-        
+        if (!projectOnLookup.allInstances().isEmpty()) {
+            exN = projectOnLookup.allInstances().iterator().next();
+            exObj = (Experiment) exN.getLookup().lookup(Experiment.class);
+        }
+        if (exObj == null) {
+            return;
+        }
+        upDateScene();
+        pcl = new PCL();
+        exObj.addPropertyChangeListener(pcl);
     }
 
     @Override
@@ -178,25 +150,15 @@ public final class ExperimentEditorTopComponent extends TopComponent implements 
     
     @Override
     public void resultChanged(LookupEvent le) {
-        Lookup.Result<Experiment> agc = Utilities.actionsGlobalContext().lookupResult(Experiment.class);
-        if (!agc.allInstances().isEmpty()) {
-            exObj = agc.allInstances().iterator().next();
+        if (!projectOnLookup.allInstances().isEmpty()) {
+            exN = projectOnLookup.allInstances().iterator().next();
+            exObj = (Experiment) exN.getLookup().lookup(Experiment.class);
             if (exObj != null) {
                 upDateScene();
                 pcl = new PCL();
                 exObj.addPropertyChangeListener(pcl);
             }
         }
-        
-//        if (!projectOnLookup.allInstances().isEmpty()) {
-//            exN = projectOnLookup.allInstances().iterator().next();
-//            exObj = (Experiment) exN.getLookup().lookup(Experiment.class);
-//            if (exObj != null) {
-//                upDateScene();
-//                pcl = new PCL();
-//                exObj.addPropertyChangeListener(pcl);
-//            }
-//        }
     }
     
     private void createScene() {
@@ -289,39 +251,14 @@ public final class ExperimentEditorTopComponent extends TopComponent implements 
 
             @Override
             public void run() {
-                
-//                Lookup.Result<Experiment> agc = Utilities.actionsGlobalContext().lookupResult(Experiment.class);
-//                if (!agc.allInstances().isEmpty()) {
-//                    exObj = agc.allInstances().iterator().next();
-//                }
-                myInit();
-                if(exObj != null && exObj.experimaentProject != null){
+                Project project = (Project) exN.getLookup().lookup(Project.class);
+                if(project != null){
                     participantChBox.getItems().clear();
-                    pList = (ParticipantList) exObj.experimaentProject.getLookup().lookup(ParticipantList.class);
+                    pList = (ParticipantList) project.getLookup().lookup(ParticipantList.class);
                     for (Participant current : pList.getAllParticipants()) {
                         participantChBox.getItems().add(current);
                     }    
-                } 
-                
-                
-                
-               
-                
-//                Project project = (Project) exN.getLookup().lookup(Project.class);
-//                if(project == null){
-//                    exN = projectOnLookup.allInstances().iterator().next();
-//                    exObj = (Experiment) exN.getLookup().lookup(Experiment.class);
-//                    project = (Project) exN.getLookup().lookup(Project.class);
-//                    System.out.println("project was null");
-//                }
-//                               
-//                if(project != null){
-//                    participantChBox.getItems().clear();
-//                    pList = (ParticipantList) project.getLookup().lookup(ParticipantList.class);
-//                    for (Participant current : pList.getAllParticipants()) {
-//                        participantChBox.getItems().add(current);
-//                    }    
-//                } 
+                }
                 
                 animateHide();
             }
@@ -329,7 +266,7 @@ public final class ExperimentEditorTopComponent extends TopComponent implements 
     }
     
     private void serialize() {
-        SerializeCookie sc = exObj.en.getLookup().lookup(SerializeCookie.class);
+        SerializeCookie sc = exN.getLookup().lookup(SerializeCookie.class);
         if (sc != null) {
             sc.serialize();
         }

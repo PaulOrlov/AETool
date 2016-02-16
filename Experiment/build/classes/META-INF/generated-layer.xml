@@ -4,10 +4,17 @@
 <filesystem>
     <folder name="Actions">
         <folder name="Delete">
-            <file name="ru-ptahi-aetexperiment-deleteExperiment.instance">
+            <file name="ru-ptahi-aetexperiment-delete.instance">
                 <!--ru.ptahi.aetexperiment.DeleteAction-->
                 <attr name="displayName" stringvalue="Delete Experiment"/>
                 <attr name="instanceCreate" newvalue="ru.ptahi.aetexperiment.DeleteAction"/>
+            </file>
+        </folder>
+        <folder name="ShowEventsAction">
+            <file name="ru-ptahi-aetexperiment-ShowEventsAction.instance">
+                <!--ru.ptahi.aetexperiment.ShowEventsAction-->
+                <attr name="displayName" stringvalue="My Action"/>
+                <attr name="instanceCreate" newvalue="ru.ptahi.aetexperiment.ShowEventsAction"/>
             </file>
         </folder>
         <folder name="Edit">
@@ -46,10 +53,17 @@
     </folder>
     <folder name="myAction">
         <folder name="Experiment">
-            <file name="ru-ptahi-aetexperiment-deleteExperiment.shadow">
+            <file name="ru-ptahi-aetexperiment-delete.shadow">
                 <!--ru.ptahi.aetexperiment.DeleteAction-->
-                <attr name="originalFile" stringvalue="Actions/Delete/ru-ptahi-aetexperiment-deleteExperiment.instance"/>
-                <attr intvalue="3" name="position"/>
+                <attr name="originalFile" stringvalue="Actions/Delete/ru-ptahi-aetexperiment-delete.instance"/>
+                <attr intvalue="0" name="position"/>
+            </file>
+        </folder>
+        <folder name="Experiment1">
+            <file name="ru-ptahi-aetexperiment-ShowEventsAction.shadow">
+                <!--ru.ptahi.aetexperiment.ShowEventsAction-->
+                <attr name="originalFile" stringvalue="Actions/ShowEventsAction/ru-ptahi-aetexperiment-ShowEventsAction.instance"/>
+                <attr intvalue="0" name="position"/>
             </file>
         </folder>
     </folder>

@@ -131,7 +131,6 @@ public final class StimuleEditorTopComponent extends TopComponent implements Loo
             sObj = (Stimule) sN.getLookup().lookup(Stimule.class);
         }
         if (sObj == null) {
-            System.out.println("sObj == null");
             return;
         }
         upDateScene();

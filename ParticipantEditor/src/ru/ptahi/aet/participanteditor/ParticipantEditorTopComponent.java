@@ -211,7 +211,6 @@ public final class ParticipantEditorTopComponent extends TopComponent implements
             p = (Participant) pN.getLookup().lookup(Participant.class);
         }
         if (p == null) {
-            System.out.println("p == null");
             return;
         }
         upDateScene();

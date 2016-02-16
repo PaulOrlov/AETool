@@ -2,35 +2,6 @@
 <!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN"
                             "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
 <filesystem>
-    <folder name="Actions">
-        <folder name="Delete">
-            <file name="ru-ptahi-aetexperiment-deleteStimuli.instance">
-                <!--ru.ptahi.cfe.stumile.DeleteAction-->
-                <attr name="displayName" stringvalue="Delete Stimuli"/>
-                <attr name="instanceCreate" newvalue="ru.ptahi.cfe.stumile.DeleteAction"/>
-            </file>
-        </folder>
-        <folder name="Window">
-            <file name="ru-ptahi-cfe-stumile-StimuleEditorTopComponent.instance">
-                <!--ru.ptahi.cfe.stumile.StimuleEditorTopComponent-->
-                <attr
-                    methodvalue="org.openide.windows.TopComponent.openAction" name="instanceCreate"/>
-                <attr name="component" newvalue="ru.ptahi.cfe.stumile.StimuleEditorTopComponent"/>
-                <attr name="preferredID" stringvalue="StimuleEditorTopComponent"/>
-                <attr
-                    bundlevalue="ru.ptahi.cfe.stumile.Bundle#CTL_StimuleEditorAction" name="displayName"/>
-            </file>
-        </folder>
-    </folder>
-    <folder name="myAction">
-        <folder name="Stimuli">
-            <file name="ru-ptahi-aetexperiment-deleteStimuli.shadow">
-                <!--ru.ptahi.cfe.stumile.DeleteAction-->
-                <attr name="originalFile" stringvalue="Actions/Delete/ru-ptahi-aetexperiment-deleteStimuli.instance"/>
-                <attr intvalue="3" name="position"/>
-            </file>
-        </folder>
-    </folder>
     <folder name="Menu">
         <folder name="Window">
             <file name="ru-ptahi-cfe-stumile-StimuleEditorTopComponent.shadow">
@@ -60,6 +31,19 @@
 </tc-ref>
 ]]></file>
             </folder>
+        </folder>
+    </folder>
+    <folder name="Actions">
+        <folder name="Window">
+            <file name="ru-ptahi-cfe-stumile-StimuleEditorTopComponent.instance">
+                <!--ru.ptahi.cfe.stumile.StimuleEditorTopComponent-->
+                <attr
+                    methodvalue="org.openide.windows.TopComponent.openAction" name="instanceCreate"/>
+                <attr name="component" newvalue="ru.ptahi.cfe.stumile.StimuleEditorTopComponent"/>
+                <attr name="preferredID" stringvalue="StimuleEditorTopComponent"/>
+                <attr
+                    bundlevalue="ru.ptahi.cfe.stumile.Bundle#CTL_StimuleEditorAction" name="displayName"/>
+            </file>
         </folder>
     </folder>
     <folder name="xml">

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><module codename="ru.ptahi.iconmanager">
-    <module_version install_time="1452629963109" last="true" origin="installer" specification_version="1.0">
-        <file crc="1927367406" name="config/Modules/ru-ptahi-iconmanager.xml"/>
+    <module_version install_time="1455619079312" last="true" origin="installer" specification_version="1.0">
+        <file crc="218255688" name="config/Modules/ru-ptahi-iconmanager.xml"/>
         <file crc="199572273" name="modules/ext/jfxrt.jar"/>
-        <file crc="243498035" name="modules/ru-ptahi-iconmanager.jar"/>
+        <file crc="2859084952" name="modules/ru-ptahi-iconmanager.jar"/>
     </module_version>
 </module>

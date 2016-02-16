@@ -5,8 +5,6 @@ import java.awt.image.BufferedImage;
 import java.beans.IntrospectionException;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
-import java.util.ArrayList;
-import java.util.List;
 import javax.swing.Action;
 import org.openide.nodes.BeanNode;
 import org.openide.nodes.Children;
@@ -30,7 +28,6 @@ public class ParticipantNode extends BeanNode<Participant> implements PropertyCh
     private InstanceContent participantContent;
 //    private static BufferedImage iconImage;
     private boolean current = false;
-    boolean shouldBeBold = false;
     
     public ParticipantNode(final Participant bean, InstanceContent participantContent) throws IntrospectionException {
         super(bean, Children.LEAF, new AbstractLookup(participantContent));
@@ -38,12 +35,9 @@ public class ParticipantNode extends BeanNode<Participant> implements PropertyCh
         
         if(bean.getFirstName() == null || bean.getLastName() == null){
             setDisplayName("Empty...");
-            this.setPreferred(true);
-            shouldBeBold = true;
         } else {
             setDisplayName(bean.getFirstName() + " " + bean.getLastName());
         }
-        
         this.participantContent.add(new DeleteCookie(this));
         this.participantContent.add(new SerializeCookie(this));
         this.participantContent.add(bean);
@@ -62,26 +56,13 @@ public class ParticipantNode extends BeanNode<Participant> implements PropertyCh
         fireDisplayNameChange(oldName, str);
         fireIconChange();
     }
-    
-    @Override
-    public String getHtmlDisplayName() {
-        String result = getDisplayName();
-        if(shouldBeBold){
-            result = "<b>" + getDisplayName() + "</b>";
-        }
-        return result;
-    }
 
     @Override
     public Action[] getActions(boolean context) {
-//        return new Action[]{ 
-//            new EditAction(getLookup()),
-//            new DeleteAction(getLookup())
-//        };
-        List<Action> nodeActions = new ArrayList<Action>();
-        nodeActions.add(new EditAction(getLookup()));
-        nodeActions.addAll(Utilities.actionsForPath("myAction/Participant"));
-        return nodeActions.toArray(new Action[nodeActions.size()]);
+        return new Action[]{ 
+            new EditAction(getLookup()),
+            new DeleteAction(getLookup())
+        };
     }
     
     @Override

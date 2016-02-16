@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><module codename="javafx">
-    <module_version install_time="1452629961800" last="true" origin="installer" specification_version="1.0">
-        <file crc="2958835152" name="config/Modules/javafx.xml"/>
+    <module_version install_time="1455619071217" last="true" origin="installer" specification_version="1.0">
+        <file crc="4177859679" name="config/Modules/javafx.xml"/>
         <file crc="199572273" name="modules/ext/jfxrt.jar"/>
-        <file crc="2930017150" name="modules/javafx.jar"/>
+        <file crc="3579189861" name="modules/javafx.jar"/>
     </module_version>
 </module>

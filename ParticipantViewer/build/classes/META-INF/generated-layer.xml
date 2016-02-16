@@ -2,35 +2,6 @@
 <!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN"
                             "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
 <filesystem>
-    <folder name="Actions">
-        <folder name="Delete">
-            <file name="ru-ptahi-aetexperiment-delete.instance">
-                <!--ru.ptahi.aet.participantviewer.DeleteAction-->
-                <attr name="displayName" stringvalue="Delete Participant"/>
-                <attr name="instanceCreate" newvalue="ru.ptahi.aet.participantviewer.DeleteAction"/>
-            </file>
-        </folder>
-        <folder name="Window">
-            <file name="ru-ptahi-aet-participantviewer-ParticipantViewerTopComponent.instance">
-                <!--ru.ptahi.aet.participantviewer.ParticipantViewerTopComponent-->
-                <attr
-                    methodvalue="org.openide.windows.TopComponent.openAction" name="instanceCreate"/>
-                <attr name="component" newvalue="ru.ptahi.aet.participantviewer.ParticipantViewerTopComponent"/>
-                <attr name="preferredID" stringvalue="ParticipantViewerTopComponent"/>
-                <attr
-                    bundlevalue="ru.ptahi.aet.participantviewer.Bundle#CTL_ParticipantViewerAction" name="displayName"/>
-            </file>
-        </folder>
-    </folder>
-    <folder name="myAction">
-        <folder name="Participant">
-            <file name="ru-ptahi-aetexperiment-delete.shadow">
-                <!--ru.ptahi.aet.participantviewer.DeleteAction-->
-                <attr name="originalFile" stringvalue="Actions/Delete/ru-ptahi-aetexperiment-delete.instance"/>
-                <attr intvalue="3" name="position"/>
-            </file>
-        </folder>
-    </folder>
     <folder name="Menu">
         <folder name="Window">
             <file name="ru-ptahi-aet-participantviewer-ParticipantViewerTopComponent.shadow">
@@ -60,6 +31,19 @@
 </tc-ref>
 ]]></file>
             </folder>
+        </folder>
+    </folder>
+    <folder name="Actions">
+        <folder name="Window">
+            <file name="ru-ptahi-aet-participantviewer-ParticipantViewerTopComponent.instance">
+                <!--ru.ptahi.aet.participantviewer.ParticipantViewerTopComponent-->
+                <attr
+                    methodvalue="org.openide.windows.TopComponent.openAction" name="instanceCreate"/>
+                <attr name="component" newvalue="ru.ptahi.aet.participantviewer.ParticipantViewerTopComponent"/>
+                <attr name="preferredID" stringvalue="ParticipantViewerTopComponent"/>
+                <attr
+                    bundlevalue="ru.ptahi.aet.participantviewer.Bundle#CTL_ParticipantViewerAction" name="displayName"/>
+            </file>
         </folder>
     </folder>
     <folder name="xml">
