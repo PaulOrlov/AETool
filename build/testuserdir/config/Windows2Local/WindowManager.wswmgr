@@ -3,10 +3,10 @@
 <windowmanager version="2.1">
     <main-window>
   <joined-properties
-   x="22"
-   y="32"
-   width="1236"
-   height="748"
+   x="96"
+   y="74"
+   width="1728"
+   height="932"
    relative-x="0.0"
    relative-y="0.0"
    relative-width="0.0"
@@ -18,10 +18,10 @@
    frame-state="6"
 />
   <separated-properties
-   x="128"
-   y="77"
-   width="1024"
-   height="61"
+   x="192"
+   y="103"
+   width="1536"
+   height="82"
    relative-x="0.0"
    relative-y="0.0"
    relative-width="0.0"
@@ -33,15 +33,14 @@
   </main-window>
     <editor-area state="joined" frame-state="0">
   <constraints>
-  <path orientation="horizontal" number="60" weight="0.7967032967032966" />
+  <path orientation="horizontal" number="60" weight="0.8361256544502618" />
   <path orientation="vertical" number="40" weight="0.7" />
   <path orientation="horizontal" number="40" weight="0.7" />
   <path orientation="vertical" number="40" weight="0.5" />
   </constraints>
-  <bounds x="422" y="185" width="537" height="340" />
+  <bounds x="633" y="248" width="806" height="455" />
     </editor-area>
     <screen width="1920" height="1080"/>
-    <active-mode name="explorer"/>
     <toolbar configuration="Standard" preferred-icon-size="24"/>
     <tc-list>
   <tc-id id="projectTabLogical_tc"/>

@@ -2,10 +2,13 @@
 <!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
 <attributes version="1.0">
     <fileobject name="editor">
-        <attr name="WinSys-TCRef-Order" stringvalue="ExperimentEditorTopComponent/ExperimentVisualizerTopComponent/ParticipantEditorTopComponent/RunExperimentTopComponent/StimuleEditorTopComponent"/>
+        <attr name="WinSys-TCRef-Order" stringvalue="ExperimentEditorTopComponent/ExperimentVisualizerTopComponent/ParticipantEditorTopComponent/RunExperimentTopComponent/StimuleEditorTopComponent/RunExperiment Window/RunExperiment Window_1/RunExperiment Window_2/RunExperiment Window_4/RunExperiment Window_3/RunExperiment Window_5/RunExperiment Window_6/RunExperiment Window_7/RunExperiment Window_8/RunExperiment Window_9/RunExperiment Window_10/RunExperiment Window_11/RunExperiment Window_12/RunExperiment Window_14/RunExperiment Window_13/RunExperiment Window_15/RunExperiment Window_16/RunExperiment Window_17/RunExperiment Window_18/RunExperiment Window_19/RunExperiment Window_20/RunExperiment Window_21/RunExperiment Window_22/RunExperiment Window_23/RunExperiment Window_24/RunExperiment Window_25/RunExperiment Window_26/RunExperiment Window_27/RunExperiment Window_28/RunExperiment Window_29/RunExperiment Window_30/RunExperiment Window_31/RunExperiment Window_32/RunExperiment Window_33/RunExperiment Window_34/RunExperiment Window_35/RunExperiment Window_36/RunExperiment Window_37/RunExperiment Window_38/RunExperiment Window_39/RunExperiment Window_40/RunExperiment Window_41"/>
     </fileobject>
     <fileobject name="explorer">
-        <attr name="WinSys-TCRef-Order" stringvalue="ParticipantViewerTopComponent/projectTabLogical_tc/projectTab_tc/favorites"/>
+        <attr name="WinSys-TCRef-Order" stringvalue="ParticipantViewerTopComponent/projectTab_tc/favorites"/>
+    </fileobject>
+    <fileobject name="leftSlidingSide">
+        <attr name="WinSys-TCRef-Order" stringvalue="projectTabLogical_tc"/>
     </fileobject>
     <fileobject name="output">
         <attr name="WinSys-TCRef-Order" stringvalue="output"/>

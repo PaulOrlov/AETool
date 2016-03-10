@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><module codename="ru.ptahi.aet.aetproject">
-    <module_version install_time="1455619105566" last="true" origin="installer" specification_version="1.0">
+    <module_version install_time="1457007855878" last="true" origin="installer" specification_version="1.0">
         <file crc="137393007" name="config/Modules/ru-ptahi-aet-aetproject.xml"/>
-        <file crc="3906454195" name="modules/ru-ptahi-aet-aetproject.jar"/>
+        <file crc="3902062272" name="modules/ru-ptahi-aet-aetproject.jar"/>
     </module_version>
 </module>

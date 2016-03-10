@@ -1,5 +1,8 @@
 package ru.ptahi.aetexperiment;
 
+import eyetrackerconnecter.Fixation;
+import eyetrackerconnecter.IViewX;
+import eyetrackerconnecter.UpdateDeviceEvent;
 import java.awt.AWTException;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -9,15 +12,8 @@ import java.awt.Toolkit;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.net.DatagramPacket;
-import java.net.DatagramSocket;
-import java.net.InetAddress;
-import java.net.SocketException;
-import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javafx.application.Platform;
 import javafx.embed.swing.JFXPanel;
 import javafx.event.EventHandler;
@@ -35,7 +31,6 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
 import javafx.scene.layout.HBox;
-import javafx.scene.paint.Color;
 import javafx.scene.shape.Ellipse;
 import javax.imageio.ImageIO;
 import javax.swing.SwingUtilities;
@@ -48,9 +43,9 @@ import org.openide.windows.TopComponent;
 import org.openide.util.NbBundle.Messages;
 import org.openide.windows.WindowManager;
 import processing.core.PApplet;
-import static processing.core.PConstants.CENTER;
 import ru.ptahi.iconmanager.IconManager;
 import ru.ptahi.cfe.stumile.StimuleList;
+
 
 /**
  * Top component which displays something.
@@ -102,9 +97,10 @@ class MyPA extends PApplet{
         //background(50);
         fill(0,5);
         rect(0,0,width,height);
-        fill(250,20);
-        ellipse(mx, my, 10, 10);
-        fill(200,mColor,mColor, 50);
+        //fill(250,20);
+        //ellipse(mx, my, 10, 10);
+        //fill(200,mColor,mColor, 50);
+        fill(200,50,50, 50); //red
         rect(0, 0, width,height);
     }
     
@@ -132,6 +128,8 @@ public final class RunExperimentTopComponent extends TopComponent {
     private String screenName = "";
     BufferedImage capture;
     public static MyPA mpa;
+    IViewX dev = new IViewX();
+    private final int LIMIT = 500;
     
     public static void makeItRed(){
         if(mpa != null){
@@ -241,12 +239,33 @@ public final class RunExperimentTopComponent extends TopComponent {
 
     public RunExperimentTopComponent(ExperimentNode context) {
         initComponents();
-        startIViewXListener();
+//        startIViewXListener();
         setName(Bundle.CTL_RunExperimentTopComponent());
         setToolTipText(Bundle.HINT_RunExperimentTopComponent());
         mThis = this;
         this.context = context;
-
+        
+        dev.setSendIP("192.168.0.2");
+        dev.setSendPort(4444);
+        dev.setRecivePort(5555);
+        dev.startTracker();
+        dev.startParsFixations();
+        
+        dev.addFixationListener((Fixation fObj) -> {
+            if(fObj.getDuration() > LIMIT){
+                makeItRed();
+            } else {
+                makeItWhite();
+            }
+        });
+        
+        dev.addUpdateDeviceListener((UpdateDeviceEvent event) -> {
+            if(mpa != null){
+                mpa.mx = event.getGazeX();
+                mpa.my = event.getGazeY();
+            }
+        });
+        
         setLayout(new BorderLayout());
         fxContainer = new JFXPanel();
         mpa = new MyPA();
@@ -313,23 +332,8 @@ public final class RunExperimentTopComponent extends TopComponent {
     }
 
     private void sendUPD() {
-       try {
-            DatagramSocket serverSocket = new DatagramSocket();
-            String send = "ET_INC\n";
-            byte[] m = send.getBytes();
-            InetAddress aHost = InetAddress.getByName("192.168.0.2");
-            int serverPort = 4444;
-            DatagramPacket request = new DatagramPacket(m, m.length, aHost, serverPort);
-            serverSocket.send(request);
-            serverSocket.close();
-        } catch (SocketException ex) {
-            Exceptions.printStackTrace(ex);
-        } catch (UnknownHostException ex) {
-            Exceptions.printStackTrace(ex);
-        } catch (IOException ex) {
-            Exceptions.printStackTrace(ex);
-        }
-        trialsCounter++;
+       dev.sendNextTrial();
+       trialsCounter++;
     }
 
     private void createScene() {
@@ -345,7 +349,7 @@ public final class RunExperimentTopComponent extends TopComponent {
         }
 
         vb = (VBox) root.lookup("#vb");
-        vb.setSpacing(10);
+        vb.setSpacing(30);
         vb.setAlignment(Pos.CENTER);
 
         Button runExpBtn = (Button) root.lookup("#runbutton");
@@ -441,16 +445,11 @@ public final class RunExperimentTopComponent extends TopComponent {
         Platform.runLater(new Runnable() {
             @Override
             public void run() {
-               // root.setCursor(Cursor.NONE);
-                // vb.setCursor(Cursor.NONE);
                 vb.getChildren().clear();
             }
         });
 
         if (iterator.hasNext()) {
-            //setCursor(blankCursor);
-
-//            final Experiment.StimuleInExperiment current = iterator.next();
             current = iterator.next();
             current.beginTime = String.valueOf(System.currentTimeMillis());
             current.indexInTheSet = stieList.indexOf(current);
@@ -462,34 +461,30 @@ public final class RunExperimentTopComponent extends TopComponent {
             Platform.runLater(new Runnable() {
                 @Override
                 public void run() {
-//                    Rectangle rect = new Rectangle(0, 0, 900, 900);
-//                    rect.setFill(Color.TRANSPARENT);
-//                    rect.setCursor(Cursor.NONE);
-
-                    TextArea ta = new TextArea(current.sObj.getContent());
-                    ta.setPrefWidth(1100);
-                    ta.setMaxWidth(1100);
-                    ta.setMaxHeight(getHeight() - 300);
-                    ta.setPrefHeight(getHeight() - 300);
-                    ta.setMinHeight(getHeight() - 300);
-
-                    ta.setEditable(false);
-                    ta.setPrefHeight(600);
-                    ta.setCursor(Cursor.NONE);
-
-                    ta.setStyle("-fx-text-fill: black;"
-                            + "-fx-background-color: white;"
-                            + "-fx-font: 14px \"Courier\" ;"
+                    final Label task = new Label(current.sObj.getContent());
+                    task.setStyle("-fx-text-fill: black;"
+                            + "-fx-font: 50px \"Courier\" ;"
                             + "-fx-font-weight: normal;"
                             + "-fx-cursor: null;");
-
-                    //                                "-fx-font: Courier New;"+ "-fx-font: 14px \"Serif\" ;"+ 
+                    task.setPrefHeight(300);
                     final Button aswerBtn = new Button("Ok");
+                    aswerBtn.setScaleX(2);
+                    aswerBtn.setScaleY(2);
                     Button nextBtn = new Button("And the Answer is...");
+                    
                     final Label yourAnswerLabel = new Label("Your answer: ");
+                    yourAnswerLabel.setStyle("-fx-text-fill: black;"
+                            + "-fx-font: 20px \"Courier\" ;"
+                            + "-fx-font-weight: normal;"
+                            + "-fx-cursor: null;");
+                    
                     final TextField answerField = new TextField();
-                    answerField.setPrefWidth(400);
-                    answerField.setMaxWidth(400);
+                    answerField.setPrefWidth(200);
+                    answerField.setMaxWidth(200);
+                    answerField.setScaleY(2);
+                    answerField.setScaleX(2);
+                    nextBtn.setScaleX(2);
+                    nextBtn.setScaleY(2);
 
                     nextBtn.addEventFilter(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
                         @Override
@@ -554,6 +549,8 @@ public final class RunExperimentTopComponent extends TopComponent {
                     });
 
                     Button noAnswerBtn = new Button("I have NO Answer");
+                    noAnswerBtn.setScaleX(2);
+                    noAnswerBtn.setScaleY(2);
 
                     noAnswerBtn.addEventFilter(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
                         @Override
@@ -597,29 +594,17 @@ public final class RunExperimentTopComponent extends TopComponent {
                         }
                     });
 
-//                    smallCircle = new Ellipse(); 
-//                    smallCircle.setCenterX(50.0f);
-//                    smallCircle.setCenterY(50.0f);
-//                    smallCircle.setRadiusX(50.0f);
-//                    smallCircle.setRadiusY(50.0f);
-//                    smallCircle.setFill(new Color(0.2, 0.2, 0.2, 0.3));
-
 
                     vb.setAlignment(Pos.TOP_CENTER);
                     Group g = new Group();
-//                    HBox mhb = new HBox();
-//                    mhb.getChildren().add(smallCircle);
-                    g.getChildren().add(ta);
-                    //g.getChildren().add(g);
-                    
-                    //g.getChildren().add(rect);
-                    //g.setCursor(Cursor.NONE);
+                    g.getChildren().add(task);
                     vb.getChildren().add(g);
 
                     HBox hb = new HBox();
+                    hb.setPrefHeight(550);
                     hb.getChildren().add(noAnswerBtn);
                     hb.getChildren().add(nextBtn);
-                    hb.setSpacing(90);
+                    hb.setSpacing(150);
                     hb.setAlignment(Pos.CENTER);
                     vb.getChildren().add(hb);
 
@@ -655,88 +640,6 @@ public final class RunExperimentTopComponent extends TopComponent {
         ExportToCSFileCookie sc = context.getLookup().lookup(ExportToCSFileCookie.class);
         if (sc != null) {
             sc.serialize();
-        }
-    }
-
-    private void startIViewXListener() {
-        try {
-            DatagramSocket serverSocket = new DatagramSocket();
-            InetAddress IPAddress = InetAddress.getByName("192.168.0.2");
-            int serverPort = 4444;
-            String send = "ET_STR\n";
-            byte[] m = send.getBytes();
-            DatagramPacket request = new DatagramPacket(m, m.length, IPAddress, serverPort);
-            serverSocket.send(request);
-            
-            send = "ET_REC\n";
-            m = send.getBytes();
-            request = new DatagramPacket(m, m.length, IPAddress, serverPort);
-            serverSocket.send(request);
-
-            send = "ET_FIX\n";
-            m = send.getBytes();
-            request = new DatagramPacket(m, m.length, IPAddress, serverPort);
-            serverSocket.send(request);
-
-            send = "ET_FRM \"%ET %SX %SY\" \n";
-            m = send.getBytes();
-            request = new DatagramPacket(m, m.length, IPAddress, serverPort);
-            serverSocket.send(request);
-            serverSocket.close();
-
-            Thread thr = new Thread() {
-                public void run() {
-                    try {
-                        long fixBegin = 0;
-                        DatagramSocket clientSocket = new DatagramSocket(5555);
-                        while (isTreadRuning) {
-                            byte[] receiveData = new byte[1024];
-                            DatagramPacket receive = new DatagramPacket(receiveData, receiveData.length);
-                            clientSocket.receive(receive);
-                            String mRes = new String(receive.getData());
-                            String[] parts = mRes.split(" ");
-                            if (parts[0].equals("ET_SPL")) {
-                                int xl = Integer.parseInt(parts[2].trim());
-                                int xr = Integer.parseInt(parts[3].trim());
-                                int yl = Integer.parseInt(parts[4].trim());
-                                int yr = Integer.parseInt(parts[5].trim());
-
-                                double gazeX = ((double) xl + (double) xr) / 2.0;
-                                double gazeY = ((double) yl + (double) yr) / 2.0;
-
-                                //System.out.println("GX: " + gazeX + ", GY: " + gazeY);
-                                if(mpa != null){
-                                    mpa.mx = (int) gazeX;
-                                    mpa.my = (int) gazeY;
-                                }
-                                
-                            } else if (parts[0].equals("ET_FIX")) {
-                                fixBegin = System.currentTimeMillis();
-                            }
-                            
-                            if(System.currentTimeMillis() - fixBegin > 500){
-                                makeItRed();
-                            } else {
-                                makeItWhite();
-                            }
-                        }
-                        clientSocket.close();
-                    } catch (SocketException ex) {
-                        
-                    } catch (IOException ex) {
-                        
-                    }
-                }
-            };
-
-            thr.start();
-
-        } catch (SocketException ex) {
-            
-        } catch (UnknownHostException ex) {
-            Exceptions.printStackTrace(ex);
-        } catch (IOException ex) {
-            Exceptions.printStackTrace(ex);
         }
     }
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><module codename="ru.ptahi.aet.participantviewer">
-    <module_version install_time="1455619080450" last="true" origin="installer" specification_version="1.0">
+    <module_version install_time="1457007854178" last="true" origin="installer" specification_version="1.0">
         <file crc="1880675077" name="config/Modules/ru-ptahi-aet-participantviewer.xml"/>
-        <file crc="239532491" name="modules/ru-ptahi-aet-participantviewer.jar"/>
+        <file crc="1565310550" name="modules/ru-ptahi-aet-participantviewer.jar"/>
     </module_version>
 </module>

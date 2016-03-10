@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><module codename="ru.ptahi.cfe.stumile">
-    <module_version install_time="1455619081696" last="true" origin="installer" specification_version="1.0">
+    <module_version install_time="1457007854989" last="true" origin="installer" specification_version="1.0">
         <file crc="1174540136" name="config/Modules/ru-ptahi-cfe-stumile.xml"/>
-        <file crc="525778076" name="modules/ru-ptahi-cfe-stumile.jar"/>
+        <file crc="3208657619" name="modules/ru-ptahi-cfe-stumile.jar"/>
     </module_version>
 </module>
